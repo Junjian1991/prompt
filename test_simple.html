@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Editor - Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #1a1a2e; color: white; padding: 20px; }
+        .template-tab { padding: 10px 20px; margin: 5px; background: #0f3460; border: none; border-radius: 8px; color: #a0a0a0; cursor: pointer; }
+        .template-tab.active { background: #e94560; color: white; }
+        .options-panel { background: #16213e; padding: 20px; border-radius: 12px; margin-top: 20px; }
+        .section { margin-bottom: 15px; }
+        .section-header { background: #0f3460; padding: 10px; cursor: pointer; border-radius: 8px; }
+        .section-content { padding: 10px; margin-top: 5px; }
+        .option-btn { padding: 8px 12px; margin: 4px; background: #0f3460; border: none; border-radius: 6px; color: white; cursor: pointer; }
+        .option-btn.active { background: #e94560; }
+        .option-btn.custom-btn { border: 1px dashed #e94560; color: #e94560; background: transparent; }
+        .custom-input { padding: 6px 10px; margin-left: 5px; background: #0f3460; border: 1px solid #e94560; border-radius: 6px; color: white; display: none; }
+        .custom-input.show { display: inline-block; }
+        .preview-panel { background: #16213e; padding: 20px; border-radius: 12px; margin-top: 20px; }
+        .preview-textarea { width: 100%; height: 200px; padding: 15px; background: #0f3460; border: none; border-radius: 8px; color: white; font-size: 14px; resize: none; }
+        .btn { padding: 10px 20px; margin: 5px; background: #0f3460; border: none; border-radius: 8px; color: white; cursor: pointer; }
+        .btn:hover { background: #1a5276; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>AI提示词编辑器 - 测试版</h1>
+    
+    <div id="template-tabs">
+        <button class="template-tab active" onclick="switchTemplate('T1')">👤 T1 单人物三视图</button>
+        <button class="template-tab" onclick="switchTemplate('T2')">🌆 T2 单场景空镜</button>
+    </div>
+    
+    <div id="options-panel">
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('basic')">基础信息 ▼</div>
+            <div id="basic" class="section-content">
+                <div>
+                    <label>角色名:</label>
+                    <input type="text" id="character_name" placeholder="输入角色名" oninput="updateOption('character_name', this.value)">
+                </div>
+                <div>
+                    <label>性别:</label>
+                    <button class="option-btn" onclick="selectOption('gender', '男')">男</button>
+                    <button class="option-btn" onclick="selectOption('gender', '女')">女</button>
+                </div>
+                <div>
+                    <label>脸型:</label>
+                    <button class="option-btn" onclick="selectOption('face_shape', '圆脸')">圆脸</button>
+                    <button class="option-btn" onclick="selectOption('face_shape', '瓜子脸')">瓜子脸</button>
+                    <button class="option-btn custom-btn" onclick="toggleCustom('face_shape')">自定义</button>
+                    <input type="text" id="custom_face_shape" class="custom-input" placeholder="自定义脸型" oninput="updateCustom('face_shape', this.value)">
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('eyes')">眼睛 ▼</div>
+            <div id="eyes" class="section-content">
+                <div>
+                    <label>眼睛大小:</label>
+                    <button class="option-btn" onclick="selectOption('eye_size', '大')">大</button>
+                    <button class="option-btn" onclick="selectOption('eye_size', '中')">中</button>
+                    <button class="option-btn" onclick="selectOption('eye_size', '细长')">细长</button>
+                </div>
+                <div>
+                    <label>眼神:</label>
+                    <button class="option-btn" onclick="selectOption('eye_expression', '清澈')">清澈</button>
+                    <button class="option-btn" onclick="selectOption('eye_expression', '锐利')">锐利</button>
+                    <button class="option-btn" onclick="selectOption('eye_expression', '温柔')">温柔</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="preview-panel">
+        <textarea id="preview-content" class="preview-textarea" readonly></textarea>
+        <div style="margin-top: 10px;">
+            <span>Tokens: <span id="token-count">0</span></span>
+        </div>
+        <div style="margin-top: 10px;">
+            <button class="btn" onclick="copyPrompt('full')">复制完整提示词</button>
+            <button class="btn" onclick="copyPrompt('plain')">复制纯文本</button>
+            <button class="btn" onclick="copyPrompt('english')">复制英文版本</button>
+        </div>
+    </div>
+
+    <script>
+        var AppState = {
+            currentTemplate: 'T1',
+            selectedOptions: {},
+            customValues: {},
+            negativePrompts: ['no watermark', 'no text']
+        };
+
+        var Template = {
+            T1: '【角色名】{{character_name}}\n【性别】{{gender}}\n【脸型】{{face_shape}}\n【面部特征】眼睛{{eye_size}}，{{eye_expression}}眼神\n【负面提示词】{{negative_prompts}}',
+            T2: '【场景类型】{{scene_type}}\n【时间】{{time_of_day}}\n【天气】{{weather}}\n【负面提示词】{{negative_prompts}}'
+        };
+
+        function switchTemplate(templateId) {
+            AppState.currentTemplate = templateId;
+            document.querySelectorAll('.template-tab').forEach(function(t) { t.classList.remove('active'); });
+            event.target.classList.add('active');
+            updatePreview();
+        }
+
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            section.classList.toggle('hidden');
+        }
+
+        function selectOption(key, value) {
+            AppState.selectedOptions[key] = value;
+            delete AppState.customValues[key];
+            document.getElementById('custom_' + key)?.classList.remove('show');
+            
+            document.querySelectorAll('.option-btn').forEach(function(b) {
+                if (b.onclick && b.onclick.toString().includes(key) && b.onclick.toString().includes(value)) {
+                    b.classList.add('active');
+                } else if (b.onclick && b.onclick.toString().includes(key) && !b.classList.contains('custom-btn')) {
+                    b.classList.remove('active');
+                }
+            });
+            
+            updatePreview();
+        }
+
+        function toggleCustom(key) {
+            var input = document.getElementById('custom_' + key);
+            input.classList.toggle('show');
+            if (input.classList.contains('show')) {
+                delete AppState.selectedOptions[key];
+            } else {
+                AppState.customValues[key] = input.value;
+            }
+            updatePreview();
+        }
+
+        function updateCustom(key, value) {
+            if (value) {
+                AppState.customValues[key] = value;
+                delete AppState.selectedOptions[key];
+            }
+            updatePreview();
+        }
+
+        function updateOption(key, value) {
+            AppState.selectedOptions[key] = value;
+            updatePreview();
+        }
+
+        function generatePrompt() {
+            var template = Template[AppState.currentTemplate];
+            var data = {};
+            
+            Object.keys(AppState.selectedOptions).forEach(function(k) {
+                data[k] = AppState.selectedOptions[k];
+            });
+            Object.keys(AppState.customValues).forEach(function(k) {
+                data[k] = AppState.customValues[k];
+            });
+            data['negative_prompts'] = AppState.negativePrompts.join(', ');
+            
+            var prompt = template;
+            Object.keys(data).forEach(function(k) {
+                prompt = prompt.replace('{{' + k + '}}', data[k] || '');
+            });
+            
+            return prompt;
+        }
+
+        function updatePreview() {
+            var preview = document.getElementById('preview-content');
+            var prompt = generatePrompt();
+            preview.value = prompt;
+            document.getElementById('token-count').textContent = Math.ceil(prompt.length / 4);
+        }
+
+        function copyPrompt(format) {
+            var prompt = generatePrompt();
+            if (format === 'plain') {
+                prompt = prompt.replace(/【[^】】】]+】/g, '');
+            } else if (format === 'english') {
+                var translations = { '男':'male', '女':'female', '圆脸':'round face', '瓜子脸':'oval face', '大':'big', '中':'medium', '细长':'slender', '清澈':'clear', '锐利':'sharp', '温柔':'gentle' };
+                Object.keys(translations).forEach(function(k) { prompt = prompt.split(k).join(translations[k]); });
+            }
+            navigator.clipboard.writeText(prompt).then(function() { alert('已复制!'); });
+        }
+
+        updatePreview();
+    </script>
+</body>
+</html>

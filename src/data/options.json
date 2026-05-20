@@ -1,0 +1,2426 @@
+{
+  "T1": {
+    "species": {
+      "label": {"zh": "物种", "en": "Species"},
+      "type": "select",
+      "items": [
+        {"value": "人类男", "label": "人类男", "en_value": "Human Male"},
+        {"value": "人类女", "label": "人类女", "en_value": "Human Female"},
+        {"value": "动物", "label": "动物", "en_value": "Animal"},
+        {"value": "半兽人", "label": "半兽人", "en_value": "Beastman"},
+        {"value": "机器人", "label": "机器人", "en_value": "Robot"}
+      ],
+      "hasCustom": true
+    },
+    "character_name": {
+      "label": {"zh": "角色名", "en": "Character Name"},
+      "type": "input",
+      "placeholder": {"zh": "请输入角色名称", "en": "Enter character name"}
+    },
+    "gender": {
+      "label": {"zh": "性别", "en": "Gender"},
+      "type": "select",
+      "items": [
+        {"value": "男", "label": "男", "en_value": "Male"},
+        {"value": "女", "label": "女", "en_value": "Female"},
+        {"value": "无性别", "label": "无性别", "en_value": "Non-binary"}
+      ],
+      "hasCustom": true
+    },
+    "age": {
+      "label": {"zh": "年龄", "en": "Age"},
+      "type": "select",
+      "items": [
+        {"value": "幼儿(2-5)", "label": "幼儿(2-5)", "en_value": "Toddler (2-5)"},
+        {"value": "儿童(6-10)", "label": "儿童(6-10)", "en_value": "Child (6-10)"},
+        {"value": "少年(11-14)", "label": "少年(11-14)", "en_value": "Pre-teen (11-14)"},
+        {"value": "青少年(15-18)", "label": "青少年(15-18)", "en_value": "Teen (15-18)"},
+        {"value": "青年(19-29)", "label": "青年(19-29)", "en_value": "Young Adult (19-29)"},
+        {"value": "壮年(30-39)", "label": "壮年(30-39)", "en_value": "Adult (30-39)"},
+        {"value": "中年(40-55)", "label": "中年(40-55)", "en_value": "Middle Aged (40-55)"},
+        {"value": "老年(55-70)", "label": "老年(55-70)", "en_value": "Senior (55-70)"}
+      ],
+      "hasCustom": true
+    },
+    "face_shape": {
+      "label": {"zh": "脸型", "en": "Face Shape"},
+      "type": "select",
+      "items": [
+        {"value": "瓜子脸", "label": "瓜子脸", "en_value": "Oval face with narrow jaw and full forehead", "zh_desc": "脸型上宽下窄，额头饱满，下巴尖细，整体轮廓流畅"},
+        {"value": "圆脸", "label": "圆脸", "en_value": "Round face with full cheeks", "zh_desc": "脸型接近正圆，面部长度与宽度相近，脸颊饱满，下颌线条柔和圆润"},
+        {"value": "方脸", "label": "方脸", "en_value": "Square face with defined jawline", "zh_desc": "脸型方正，额头宽，下颌角明显，下巴平直，轮廓棱角分明"},
+        {"value": "长脸", "label": "长脸", "en_value": "Long and narrow face", "zh_desc": "脸型长度明显大于宽度，额头较高，下巴偏长，纵向拉伸感强"},
+        {"value": "鹅蛋脸", "label": "鹅蛋脸", "en_value": "Soft oval face shape", "zh_desc": "脸型呈椭圆形，长度略大于宽度，额头适中，下巴圆润，整体柔和平衡"},
+        {"value": "菱形脸", "label": "菱形脸", "en_value": "Diamond face with high cheekbones", "zh_desc": "脸型颧骨处最宽，额头和下巴偏窄，颧骨突出，轮廓分明"},
+        {"value": "国字脸", "label": "国字脸", "en_value": "Square-shaped face", "zh_desc": "脸型宽阔方正，额头宽，下颌宽大，下巴平直，整体呈国字形"},
+        {"value": "心形脸", "label": "心形脸", "en_value": "Heart-shaped face", "zh_desc": "脸型额头宽，颧骨饱满，下颌收窄，下巴尖细，形似心形"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "eye_size": {
+      "label": {"zh": "眼睛·大小", "en": "Eye Size"},
+      "type": "select",
+      "items": [
+        {"value": "大", "label": "大", "en_value": "Large"},
+        {"value": "中", "label": "中", "en_value": "Medium"},
+        {"value": "细长", "label": "细长", "en_value": "Slender"}
+      ],
+      "hasCustom": true
+    },
+    "eye_lid": {
+      "label": {"zh": "眼睛·眼皮", "en": "Eyelid Type"},
+      "type": "select",
+      "items": [
+        {"value": "单", "label": "单", "en_value": "Single"},
+        {"value": "双", "label": "双", "en_value": "Double"},
+        {"value": "内双", "label": "内双", "en_value": "Hidden Double"}
+      ],
+      "hasCustom": true
+    },
+    "eye_corner": {
+      "label": {"zh": "眼睛·眼尾", "en": "Eye Corner"},
+      "type": "select",
+      "items": [
+        {"value": "上扬", "label": "上扬", "en_value": "Upward slanting eyes", "zh_desc": "眼尾高于内眼角，眼部外角向上挑起，呈锐利的上挑弧线"},
+        {"value": "下垂", "label": "下垂", "en_value": "Downward slanting eyes", "zh_desc": "眼尾低于内眼角，眼部外角自然向下，呈柔和的下垂弧线"},
+        {"value": "平直", "label": "平直", "en_value": "Straight eyes", "zh_desc": "内外眼角几乎在同一水平线上，眼裂走向水平"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "eye_expression": {
+      "label": {"zh": "眼睛·眼神", "en": "Eye Expression"},
+      "type": "select",
+      "items": [
+        {"value": "清澈", "label": "清澈", "en_value": "Clear eyes with bright highlights", "zh_desc": "虹膜色彩纯净，瞳孔与虹膜边界清晰，高光点明亮，整体眼神通透"},
+        {"value": "锐利", "label": "锐利", "en_value": "Sharp and penetrating gaze", "zh_desc": "瞳孔收缩较小，虹膜纹理清晰，眼神聚焦于一点，具有穿透力"},
+        {"value": "温柔", "label": "温柔", "en_value": "Gentle and soft eyes", "zh_desc": "上眼睑微微下垂，虹膜受柔光照射显得柔和，眼角线条平缓"},
+        {"value": "无神", "label": "无神", "en_value": "Dull and lifeless eyes", "zh_desc": "瞳孔散大，虹膜颜色暗淡，高光点缺失或微弱，凝视方向涣散"},
+        {"value": "空洞", "label": "空洞", "en_value": "Empty and vacant stare", "zh_desc": "虹膜与瞳孔边界模糊，眼内缺乏焦点，仿佛视线穿透眼前物体"},
+        {"value": "凶狠", "label": "凶狠", "en_value": "Fierce and intense eyes", "zh_desc": "眉头压低，上眼睑抬起露出上方眼白，虹膜下方也可能露出眼白，瞳孔收缩"},
+        {"value": "呆萌", "label": "呆萌", "en_value": "Cute and innocent eyes", "zh_desc": "眼睛睁得圆而大，瞳孔相对较大，高光点大而明亮，眼神单纯"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "eye_color": {
+      "label": {"zh": "眼睛·瞳色", "en": "Eye Color"},
+      "type": "select",
+      "items": [
+        {"value": "黑色", "label": "黑色", "en_value": "Black"},
+        {"value": "棕色", "label": "棕色", "en_value": "Brown"},
+        {"value": "蓝色", "label": "蓝色", "en_value": "Blue"},
+        {"value": "绿色", "label": "绿色", "en_value": "Green"},
+        {"value": "红色", "label": "红色", "en_value": "Red"},
+        {"value": "紫色", "label": "紫色", "en_value": "Purple"},
+        {"value": "金色", "label": "金色", "en_value": "Gold"},
+        {"value": "异色瞳", "label": "异色瞳", "en_value": "Heterochromia"}
+      ],
+      "hasCustom": true
+    },
+    "eyebrow_density": {
+      "label": {"zh": "眉毛·浓密度", "en": "Eyebrow Density"},
+      "type": "select",
+      "items": [
+        {"value": "浓密", "label": "浓密", "en_value": "Thick"},
+        {"value": "稀疏", "label": "稀疏", "en_value": "Thin"},
+        {"value": "中等", "label": "中等", "en_value": "Medium"}
+      ],
+      "hasCustom": true
+    },
+    "eyebrow_shape": {
+      "label": {"zh": "眉毛·形状", "en": "Eyebrow Shape"},
+      "type": "select",
+      "items": [
+        {"value": "剑眉", "label": "剑眉", "en_value": "Sword-shaped eyebrows", "zh_desc": "眉毛浓密，眉形直而末端向上斜挑，形如出鞘之剑"},
+        {"value": "柳叶眉", "label": "柳叶眉", "en_value": "Willow leaf eyebrows", "zh_desc": "眉毛细长弯曲，形如柳叶，眉尾尖细，线条柔美"},
+        {"value": "平直眉", "label": "平直眉", "en_value": "Straight eyebrows", "zh_desc": "眉毛粗且平直，眉峰不明显，从眉头到眉尾几乎呈水平直线"},
+        {"value": "上挑眉", "label": "上挑眉", "en_value": "Arched eyebrows", "zh_desc": "眉尾明显高于眉头，眉峰高耸"},
+        {"value": "八字眉", "label": "八字眉", "en_value": "Downward slanting eyebrows", "zh_desc": "眉尾下垂，形如八字"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "eyebrow_color": {
+      "label": {"zh": "眉毛·颜色", "en": "Eyebrow Color"},
+      "type": "select",
+      "items": [
+        {"value": "黑色", "label": "黑色", "en_value": "Black"},
+        {"value": "棕色", "label": "棕色", "en_value": "Brown"},
+        {"value": "金色", "label": "金色", "en_value": "Blonde"},
+        {"value": "白色", "label": "白色", "en_value": "White"},
+        {"value": "与发色相同", "label": "与发色相同", "en_value": "Same as Hair"}
+      ],
+      "hasCustom": true
+    },
+    "nose": {
+      "label": {"zh": "鼻子", "en": "Nose"},
+      "type": "select",
+      "items": [
+        {"value": "高挺", "label": "高挺", "en_value": "High straight nose", "zh_desc": "鼻梁从眉心到鼻尖笔直高耸，线条流畅，在面部形成明显的立体凸起"},
+        {"value": "小巧", "label": "小巧", "en_value": "Small delicate nose", "zh_desc": "鼻子在面部占比小，鼻梁不高，鼻头小而精致，线条柔和"},
+        {"value": "圆润", "label": "圆润", "en_value": "Rounded nose", "zh_desc": "鼻头圆而饱满，鼻翼较宽，鼻梁不高，整体轮廓柔和"},
+        {"value": "扁平", "label": "扁平", "en_value": "Flat nose", "zh_desc": "鼻梁低平，从侧面看鼻子几乎不突出于面部平面"},
+        {"value": "鹰钩", "label": "鹰钩", "en_value": "Hooked nose", "zh_desc": "鼻梁上部高挺，鼻尖向下弯曲呈钩状"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "lip_thickness": {
+      "label": {"zh": "嘴唇·厚度", "en": "Lip Thickness"},
+      "type": "select",
+      "items": [
+        {"value": "厚", "label": "厚", "en_value": "Thick"},
+        {"value": "薄", "label": "薄", "en_value": "Thin"},
+        {"value": "适中", "label": "适中", "en_value": "Medium"}
+      ],
+      "hasCustom": true
+    },
+    "lip_color": {
+      "label": {"zh": "嘴唇·唇色", "en": "Lip Color"},
+      "type": "select",
+      "items": [
+        {"value": "淡红", "label": "淡红", "en_value": "Light Red"},
+        {"value": "自然", "label": "自然", "en_value": "Natural"},
+        {"value": "苍白", "label": "苍白", "en_value": "Pale"},
+        {"value": "红润", "label": "红润", "en_value": "Rosy"}
+      ],
+      "hasCustom": true
+    },
+    "lip_corner": {
+      "label": {"zh": "嘴唇·嘴角", "en": "Mouth Corners"},
+      "type": "select",
+      "items": [
+        {"value": "上扬", "label": "上扬", "en_value": "Upward"},
+        {"value": "下垂", "label": "下垂", "en_value": "Downward"},
+        {"value": "平直", "label": "平直", "en_value": "Neutral"}
+      ],
+      "hasCustom": true
+    },
+    "skin_color": {
+      "label": {"zh": "肤色", "en": "Skin Color"},
+      "type": "select",
+      "items": [
+        {"value": "白皙", "label": "白皙", "en_value": "Fair"},
+        {"value": "健康偏白", "label": "健康偏白", "en_value": "Light"},
+        {"value": "小麦色", "label": "小麦色", "en_value": "Wheat"},
+        {"value": "古铜色", "label": "古铜色", "en_value": "Bronze"},
+        {"value": "黝黑", "label": "黝黑", "en_value": "Dark"},
+        {"value": "苍白", "label": "苍白", "en_value": "Pale"},
+        {"value": "红润", "label": "红润", "en_value": "Rosy"}
+      ],
+      "hasCustom": true
+    },
+    "hair_length": {
+      "label": {"zh": "发型·长度", "en": "Hair Length"},
+      "type": "select",
+      "items": [
+        {"value": "光头", "label": "光头", "short_label": "光头", "en_value": "Bald", "zh_desc": "头皮完全裸露，无任何头发"},
+        {"value": "寸头", "label": "寸头", "short_label": "寸头", "en_value": "Crew cut", "zh_desc": "极短发，紧贴头皮，发长约1厘米"},
+        {"value": "短发", "label": "短发", "short_label": "短发", "en_value": "Short", "zh_desc": "长度在耳际以上，露出耳朵"},
+        {"value": "及肩短发", "label": "及肩短发", "short_label": "及肩短发", "en_value": "Shoulder-length short", "zh_desc": "长度达到下巴至肩膀之间，可自然垂落或塞耳后"},
+        {"value": "中长发", "label": "中长发", "short_label": "中长发", "en_value": "Medium-long", "zh_desc": "长度到肩膀以下锁骨以上，有明显垂坠感"},
+        {"value": "长发", "label": "长发", "short_label": "长发", "en_value": "Long", "zh_desc": "长度达到背部肩胛骨位置，发量感足"},
+        {"value": "齐腰长发", "label": "齐腰长发", "short_label": "齐腰长发", "en_value": "Waist-length", "zh_desc": "长度达到腰部，发尾在腰线处"},
+        {"value": "及臀长发", "label": "及臀长发", "short_label": "及臀长发", "en_value": "Hip-length", "zh_desc": "长度达到臀部，极其修长"},
+        {"value": "左右不对称", "label": "左右不对称", "short_label": "不对称", "en_value": "Asymmetrical", "zh_desc": "一侧短一侧长，形成明显的长度落差"}
+      ],
+      "hasCustom": true,
+      "useShortLabel": true
+    },
+    "hair_color": {
+      "label": {"zh": "发型·颜色", "en": "Hair Color"},
+      "type": "select",
+      "items": [
+        {"value": "黑色", "label": "黑色", "en_value": "Black"},
+        {"value": "深棕色", "label": "深棕色", "en_value": "Dark Brown"},
+        {"value": "浅棕色", "label": "浅棕色", "en_value": "Light Brown"},
+        {"value": "金色", "label": "金色", "en_value": "Blonde"},
+        {"value": "白色", "label": "白色", "en_value": "White"},
+        {"value": "红色", "label": "红色", "en_value": "Red"},
+        {"value": "蓝色", "label": "蓝色", "en_value": "Blue"},
+        {"value": "紫色", "label": "紫色", "en_value": "Purple"},
+        {"value": "绿色", "label": "绿色", "en_value": "Green"},
+        {"value": "粉色", "label": "粉色", "en_value": "Pink"},
+        {"value": "挑染", "label": "挑染", "en_value": "Highlights"},
+        {"value": "渐变色", "label": "渐变色", "en_value": "Ombre"}
+      ],
+      "hasCustom": true
+    },
+    "hair_bangs": {
+      "label": {"zh": "发型·刘海", "en": "Bangs"},
+      "type": "select",
+      "items": [
+        {"value": "无刘海", "label": "无刘海", "en_value": "Forehead fully exposed", "zh_desc": "额头完全露出，头发全部向后或向两侧梳理"},
+        {"value": "微遮左眉", "label": "微遮左眉", "en_value": "Partial left bangs", "zh_desc": "刘海覆盖左眉的一部分，右眉露出"},
+        {"value": "微遮右眉", "label": "微遮右眉", "en_value": "Partial right bangs", "zh_desc": "刘海覆盖右眉的一部分，左眉露出"},
+        {"value": "中分", "label": "中分", "en_value": "Center part", "zh_desc": "头发从额头正中向两侧对称分开，露出额头中央"},
+        {"value": "齐刘海", "label": "齐刘海", "en_value": "Straight bangs", "zh_desc": "刘海在眉毛上方水平剪齐，覆盖整个额头"},
+        {"value": "斜刘海", "label": "斜刘海", "en_value": "Side-swept bangs", "zh_desc": "刘海从一侧向另一侧倾斜，发尾形成斜线"},
+        {"value": "空气刘海", "label": "空气刘海", "en_value": "Airy bangs", "zh_desc": "刘海轻薄稀疏，能看到额头皮肤，呈现轻盈通透感"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "hair_texture": {
+      "label": {"zh": "发型·发质", "en": "Hair Texture"},
+      "type": "select",
+      "items": [
+        {"value": "直发", "label": "直发", "en_value": "Straight"},
+        {"value": "卷发", "label": "卷发", "en_value": "Curly"},
+        {"value": "波浪", "label": "波浪", "en_value": "Wavy"},
+        {"value": "凌乱", "label": "凌乱", "en_value": "Messy"},
+        {"value": "刺头", "label": "刺头", "en_value": "Spiky"},
+        {"value": "层次分明", "label": "层次分明", "en_value": "Layered"}
+      ],
+      "hasCustom": true
+    },
+    "hair_style": {
+      "label": {"zh": "发型·造型", "en": "Hair Style"},
+      "type": "select",
+      "items": [
+        {"value": "马尾", "label": "马尾", "en_value": "Ponytail", "zh_desc": "头发向后脑勺集中扎成一束，发束自然垂落"},
+        {"value": "双马尾", "label": "双马尾", "en_value": "Double ponytail", "zh_desc": "头发在头部两侧各扎一束，对称垂落"},
+        {"value": "丸子头", "label": "丸子头", "en_value": "Bun", "zh_desc": "头发在头顶盘绕成圆润的发髻，紧实饱满"},
+        {"value": "编发", "label": "编发", "en_value": "Braided", "zh_desc": "头发被编织成一股或多股辫子，纹理清晰"},
+        {"value": "背头", "label": "背头", "en_value": "Slicked back", "zh_desc": "头发全部向后梳理，露出完整额头"},
+        {"value": "自然垂落", "label": "自然垂落", "en_value": "Natural down", "zh_desc": "头发不加任何束缚，从头顶自然向下垂落"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "body_type": {
+      "label": {"zh": "体型", "en": "Body Type"},
+      "type": "select",
+      "items": [
+        {"value": "极瘦", "label": "极瘦", "en_value": "Extremely thin", "zh_desc": "骨骼轮廓突出，皮下脂肪极薄，四肢纤细如杆"},
+        {"value": "清瘦", "label": "清瘦", "en_value": "Slender", "zh_desc": "身材纤细，骨骼感明显，四肢修长，体脂低"},
+        {"value": "结实", "label": "结实", "en_value": "Fit", "zh_desc": "肌肉紧实但不夸张，肩宽适中，手臂和腿部有清晰但不膨胀的肌肉线条"},
+        {"value": "微胖", "label": "微胖", "en_value": "Slightly chubby", "zh_desc": "身材略显圆润，脂肪覆盖均匀，腹部和大腿略有肉感"},
+        {"value": "圆润", "label": "圆润", "en_value": "Round", "zh_desc": "身体轮廓呈圆形，脂肪层厚实，缺乏棱角"},
+        {"value": "肌肉型", "label": "肌肉型", "en_value": "Muscular", "zh_desc": "肌肉发达，肩宽背厚，胸肌和手臂肌肉轮廓分明"},
+        {"value": "肩宽腰窄", "label": "肩宽腰窄", "en_value": "Broad shoulders narrow waist", "zh_desc": "肩部宽阔，腰部收窄，呈倒三角形轮廓"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "height": {
+      "label": {"zh": "身高", "en": "Height"},
+      "type": "select",
+      "items": [
+        {"value": "偏矮", "label": "偏矮", "en_value": "Short"},
+        {"value": "中等", "label": "中等", "en_value": "Average"},
+        {"value": "偏高", "label": "偏高", "en_value": "Tall"},
+        {"value": "极高", "label": "极高", "en_value": "Very Tall"}
+      ],
+      "hasCustom": true
+    },
+    "top_inner_type": {
+      "label": {"zh": "内搭·类型", "en": "Inner Top Type"},
+      "type": "select",
+      "items": [
+        {"value": "圆领T恤", "label": "圆领T恤", "en_value": "Round neck T-shirt", "zh_desc": "圆领短袖针织衫，版型宽松"},
+        {"value": "V领T恤", "label": "V领T恤", "en_value": "V-neck T-shirt", "zh_desc": "V型领口短袖，露出锁骨"},
+        {"value": "背心", "label": "背心", "en_value": "Vest", "zh_desc": "无袖上衣，肩部和手臂完全裸露"},
+        {"value": "高领打底", "label": "高领打底", "en_value": "Turtleneck", "zh_desc": "高领贴身长袖，紧裹颈部和手臂"},
+        {"value": "衬衫", "label": "衬衫", "en_value": "Shirt", "zh_desc": "有领子和全开襟的梭织上衣"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "top_inner_color": {
+      "label": {"zh": "内搭·颜色", "en": "Inner Top Color"},
+      "type": "select",
+      "items": [
+        {"value": "白", "label": "白", "en_value": "White"},
+        {"value": "黑", "label": "黑", "en_value": "Black"},
+        {"value": "灰", "label": "灰", "en_value": "Gray"},
+        {"value": "蓝", "label": "蓝", "en_value": "Blue"},
+        {"value": "红", "label": "红", "en_value": "Red"},
+        {"value": "粉", "label": "粉", "en_value": "Pink"}
+      ],
+      "hasCustom": true
+    },
+    "top_type": {
+      "label": {"zh": "上衣·类型", "en": "Top Type"},
+      "type": "select",
+      "categories": [
+        {
+          "name": {"zh": "内衣/打底类", "en": "Underwear/Layering"},
+          "items": [
+            {"value": "圆领T恤", "label": "圆领T恤", "en_value": "Round neck T-shirt", "zh_desc": "圆领短袖针织衫，版型宽松"},
+            {"value": "V领T恤", "label": "V领T恤", "en_value": "V-neck T-shirt", "zh_desc": "V型领口短袖，露出锁骨"},
+            {"value": "背心", "label": "背心", "en_value": "Vest", "zh_desc": "无袖上衣，肩部和手臂完全裸露"},
+            {"value": "高领打底", "label": "高领打底", "en_value": "Turtleneck", "zh_desc": "高领贴身长袖，紧裹颈部和手臂"},
+            {"value": "衬衫", "label": "衬衫", "en_value": "Shirt", "zh_desc": "有领子和全开襟的梭织上衣"},
+            {"value": "Polo衫", "label": "Polo衫", "en_value": "Polo shirt", "zh_desc": "有领子的短袖针织衫，领口有两到三颗纽扣"}
+          ]
+        },
+        {
+          "name": {"zh": "外套类", "en": "Outerwear"},
+          "items": [
+            {"value": "校服外套", "label": "校服外套", "en_value": "School uniform jacket", "zh_desc": "正式学生制服外套，左胸有校徽刺绣"},
+            {"value": "运动外套", "label": "运动外套", "en_value": "Track jacket", "zh_desc": "轻便拉链夹克，运动版型，撞色条纹"},
+            {"value": "连帽卫衣", "label": "连帽卫衣", "en_value": "Hoodie", "zh_desc": "带连帽的针织上衣，面料厚实柔软"},
+            {"value": "开襟卫衣", "label": "开襟卫衣", "en_value": "Zip-up hoodie", "zh_desc": "拉链开襟式卫衣，可敞开穿着"},
+            {"value": "西装外套", "label": "西装外套", "en_value": "Blazer", "zh_desc": "正式西装，有翻领和垫肩"},
+            {"value": "牛仔夹克", "label": "牛仔夹克", "en_value": "Denim jacket", "zh_desc": "丹宁布短夹克，金属纽扣"},
+            {"value": "风衣", "label": "风衣", "en_value": "Trench coat", "zh_desc": "中长款风衣，腰带，翻领"},
+            {"value": "羽绒服", "label": "羽绒服", "en_value": "Down jacket", "zh_desc": "厚实蓬松的冬季外套，绗缝填充"},
+            {"value": "针织开衫", "label": "针织开衫", "en_value": "Cardigan", "zh_desc": "编织针织面料，无领开襟"},
+            {"value": "棒球夹克", "label": "棒球夹克", "en_value": "Baseball jacket", "zh_desc": "运动风短夹克，袖子与衣身不同颜色"},
+            {"value": "马甲", "label": "马甲", "en_value": "Vest", "zh_desc": "无袖外套，前开襟"}
+          ]
+        }
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "top_inner_type": {
+      "label": {"zh": "内搭·类型", "en": "Inner Top Type"},
+      "type": "select",
+      "items": [
+        {"value": "圆领T恤", "label": "圆领T恤", "en_value": "Round neck T-shirt", "zh_desc": "圆领短袖针织衫，版型宽松"},
+        {"value": "V领T恤", "label": "V领T恤", "en_value": "V-neck T-shirt", "zh_desc": "V型领口短袖，露出锁骨"},
+        {"value": "背心", "label": "背心", "en_value": "Vest", "zh_desc": "无袖上衣，肩部和手臂完全裸露"},
+        {"value": "高领打底", "label": "高领打底", "en_value": "Turtleneck", "zh_desc": "高领贴身长袖，紧裹颈部和手臂"},
+        {"value": "衬衫", "label": "衬衫", "en_value": "Shirt", "zh_desc": "有领子和全开襟的梭织上衣"},
+        {"value": "Polo衫", "label": "Polo衫", "en_value": "Polo shirt", "zh_desc": "有领子的短袖针织衫，领口有两到三颗纽扣"},
+        {"value": "无内搭", "label": "无内搭", "en_value": "No inner top"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "top_color": {
+      "label": {"zh": "上衣·颜色", "en": "Top Color"},
+      "type": "select",
+      "items": [
+        {"value": "白色", "label": "白色", "en_value": "White"},
+        {"value": "黑色", "label": "黑色", "en_value": "Black"},
+        {"value": "灰色", "label": "灰色", "en_value": "Gray"},
+        {"value": "蓝色", "label": "蓝色", "en_value": "Blue"},
+        {"value": "红色", "label": "红色", "en_value": "Red"},
+        {"value": "黄色", "label": "黄色", "en_value": "Yellow"},
+        {"value": "绿色", "label": "绿色", "en_value": "Green"},
+        {"value": "紫色", "label": "紫色", "en_value": "Purple"},
+        {"value": "条纹", "label": "条纹", "en_value": "Striped"},
+        {"value": "格纹", "label": "格纹", "en_value": "Plaid"}
+      ],
+      "hasCustom": true
+    },
+    "top_inner_color": {
+      "label": {"zh": "内搭·颜色", "en": "Inner Top Color"},
+      "type": "select",
+      "items": [
+        {"value": "白色", "label": "白色", "en_value": "White"},
+        {"value": "黑色", "label": "黑色", "en_value": "Black"},
+        {"value": "灰色", "label": "灰色", "en_value": "Gray"},
+        {"value": "蓝色", "label": "蓝色", "en_value": "Blue"},
+        {"value": "红色", "label": "红色", "en_value": "Red"},
+        {"value": "黄色", "label": "黄色", "en_value": "Yellow"},
+        {"value": "绿色", "label": "绿色", "en_value": "Green"},
+        {"value": "紫色", "label": "紫色", "en_value": "Purple"}
+      ],
+      "hasCustom": true
+    },
+    "top_outer_color": {
+      "label": {"zh": "外套·颜色", "en": "Outer Top Color"},
+      "type": "select",
+      "items": [
+        {"value": "白色", "label": "白色", "en_value": "White"},
+        {"value": "黑色", "label": "黑色", "en_value": "Black"},
+        {"value": "灰色", "label": "灰色", "en_value": "Gray"},
+        {"value": "蓝色", "label": "蓝色", "en_value": "Blue"},
+        {"value": "红色", "label": "红色", "en_value": "Red"},
+        {"value": "黄色", "label": "黄色", "en_value": "Yellow"},
+        {"value": "绿色", "label": "绿色", "en_value": "Green"},
+        {"value": "紫色", "label": "紫色", "en_value": "Purple"}
+      ],
+      "hasCustom": true
+    },
+    "top_pattern": {
+      "label": {"zh": "上衣·图案", "en": "Top Pattern"},
+      "type": "select",
+      "items": [
+        {"value": "纯色", "label": "纯色", "en_value": "Solid"},
+        {"value": "字母", "label": "字母", "en_value": "Letters"},
+        {"value": "数字", "label": "数字", "en_value": "Numbers"},
+        {"value": "几何图案", "label": "几何图案", "en_value": "Geometric"},
+        {"value": "动漫印花", "label": "动漫印花", "en_value": "Anime Print"},
+        {"value": "校徽", "label": "校徽", "en_value": "School Emblem"}
+      ],
+      "hasCustom": true
+    },
+    "bottom_type": {
+      "label": {"zh": "下装·类型", "en": "Bottom Type"},
+      "type": "select",
+      "items": [
+        {"value": "运动长裤", "label": "运动长裤", "en_value": "Sweatpants", "zh_desc": "宽松长裤，棉质混纺，腰部松紧带或抽绳"},
+        {"value": "运动短裤", "label": "运动短裤", "en_value": "Athletic shorts", "zh_desc": "膝上短裤，运动版型，透气面料"},
+        {"value": "牛仔裤", "label": "牛仔裤", "en_value": "Jeans", "zh_desc": "丹宁布长裤，经典五袋设计"},
+        {"value": "休闲长裤", "label": "休闲长裤", "en_value": "Casual pants", "zh_desc": "直筒或修身长裤"},
+        {"value": "束脚运动裤", "label": "束脚运动裤", "en_value": "Joggers", "zh_desc": "裤脚有弹力收口"},
+        {"value": "百褶裙", "label": "百褶裙", "en_value": "Pleated skirt", "zh_desc": "有规律垂直压褶的短裙"},
+        {"value": "及膝裙", "label": "及膝裙", "en_value": "Knee-length skirt", "zh_desc": "裙长到膝盖处"},
+        {"value": "长裙", "label": "长裙", "en_value": "Long skirt", "zh_desc": "裙长到小腿或脚踝"},
+        {"value": "短裤", "label": "短裤", "en_value": "Shorts", "zh_desc": "休闲短裤，膝上长度"},
+        {"value": "工装裤", "label": "工装裤", "en_value": "Cargo pants", "zh_desc": "多口袋长裤，宽松版型"},
+        {"value": "背带裤", "label": "背带裤", "en_value": "Overalls", "zh_desc": "有背带的裤子，胸前有护胸片"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "bottom_color": {
+      "label": {"zh": "下装·颜色", "en": "Bottom Color"},
+      "type": "select",
+      "items": [
+        {"value": "黑", "label": "黑", "en_value": "Black"},
+        {"value": "白", "label": "白", "en_value": "White"},
+        {"value": "灰", "label": "灰", "en_value": "Gray"},
+        {"value": "深蓝", "label": "深蓝", "en_value": "Navy"},
+        {"value": "卡其", "label": "卡其", "en_value": "Khaki"}
+      ],
+      "hasCustom": true
+    },
+    "bottom_stripe": {
+      "label": {"zh": "下装·条纹", "en": "Bottom Stripe"},
+      "type": "select",
+      "items": [
+        {"value": "红条纹", "label": "红条纹", "en_value": "Red stripes"},
+        {"value": "蓝条纹", "label": "蓝条纹", "en_value": "Blue stripes"},
+        {"value": "白条纹", "label": "白条纹", "en_value": "White stripes"},
+        {"value": "黑条纹", "label": "黑条纹", "en_value": "Black stripes"}
+      ],
+      "hasCustom": true
+    },
+    "shoe_type": {
+      "label": {"zh": "鞋子·类型", "en": "Shoe Type"},
+      "type": "select",
+      "items": [
+        {"value": "跑鞋", "label": "跑鞋", "en_value": "Running shoes", "zh_desc": "轻便运动鞋，鞋底柔软，鞋面透气网布"},
+        {"value": "帆布鞋", "label": "帆布鞋", "en_value": "Canvas shoes", "zh_desc": "帆布面料平底鞋，鞋底为橡胶，系带"},
+        {"value": "篮球鞋", "label": "篮球鞋", "en_value": "Basketball shoes", "zh_desc": "高帮运动鞋，鞋底厚实有缓冲科技"},
+        {"value": "足球鞋", "label": "足球鞋", "en_value": "Soccer cleats", "zh_desc": "鞋底有鞋钉，鞋面薄且贴合脚型"},
+        {"value": "皮鞋", "label": "皮鞋", "en_value": "Leather shoes", "zh_desc": "皮革面料正装鞋，鞋面光亮"},
+        {"value": "凉鞋", "label": "凉鞋", "en_value": "Sandals", "zh_desc": "露脚趾和脚后跟的鞋子"},
+        {"value": "靴子", "label": "靴子", "en_value": "Boots", "zh_desc": "鞋帮到脚踝以上的鞋"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "shoe_color": {
+      "label": {"zh": "鞋子·颜色", "en": "Shoe Color"},
+      "type": "select",
+      "items": [
+        {"value": "白", "label": "白", "en_value": "White"},
+        {"value": "黑", "label": "黑", "en_value": "Black"},
+        {"value": "红黑", "label": "红黑", "en_value": "Red/Black"},
+        {"value": "蓝白", "label": "蓝白", "en_value": "Blue/White"},
+        {"value": "灰蓝", "label": "灰蓝", "en_value": "Gray/Blue"}
+      ],
+      "hasCustom": true
+    },
+    "accessories": {
+      "label": {"zh": "配饰", "en": "Accessories"},
+      "type": "select",
+      "items": [
+        {"value": "帽子", "label": "帽子", "en_value": "Hat"},
+        {"value": "发带", "label": "发带", "en_value": "Headband"},
+        {"value": "手表", "label": "手表", "en_value": "Watch"},
+        {"value": "背包", "label": "背包", "en_value": "Backpack"},
+        {"value": "眼镜", "label": "眼镜", "en_value": "Glasses"},
+        {"value": "耳机", "label": "耳机", "en_value": "Headphones"},
+        {"value": "项链", "label": "项链", "en_value": "Necklace"},
+        {"value": "围巾", "label": "围巾", "en_value": "Scarf"},
+        {"value": "护具", "label": "护具", "en_value": "Protective Gear"}
+      ],
+      "hasCustom": true
+    },
+    "temperament": {
+      "label": {"zh": "气质", "en": "Temperament"},
+      "type": "select",
+      "items": [
+        {"value": "安静", "label": "安静", "en_value": "Quiet demeanor", "zh_desc": "整体姿态内敛，动作幅度小，眼神平和"},
+        {"value": "清冷", "label": "清冷", "en_value": "Cold and distant", "zh_desc": "表情冷淡疏离，眼神淡漠，与他人保持距离感"},
+        {"value": "阳光", "label": "阳光", "en_value": "Sunny and cheerful", "zh_desc": "表情开朗，眼中有笑意，姿态舒展开放"},
+        {"value": "忧郁", "label": "忧郁", "en_value": "Melancholic", "zh_desc": "眉眼低垂，眼神迷离或凝视远方，嘴角微微下垂"},
+        {"value": "凶狠", "label": "凶狠", "en_value": "Fierce", "zh_desc": "眼神凌厉，眉毛压低，嘴唇紧闭或龇牙"},
+        {"value": "随性", "label": "随性", "en_value": "Casual", "zh_desc": "姿态松弛不拘谨，动作随意自然"},
+        {"value": "优雅", "label": "优雅", "en_value": "Elegant", "zh_desc": "姿态端庄挺拔，动作流畅轻盈"},
+        {"value": "高冷", "label": "高冷", "en_value": "Aloof", "zh_desc": "姿态高傲，眼神俯视或平视但冷漠"},
+        {"value": "憨厚", "label": "憨厚", "en_value": "Honest", "zh_desc": "表情朴实真诚，眼神温和，姿态端正但略带笨拙"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "special_features": {
+      "label": {"zh": "特殊体征", "en": "Special Features"},
+      "type": "select",
+      "items": [
+        {"value": "雀斑", "label": "雀斑", "en_value": "Freckles on cheeks", "zh_desc": "面颊和鼻梁上散布着细小的淡褐色斑点"},
+        {"value": "痣", "label": "痣", "en_value": "Mole on face", "zh_desc": "面部或身体某个位置有一颗明显的深色圆点"},
+        {"value": "疤痕", "label": "疤痕", "en_value": "Scar on skin", "zh_desc": "皮肤上有一道细长的愈合痕迹"},
+        {"value": "酒窝", "label": "酒窝", "en_value": "Dimple on cheeks", "zh_desc": "脸颊或嘴角两侧在笑时会凹陷的小窝"},
+        {"value": "虎牙", "label": "虎牙", "en_value": "Prominent canine teeth", "zh_desc": "上排牙齿中犬齿突出，比周围牙齿略长略尖"},
+        {"value": "兽耳", "label": "兽耳", "en_value": "Animal ears on head", "zh_desc": "头顶长有一对动物耳朵，耳内有绒毛，可以转动"},
+        {"value": "角", "label": "角", "en_value": "Horns on forehead", "zh_desc": "额头或头顶长有角状突起"},
+        {"value": "尾巴", "label": "尾巴", "en_value": "Tail on body", "zh_desc": "身体后方延伸出一条尾巴"},
+        {"value": "翅膀", "label": "翅膀", "en_value": "Wings on back", "zh_desc": "背后长有一对或多对翅膀"},
+        {"value": "机械臂", "label": "机械臂", "en_value": "Mechanical arm", "zh_desc": "一侧或双侧手臂被机械假肢替代，可见金属关节和线缆"}
+      ],
+      "hasCustom": true,
+      "multiple": true,
+      "useDesc": true
+    },
+    "three_view_expression": {
+      "label": {"zh": "三视图表情", "en": "Three-view Expression"},
+      "type": "select",
+      "items": [
+        {"value": "无表情", "label": "无表情", "en_value": "Neutral"}
+      ],
+      "hasCustom": true,
+      "locked": true
+    },
+    "animal_species": {
+      "label": {"zh": "动物物种", "en": "Animal Species"},
+      "type": "select",
+      "items": [
+        {"value": "猫", "label": "猫", "en_value": "Cat"},
+        {"value": "狗", "label": "狗", "en_value": "Dog"},
+        {"value": "兔", "label": "兔", "en_value": "Rabbit"},
+        {"value": "狼", "label": "狼", "en_value": "Wolf"},
+        {"value": "熊", "label": "熊", "en_value": "Bear"},
+        {"value": "狐狸", "label": "狐狸", "en_value": "Fox"},
+        {"value": "鹿", "label": "鹿", "en_value": "Deer"},
+        {"value": "鸟", "label": "鸟", "en_value": "Bird"},
+        {"value": "鱼", "label": "鱼", "en_value": "Fish"}
+      ],
+      "hasCustom": true
+    },
+    "animal_fur_color": {
+      "label": {"zh": "毛色", "en": "Fur Color"},
+      "type": "select",
+      "items": [
+        {"value": "白", "label": "白", "en_value": "White"},
+        {"value": "黑", "label": "黑", "en_value": "Black"},
+        {"value": "棕", "label": "棕", "en_value": "Brown"},
+        {"value": "灰", "label": "灰", "en_value": "Gray"},
+        {"value": "橘", "label": "橘", "en_value": "Orange"},
+        {"value": "花斑", "label": "花斑", "en_value": "Spotted"}
+      ],
+      "hasCustom": true
+    },
+    "animal_body_type": {
+      "label": {"zh": "体型", "en": "Body Size"},
+      "type": "select",
+      "items": [
+        {"value": "小型", "label": "小型", "en_value": "Small"},
+        {"value": "中型", "label": "中型", "en_value": "Medium"},
+        {"value": "大型", "label": "大型", "en_value": "Large"}
+      ],
+      "hasCustom": true
+    },
+    "animal_anthropomorphism": {
+      "label": {"zh": "拟人化程度", "en": "Anthropomorphism"},
+      "type": "select",
+      "items": [
+        {"value": "完全动物", "label": "完全动物", "en_value": "Full animal form", "zh_desc": "保持原始动物的外形和四肢着地姿态"},
+        {"value": "拟人化50%", "label": "拟人化50%", "en_value": "50% anthropomorphic", "zh_desc": "具有人类身体比例和直立姿态，保留动物头部、皮毛、尾巴等核心特征"},
+        {"value": "拟人化80%", "label": "拟人化80%", "en_value": "80% anthropomorphic", "zh_desc": "外观接近人类，仅有耳朵、尾巴、瞳孔等少数特征保留动物形态"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "beastman_base_species": {
+      "label": {"zh": "基础物种", "en": "Base Species"},
+      "type": "select",
+      "items": [
+        {"value": "猫", "label": "猫", "en_value": "Cat"},
+        {"value": "狗", "label": "狗", "en_value": "Dog"},
+        {"value": "狼", "label": "狼", "en_value": "Wolf"},
+        {"value": "兔", "label": "兔", "en_value": "Rabbit"},
+        {"value": "狐", "label": "狐", "en_value": "Fox"}
+      ],
+      "hasCustom": true
+    },
+    "beastman_ratio": {
+      "label": {"zh": "人兽比例", "en": "Human-Beast Ratio"},
+      "type": "select",
+      "items": [
+        {"value": "人80%兽20%", "label": "人80%兽20%", "en_value": "80% human 20% beast", "zh_desc": "整体外观接近人类，仅保留耳朵、尾巴等少数兽类特征"},
+        {"value": "人50%兽50%", "label": "人50%兽50%", "en_value": "50% human 50% beast", "zh_desc": "人类体型但覆盖兽毛，面部保留兽类口鼻结构，手脚为兽爪形态"},
+        {"value": "人20%兽80%", "label": "人20%兽80%", "en_value": "20% human 80% beast", "zh_desc": "外观主要为兽形，具有部分人类的上肢灵活性或直立能力"}
+      ],
+      "hasCustom": true,
+      "useDesc": true
+    },
+    "beastman_features": {
+      "label": {"zh": "保留兽类特征", "en": "Beast Features"},
+      "type": "select",
+      "items": [
+        {"value": "耳", "label": "耳", "en_value": "Ears"},
+        {"value": "尾", "label": "尾", "en_value": "Tail"},
+        {"value": "角", "label": "角", "en_value": "Horns"},
+        {"value": "爪", "label": "爪", "en_value": "Claws"},
+        {"value": "毛皮", "label": "毛皮", "en_value": "Fur"},
+        {"value": "翅膀", "label": "翅膀", "en_value": "Wings"}
+      ],
+      "hasCustom": true
+    },
+    "robot_appearance": {
+      "label": {"zh": "外观", "en": "Appearance"},
+      "type": "select",
+      "items": [
+        {"value": "人形", "label": "人形", "en_value": "Humanoid"},
+        {"value": "异形", "label": "异形", "en_value": "Alien"},
+        {"value": "球形", "label": "球形", "en_value": "Spherical"},
+        {"value": "多足", "label": "多足", "en_value": "Multi-legged"}
+      ],
+      "hasCustom": true
+    },
+    "robot_material": {
+      "label": {"zh": "材质", "en": "Material"},
+      "type": "select",
+      "items": [
+        {"value": "金属", "label": "金属", "en_value": "Metal"},
+        {"value": "塑料", "label": "塑料", "en_value": "Plastic"},
+        {"value": "磨砂", "label": "磨砂", "en_value": "Matte"},
+        {"value": "镜面", "label": "镜面", "en_value": "Mirror"},
+        {"value": "碳纤维", "label": "碳纤维", "en_value": "Carbon Fiber"}
+      ],
+      "hasCustom": true
+    },
+    "robot_color": {
+      "label": {"zh": "颜色", "en": "Color"},
+      "type": "select",
+      "items": [
+        {"value": "银白", "label": "银白", "en_value": "Silver"},
+        {"value": "黑", "label": "黑", "en_value": "Black"},
+        {"value": "金", "label": "金", "en_value": "Gold"}
+      ],
+      "hasCustom": true
+    },
+    "robot_light_color": {
+      "label": {"zh": "灯光颜色", "en": "Light Color"},
+      "type": "select",
+      "items": [
+        {"value": "蓝", "label": "蓝", "en_value": "Blue"},
+        {"value": "红", "label": "红", "en_value": "Red"},
+        {"value": "绿", "label": "绿", "en_value": "Green"},
+        {"value": "白", "label": "白", "en_value": "White"},
+        {"value": "无", "label": "无", "en_value": "None"}
+      ],
+      "hasCustom": true
+    },
+    "style_base": {
+      "label": {"zh": "基础风格", "en": "Base Style"},
+      "type": "select",
+      "categories": [
+        {
+          "name": {"zh": "动漫/二次元类", "en": "Anime/Anime Style"},
+          "items": [
+            {"name": "赛璐珞三渲二(蓝锁风)", "description": "三渲二渲染的3D动漫，粗犷的黑色轮廓线，双色调阴影带有细腻的中灰过渡，冷色调为主，色彩饱和度高，锐利的镜面高光", "en_value": "Cel-shaded 3D anime, Blue Lock style, bold black outlines, two-tone cel shading with subtle mid-tones, high saturation cold colors, sharp specular highlights"},
+            {"name": "新海诚电影风", "description": "新海诚电影美学，电影级体积光，镜头光晕，高度细节化，鲜艳自然的色彩", "en_value": "Makoto Shinkai cinematic aesthetics, cinematic volumetric lighting, lens flare, hyper-detailed, vivid natural colors"},
+            {"name": "吉卜力柔和风", "description": "吉卜力工作室风格，柔和的手绘质感背景，温柔的阳光，水彩般透明的阴影，温暖的怀旧氛围", "en_value": "Studio Ghibli style, soft hand-drawn background textures, gentle sunlight, watercolor-like transparent shadows, warm nostalgic atmosphere"},
+            {"name": "美式卡通(皮克斯)", "description": "皮克斯动画风格，风格化的3D角色，富有表现力的表情，明亮饱和的色彩，次表面散射的皮肤质感，光滑的曲面", "en_value": "Pixar animation style, stylized 3D characters, expressive features, bright saturated colors, subsurface scattering skin texture, smooth curved surfaces"},
+            {"name": "热血少年漫风", "description": "少年漫画风格，动态速度线，戏剧化的黑白对比，大胆的构图，高对比度的画面", "en_value": "Shonen manga style, dynamic speed lines, dramatic black and white contrast, bold composition, high contrast"},
+            {"name": "90年代赛璐珞手绘动画", "description": "1990年代赛璐珞手绘动画，手绘画面，可见笔触，柔和的胶片颗粒，复古动漫质感", "en_value": "1990s cel-drawn animation, hand-drawn visuals, visible brushstrokes, soft film grain, retro anime texture"},
+            {"name": "80年代复古动画", "description": "1980年代复古动漫，颗粒纹理，柔和色调，手绘的不完美感", "en_value": "1980s retro anime, grain texture, soft tones, hand-drawn imperfection"},
+            {"name": "暗黑哥特动画", "description": "暗黑哥特动漫，浓重阴影，戏剧化的明暗对比，华丽细节，阴郁氛围", "en_value": "Dark gothic anime, heavy shadows, dramatic chiaroscuro, ornate details, gloomy atmosphere"},
+            {"name": "蒸汽波动画", "description": "蒸汽波动漫美学，霓虹粉和青蓝，故障效果，复古未来主义，梦幻朦胧", "en_value": "Vaporwave anime aesthetic, neon pink and cyan, glitch effects, retro futurism, dreamy haze"},
+            {"name": "赛博朋克边缘行者风", "description": "赛博朋克边缘行者风格，霓虹灯照明，高对比度，粗粝都市，机械细节", "en_value": "Cyberpunk Edgerunners style, neon lighting, high contrast, gritty urban, mechanical details"}
+          ]
+        },
+        {
+          "name": {"zh": "写实/电影类", "en": "Realistic/Cinematic"},
+          "items": [
+            {"name": "UE5电影写实", "description": "虚幻引擎5电影级渲染，照片级真实，PBR材质，光线追踪，全局光照，8K", "en_value": "Unreal Engine 5 cinematic rendering, photorealistic, PBR materials, ray tracing, global illumination, 8K"},
+            {"name": "照片级写实", "description": "照片级写实，超高细节，8K分辨率，真实纹理，自然光线", "en_value": "Photorealistic, ultra-high detail, 8K resolution, realistic textures, natural lighting"},
+            {"name": "经典好莱坞电影风", "description": "经典好莱坞电影感，黄金时代布光，戏剧性阴影，胶片颗粒，35mm胶片质感", "en_value": "Classic Hollywood cinematic feel, Golden Age lighting, dramatic shadows, film grain, 35mm film texture"},
+            {"name": "纪录片质感", "description": "纪录片风格，自然光线，手持摄影感，真实世界纹理", "en_value": "Documentary style, natural lighting, handheld camera feel, realistic world textures"}
+          ]
+        },
+        {
+          "name": {"zh": "艺术/绘画类", "en": "Art/Painting Style"},
+          "items": [
+            {"name": "水墨古风", "description": "中国传统水墨画风格，浓淡变化的墨色，流动的晕染渐变，极简留白，古典意境", "en_value": "Chinese traditional ink painting style, varying ink density, flowing diffusion gradients, minimalistic white space, classical artistic conception"},
+            {"name": "工笔画", "description": "工笔细描风格，精致均匀的轮廓线条，平涂色彩填充，古典韵味", "en_value": "Gongbi fine brushwork style, delicate even outline strokes, flat color fills, classical charm"},
+            {"name": "浮世绘", "description": "浮世绘日本木版画风格，平面色彩，粗轮廓线，装饰性图案", "en_value": "Ukiyo-e Japanese woodblock print style, flat colors, bold outlines, decorative patterns"},
+            {"name": "印象派油画", "description": "印象派油画，可见笔触，斑驳光线，鲜艳色调", "en_value": "Impressionist oil painting, visible brushstrokes, dappled light, vivid tones"},
+            {"name": "水彩渲染", "description": "水彩画，湿画法，色彩渗透，柔和边缘，半透明层次", "en_value": "Watercolor rendering, wet technique, color bleeding, soft edges, translucent layers"},
+            {"name": "彩色铅笔手绘", "description": "手绘线条，层次排线，纹理质感，手工感", "en_value": "Colored pencil hand-drawn, layered strokes, texture feel, handmade aesthetic"},
+            {"name": "钢笔淡彩", "description": "精细线条加水彩薄涂风格，清晰墨线，淡色渲染，速写本质感", "en_value": "Fine pen and watercolor wash style, clear ink lines, light color rendering, sketch essence texture"},
+            {"name": "版画/木刻", "description": "版画风格，粗黑线条，有限色块，强烈的黑白对比", "en_value": "Printmaking/woodcut style, bold black lines, limited color blocks, strong black and white contrast"},
+            {"name": "低多边形", "description": "低多边形3D风格，几何切面，平面着色，简化形态", "en_value": "Low poly 3D style, geometric facets, flat shading, simplified forms"},
+            {"name": "像素艺术", "description": "像素艺术，8-bit或16-bit，可见像素点，有限调色板", "en_value": "Pixel art, 8-bit or 16-bit, visible pixel points, limited palette"},
+            {"name": "黏土/橡皮泥风", "description": "黏土动画风格，橡皮泥质感，指纹痕迹，定格动画感", "en_value": "Claymation style, plasticine texture, fingerprint traces, stop-motion feel"}
+          ]
+        },
+        {
+          "name": {"zh": "年代/复古类", "en": "Era/Vintage Style"},
+          "items": [
+            {"name": "80年代霓虹复古", "description": "1980年代霓虹复古，合成器波美学，霓虹网格线，发光边缘，紫色和青色配色", "en_value": "1980s neon retro, synthwave aesthetic, neon grid lines, glowing edges, purple and cyan palette"},
+            {"name": "民国月份牌风", "description": "1920年代上海月份牌广告画风格，复古广告艺术，柔和的水彩渲染，优雅姿态", "en_value": "1920s Shanghai monthly calendar advertisement style, retro advertising art, soft watercolor rendering, elegant poses"},
+            {"name": "维多利亚时代插画", "description": "维多利亚时代插画，雕刻般的线条，华丽边框，棕褐色调，19世纪书版画风格", "en_value": "Victorian era illustration, engraved line quality, ornate borders, sepia tones, 19th century book illustration style"},
+            {"name": "中世纪手抄本风", "description": "中世纪手抄本风格，金箔点缀，装饰性首字母，古朴纸张纹理，宗教图像感", "en_value": "Medieval manuscript style, gold leaf accents, decorative initials, antique paper texture, religious iconography feel"}
+          ]
+        },
+        {
+          "name": {"zh": "地域/民族类", "en": "Regional/Ethnic Style"},
+          "items": [
+            {"name": "北欧极简风", "description": "北欧极简设计，干净线条，柔和色调，功能性简洁，自然光线", "en_value": "Nordic minimalist design, clean lines, soft tones, functional simplicity, natural lighting"},
+            {"name": "非洲部落艺术", "description": "非洲部落艺术，粗犷几何图案，大地色调，面具风格设计，节奏感构图", "en_value": "African tribal art, bold geometric patterns, earth tones, mask-style design, rhythmic composition"},
+            {"name": "阿拉伯几何纹样", "description": "伊斯兰几何艺术，精细的镶嵌图案，阿拉伯藤蔓纹，金色和蓝色，数学精度", "en_value": "Islamic geometric art, intricate tessellation patterns, Arabic arabesques, gold and blue, mathematical precision"}
+          ]
+        },
+        {
+          "name": {"zh": "特殊质感/材质类", "en": "Special Texture/Material"},
+          "items": [
+            {"name": "粉笔画/黑板报风", "description": "粉笔质感，柔和颗粒，深色背景上的明亮色彩", "en_value": "Chalk drawing/blackboard style, soft particles, bright colors on dark background"},
+            {"name": "剪纸/纸雕风", "description": "剪纸艺术，层叠纸张效果，锐利边缘，立体阴影，民间艺术纸工艺", "en_value": "Papercut/paper carving art, layered paper effect, sharp edges, dimensional shadows, folk paper craft"},
+            {"name": "全息投影/镭射", "description": "全息投影，彩虹色，光的衍射，彩虹光泽，未来感展示", "en_value": "Holographic projection, iridescent colors, light diffraction, rainbow sheen, futuristic display"}
+          ]
+        },
+        {
+          "name": {"zh": "概念/实验类", "en": "Conceptual/Experimental"},
+          "items": [
+            {"name": "赛博朋克", "description": "赛博朋克，霓虹灯，雨湿街道，全息投影，高科技低生活，反乌托邦", "en_value": "Cyberpunk, neon lights, rain-wet streets, holographic projections, high-tech low-life, dystopia"},
+            {"name": "末世废土", "description": "后末日废土，铁锈和腐烂，贫瘠景观，拼凑科技，褪色色调", "en_value": "Post-apocalyptic wasteland, rust and decay, barren landscapes, patched technology, faded tones"},
+            {"name": "蒸汽朋克", "description": "蒸汽朋克，黄铜和铜，维多利亚机械，蒸汽动力，齿轮和发条", "en_value": "Steampunk, brass and copper, Victorian machinery, steam power, gears and clockwork"},
+            {"name": "童话绘本风", "description": "儿童绘本插画，柔和梦幻色彩，故事书魅力，温柔质感", "en_value": "Children's picture book illustration, soft dreamy colors, storybook charm, gentle textures"},
+            {"name": "超现实主义", "description": "超现实主义，梦境逻辑，不可能的图像，融化形态", "en_value": "Surrealism, dream logic, impossible images, melting forms"},
+            {"name": "故障艺术", "description": "故障艺术，数字损坏，RGB偏移，像素排序，屏幕撕裂", "en_value": "Glitch art, digital corruption, RGB shift, pixel sorting, screen tearing"},
+            {"name": "禅意/侘寂", "description": "侘寂美学，不完美之美，自然材质，质朴简洁，宁静氛围", "en_value": "Zen/Wabi-sabi aesthetics, beauty of imperfection, natural materials, rustic simplicity, serene atmosphere"}
+          ]
+        },
+        {
+          "name": {"zh": "角色专属风格", "en": "Character-Specific Styles"},
+          "items": [
+            {"name": "角色概念设计风", "description": "游戏角色概念设计，设计稿质感，笔触可见，动态姿态", "en_value": "Game character concept art style, visible brushstrokes, dynamic poses"},
+            {"name": "游戏角色立绘", "description": "游戏角色立绘，清晰轮廓，完整展示角色设计，精致上色", "en_value": "Game character full-body illustration, clear contours, complete character showcase, exquisite coloring"},
+            {"name": "视觉小说立绘", "description": "视觉小说风格立绘，干净的赛璐珞上色，柔和光影，角色正面全身", "en_value": "Visual novel style character illustration, clean cel shading, soft lighting, full-body front-facing character"},
+            {"name": "美漫英雄风", "description": "美式漫画超级英雄风格，夸张肌肉，戏剧性光影，高饱和色彩", "en_value": "American comic superhero style, exaggerated muscles, dramatic lighting, high saturation colors"},
+            {"name": "Q版大头娃", "description": "Q版大头风格，头部占比极大，身体小巧圆润，可爱夸张", "en_value": "Chibi big-head style, extremely large head proportion, small cute round body, adorable exaggeration"},
+            {"name": "娃娃/人偶风", "description": "球形关节人偶风格，光滑瓷质皮肤，玻璃眼珠，关节结构可见", "en_value": "Ball-jointed doll style, smooth porcelain skin, glass eyeballs, visible joint structures"}
+          ]
+        }
+      ],
+      "hasCustom": true,
+      "defaultSelected": "三渲二渲染的3D动漫，粗犷的黑色轮廓线，双色调阴影带有细腻的中灰过渡，冷色调为主，色彩饱和度高，锐利的镜面高光"
+    },
+    "style_advanced": {
+      "label": {"zh": "高级质感", "en": "Advanced Textures"},
+      "type": "select",
+      "multiple": true,
+      "categories": [
+        {
+          "name": {"zh": "画质分辨率", "en": "Quality Resolution"},
+          "items": [
+            {"value": "standard quality", "label": "标准", "en_value": "Standard"},
+            {"value": "HD 1080P", "label": "高清(1080P)", "en_value": "HD 1080P"},
+            {"value": "2K resolution", "label": "2K", "en_value": "2K"},
+            {"value": "4K resolution", "label": "4K", "en_value": "4K"},
+            {"value": "8K resolution", "label": "8K", "en_value": "8K"}
+          ]
+        },
+        {
+          "name": {"zh": "颗粒质感", "en": "Grain Texture"},
+          "items": [
+            {"value": "no grain", "label": "无颗粒", "en_value": "No grain"},
+            {"value": "subtle noise", "label": "轻微噪点", "en_value": "Subtle noise"},
+            {"value": "fine film grain", "label": "胶片颗粒(细)", "en_value": "Fine film grain"},
+            {"value": "coarse film grain", "label": "胶片颗粒(粗)", "en_value": "Coarse film grain"},
+            {"value": "rough texture", "label": "粗粝质感", "en_value": "Rough texture"},
+            {"value": "vintage 16mm", "label": "复古16mm", "en_value": "Vintage 16mm"},
+            {"value": "vintage 8mm", "label": "复古8mm", "en_value": "Vintage 8mm"}
+          ]
+        },
+        {
+          "name": {"zh": "皮肤质感", "en": "Skin Texture"},
+          "items": [
+            {"value": "standard skin", "label": "标准", "en_value": "Standard"},
+            {"value": "smooth silky skin", "label": "细腻光滑", "en_value": "Smooth silky"},
+            {"value": "realistic pores", "label": "真实毛孔", "en_value": "Realistic pores"},
+            {"value": "subsurface scattering", "label": "次表面散射(SSS)", "en_value": "Subsurface scattering"},
+            {"value": "matte skin", "label": "哑光", "en_value": "Matte"},
+            {"value": "wet gloss", "label": "湿润光泽", "en_value": "Wet gloss"}
+          ]
+        },
+        {
+          "name": {"zh": "毛发细节", "en": "Hair Detail"},
+          "items": [
+            {"value": "standard hair", "label": "标准", "en_value": "Standard"},
+            {"value": "strand by strand", "label": "根根分明", "en_value": "Strand by strand"},
+            {"value": "clear hair texture", "label": "发丝纹理清晰", "en_value": "Clear hair texture"},
+            {"value": "fluffy visible", "label": "绒毛可见", "en_value": "Fluffy visible"}
+          ]
+        },
+        {
+          "name": {"zh": "电影感光影", "en": "Cinematic Lighting"},
+          "items": [
+            {"value": "no cinematic lighting", "label": "无", "en_value": "None"},
+            {"value": "three-point lighting", "label": "电影级三点布光", "en_value": "Three-point lighting"},
+            {"value": "dramatic side lighting", "label": "戏剧性侧光", "en_value": "Dramatic side lighting"},
+            {"value": "Rembrandt lighting", "label": "伦勃朗光", "en_value": "Rembrandt lighting"},
+            {"value": "butterfly lighting", "label": "蝴蝶光", "en_value": "Butterfly lighting"},
+            {"value": "lens flare", "label": "镜头光晕", "en_value": "Lens flare"},
+            {"value": "glare", "label": "眩光", "en_value": "Glare"}
+          ]
+        },
+        {
+          "name": {"zh": "锐度", "en": "Sharpness"},
+          "items": [
+            {"value": "standard sharpness", "label": "标准", "en_value": "Standard"},
+            {"value": "soft focus", "label": "柔焦", "en_value": "Soft focus"},
+            {"value": "soft lens effect", "label": "柔光镜效果", "en_value": "Soft lens effect"},
+            {"value": "sharp clear", "label": "锐利清晰", "en_value": "Sharp clear"},
+            {"value": "ultra sharp", "label": "超锐", "en_value": "Ultra sharp"}
+          ]
+        },
+        {
+          "name": {"zh": "镜头畸变", "en": "Lens Distortion"},
+          "items": [
+            {"value": "no distortion", "label": "无", "en_value": "None"},
+            {"value": "slight barrel distortion", "label": "轻微桶形畸变", "en_value": "Slight barrel"},
+            {"value": "pincushion distortion", "label": "枕形畸变", "en_value": "Pincushion"},
+            {"value": "fisheye effect", "label": "鱼眼效果", "en_value": "Fisheye"},
+            {"value": "tilt shift effect", "label": "移轴效果", "en_value": "Tilt shift"}
+          ]
+        },
+        {
+          "name": {"zh": "暗角", "en": "Vignetting"},
+          "items": [
+            {"value": "no vignetting", "label": "无", "en_value": "None"},
+            {"value": "slight vignetting", "label": "轻微", "en_value": "Slight"},
+            {"value": "medium vignetting", "label": "中等", "en_value": "Medium"},
+            {"value": "strong vignetting", "label": "强", "en_value": "Strong"},
+            {"value": "vintage vignetting", "label": "复古暗角", "en_value": "Vintage"}
+          ]
+        },
+        {
+          "name": {"zh": "色散/色差", "en": "Chromatic Aberration"},
+          "items": [
+            {"value": "no chromatic aberration", "label": "无", "en_value": "None"},
+            {"value": "slight chromatic aberration", "label": "轻微色散", "en_value": "Slight"},
+            {"value": "strong chromatic aberration", "label": "强色散", "en_value": "Strong"},
+            {"value": "cinematic chromatic aberration", "label": "电影级色差", "en_value": "Cinematic"}
+          ]
+        },
+        {
+          "name": {"zh": "胶片模拟", "en": "Film Simulation"},
+          "items": [
+            {"value": "no film simulation", "label": "无", "en_value": "None"},
+            {"value": "Kodak Portra", "label": "Kodak Portra", "en_value": "Kodak Portra"},
+            {"value": "Fuji Velvia", "label": "Fuji Velvia", "en_value": "Fuji Velvia"},
+            {"value": "Kodak Tri-X", "label": "Kodak Tri-X", "en_value": "Kodak Tri-X"},
+            {"value": "Ilford HP5", "label": "Ilford HP5", "en_value": "Ilford HP5"}
+          ]
+        },
+        {
+          "name": {"zh": "艺术化处理", "en": "Artistic Processing"},
+          "items": [
+            {"value": "no artistic processing", "label": "无", "en_value": "None"},
+            {"value": "LUT color grading", "label": "LUT调色", "en_value": "LUT color grading"},
+            {"value": "bleach bypass", "label": "漂白效果", "en_value": "Bleach bypass"},
+            {"value": "cross process", "label": "交叉冲印", "en_value": "Cross process"},
+            {"value": "color separation", "label": "色调分离", "en_value": "Color separation"}
+          ]
+        }
+      ],
+      "hasCustom": true,
+      "collapsible": true
+    },
+    "image_weight": {
+      "label": {"zh": "图片参考权重", "en": "Image Reference Weight"},
+      "type": "slider",
+      "min": 0.1,
+      "max": 2.0,
+      "step": 0.1,
+      "default": 1.0
+    },
+    "aspect_ratio": {
+      "label": {"zh": "画面比例", "en": "Aspect Ratio"},
+      "type": "select",
+      "items": [
+        {"value": "1:1", "label": "1:1", "en_value": "1:1"},
+        {"value": "3:2", "label": "3:2", "en_value": "3:2"},
+        {"value": "4:3", "label": "4:3", "en_value": "4:3"},
+        {"value": "16:9", "label": "16:9", "en_value": "16:9"},
+        {"value": "9:16", "label": "9:16", "en_value": "9:16"},
+        {"value": "2.35:1", "label": "2.35:1", "en_value": "2.35:1"}
+      ],
+      "hasCustom": true,
+      "defaultSelected": "16:9"
+    },
+    "negative_prompts": {
+      "label": {"zh": "负面提示词", "en": "Negative Prompts"},
+      "type": "select",
+      "items": [
+        {"value": "no watermark", "label": "no watermark", "en_value": "no watermark"},
+        {"value": "no text", "label": "no text", "en_value": "no text"},
+        {"value": "no body distortion", "label": "no body distortion", "en_value": "no body distortion"},
+        {"value": "no floating objects", "label": "no floating objects", "en_value": "no floating objects"}
+      ],
+      "hasCustom": true,
+      "multiple": true,
+      "defaultSelected": ["no watermark", "no text", "no body distortion", "no floating objects"]
+    }
+  },
+  "T2": {
+    "scene_description": {
+      "label": {"zh": "场景描述", "en": "Scene Description"},
+      "type": "textarea",
+      "placeholder": {"zh": "请输入场景描述...", "en": "Enter scene description..."}
+    },
+    "lighting": {
+      "label": {"zh": "光线", "en": "Lighting"},
+      "type": "select",
+      "items": [
+        {"value": "金色黄昏暖光", "label": "金色黄昏暖光", "en_value": "Golden hour warm light"},
+        {"value": "清晨白光", "label": "清晨白光", "en_value": "Morning white light"},
+        {"value": "正午强光", "label": "正午强光", "en_value": "Noon harsh light"},
+        {"value": "阴天柔光", "label": "阴天柔光", "en_value": "Overcast soft light"},
+        {"value": "夜晚月光", "label": "夜晚月光", "en_value": "Night moonlight"},
+        {"value": "室内暖灯", "label": "室内暖灯", "en_value": "Indoor warm lamp"},
+        {"value": "冷白6500K", "label": "冷白6500K", "en_value": "Cool white 6500K"}
+      ],
+      "hasCustom": true
+    },
+    "weather": {
+      "label": {"zh": "天气", "en": "Weather"},
+      "type": "select",
+      "items": [
+        {"value": "晴朗", "label": "晴朗", "en_value": "Clear"},
+        {"value": "多云", "label": "多云", "en_value": "Cloudy"},
+        {"value": "小雨", "label": "小雨", "en_value": "Light rain"},
+        {"value": "中雨", "label": "中雨", "en_value": "Moderate rain"},
+        {"value": "暴雨", "label": "暴雨", "en_value": "Heavy rain"},
+        {"value": "雷阵雨", "label": "雷阵雨", "en_value": "Thunderstorm"},
+        {"value": "雨后初晴", "label": "雨后初晴", "en_value": "Post-rain"},
+        {"value": "小雪", "label": "小雪", "en_value": "Light snow"},
+        {"value": "大雪", "label": "大雪", "en_value": "Heavy snow"},
+        {"value": "暴风雪", "label": "暴风雪", "en_value": "Blizzard"},
+        {"value": "薄雾", "label": "薄雾", "en_value": "Light fog"},
+        {"value": "浓雾", "label": "浓雾", "en_value": "Heavy fog"},
+        {"value": "霾", "label": "霾", "en_value": "Haze"},
+        {"value": "大风", "label": "大风", "en_value": "Strong wind"},
+        {"value": "微风", "label": "微风", "en_value": "Light breeze"},
+        {"value": "狂风", "label": "狂风", "en_value": "Gale"},
+        {"value": "沙尘", "label": "沙尘", "en_value": "Dust"}
+      ],
+      "hasCustom": true
+    },
+    "time_of_day": {
+      "label": {"zh": "时间", "en": "Time of Day"},
+      "type": "select",
+      "items": [
+        {"value": "清晨", "label": "清晨", "en_value": "Early morning"},
+        {"value": "正午", "label": "正午", "en_value": "Noon"},
+        {"value": "午后", "label": "午后", "en_value": "Afternoon"},
+        {"value": "黄昏", "label": "黄昏", "en_value": "Dusk"},
+        {"value": "夜晚", "label": "夜晚", "en_value": "Night"},
+        {"value": "黎明", "label": "黎明", "en_value": "Dawn"},
+        {"value": "深夜", "label": "深夜", "en_value": "Midnight"}
+      ],
+      "hasCustom": true
+    },
+    "camera_angle": {
+      "label": {"zh": "视角", "en": "Camera Angle"},
+      "type": "select",
+      "items": [
+        {"value": "正视", "label": "正视", "en_value": "Front view"},
+        {"value": "侧视", "label": "侧视", "en_value": "Side view"},
+        {"value": "背视", "label": "背视", "en_value": "Back view"},
+        {"value": "鸟瞰", "label": "鸟瞰", "en_value": "Bird's eye view"},
+        {"value": "正射俯视", "label": "正射俯视", "en_value": "Orthographic top"},
+        {"value": "低角度仰视", "label": "低角度仰视", "en_value": "Low angle"},
+        {"value": "高角度俯视", "label": "高角度俯视", "en_value": "High angle"},
+        {"value": "四分之三侧", "label": "四分之三侧", "en_value": "Three-quarter view"},
+        {"value": "过肩", "label": "过肩", "en_value": "Over-the-shoulder"},
+        {"value": "主观视角POV", "label": "主观视角POV", "en_value": "POV"}
+      ],
+      "hasCustom": true
+    },
+    "shot_type": {
+      "label": {"zh": "景别", "en": "Shot Type"},
+      "type": "select",
+      "items": [
+        {"value": "大特写", "label": "大特写", "en_value": "Extreme close-up"},
+        {"value": "特写", "label": "特写", "en_value": "Close-up"},
+        {"value": "近景", "label": "近景", "en_value": "Medium close-up"},
+        {"value": "中近景", "label": "中近景", "en_value": "Medium shot"},
+        {"value": "中景", "label": "中景", "en_value": "Medium-full shot"},
+        {"value": "全景", "label": "全景", "en_value": "Full shot"},
+        {"value": "远景", "label": "远景", "en_value": "Wide shot"},
+        {"value": "超远景", "label": "超远景", "en_value": "Extreme wide shot"}
+      ],
+      "hasCustom": true
+    },
+    "focal_length": {
+      "label": {"zh": "焦段", "en": "Focal Length"},
+      "type": "select",
+      "items": [
+        {"value": "24mm广角", "label": "24mm广角", "en_value": "24mm wide"},
+        {"value": "35mm", "label": "35mm", "en_value": "35mm"},
+        {"value": "50mm标准", "label": "50mm标准", "en_value": "50mm standard"},
+        {"value": "85mm人像", "label": "85mm人像", "en_value": "85mm portrait"},
+        {"value": "135mm长焦", "label": "135mm长焦", "en_value": "135mm telephoto"},
+        {"value": "200mm超长焦", "label": "200mm超长焦", "en_value": "200mm extreme telephoto"}
+      ],
+      "hasCustom": true
+    },
+    "depth_of_field": {
+      "label": {"zh": "景深", "en": "Depth of Field"},
+      "type": "select",
+      "items": [
+        {"value": "浅景深(f/1.4)", "label": "浅景深(f/1.4)", "en_value": "Shallow (f/1.4)"},
+        {"value": "中等(f/4)", "label": "中等(f/4)", "en_value": "Medium (f/4)"},
+        {"value": "深景深(f/11)", "label": "深景深(f/11)", "en_value": "Deep (f/11)"},
+        {"value": "全清晰", "label": "全清晰", "en_value": "Sharp throughout"}
+      ],
+      "hasCustom": true
+    },
+    "grain": {
+      "label": {"zh": "颗粒感", "en": "Grain"},
+      "type": "select",
+      "items": [
+        {"value": "无颗粒", "label": "无颗粒", "en_value": "No grain"},
+        {"value": "轻微噪点", "label": "轻微噪点", "en_value": "Light noise"},
+        {"value": "胶片颗粒", "label": "胶片颗粒", "en_value": "Film grain"},
+        {"value": "粗粝质感", "label": "粗粝质感", "en_value": "Coarse texture"}
+      ],
+      "hasCustom": true
+    },
+    "vignetting": {
+      "label": {"zh": "暗角", "en": "Vignetting"},
+      "type": "select",
+      "items": [
+        {"value": "无", "label": "无", "en_value": "None"},
+        {"value": "轻微", "label": "轻微", "en_value": "Light"},
+        {"value": "强", "label": "强", "en_value": "Strong"}
+      ],
+      "hasCustom": true
+    },
+    "style_base": {
+      "label": {"zh": "基础风格", "en": "Base Style"},
+      "type": "select",
+      "categories": [
+        {
+          "name": {"zh": "动漫/二次元类", "en": "Anime/Anime Style"},
+          "items": [
+            {"name": "赛璐珞三渲二(蓝锁风)", "description": "三渲二渲染的3D动漫，粗犷的黑色轮廓线，双色调阴影带有细腻的中灰过渡，冷色调为主，色彩饱和度高，锐利的镜面高光", "en_value": "Cel-shaded 3D anime scene, Blue Lock style, bold black outlines, two-tone cel shading with subtle mid-tones, high saturation cold colors, sharp specular highlights"},
+            {"name": "新海诚电影风", "description": "新海诚电影美学，电影级体积光，镜头光晕，高度细节化，鲜艳自然的色彩", "en_value": "Makoto Shinkai cinematic aesthetics, cinematic volumetric lighting, lens flare, hyper-detailed, vivid natural colors"},
+            {"name": "吉卜力柔和风", "description": "吉卜力工作室风格，柔和的手绘质感背景，温柔的阳光，水彩般透明的阴影，温暖的怀旧氛围", "en_value": "Studio Ghibli style, soft hand-drawn background textures, gentle sunlight, watercolor-like transparent shadows, warm nostalgic atmosphere"},
+            {"name": "美式卡通(皮克斯)", "description": "皮克斯动画风格，风格化的3D角色，富有表现力的表情，明亮饱和的色彩，次表面散射的皮肤质感，光滑的曲面", "en_value": "Pixar animation style, stylized 3D characters, expressive features, bright saturated colors, subsurface scattering skin texture, smooth curved surfaces"},
+            {"name": "热血少年漫风", "description": "少年漫画风格，动态速度线，戏剧化的黑白对比，大胆的构图，高对比度的画面", "en_value": "Shonen manga style, dynamic speed lines, dramatic black and white contrast, bold composition, high contrast"},
+            {"name": "90年代赛璐珞手绘动画", "description": "1990年代赛璐珞手绘动画，手绘画面，可见笔触，柔和的胶片颗粒，复古动漫质感", "en_value": "1990s cel-drawn animation, hand-drawn visuals, visible brushstrokes, soft film grain, retro anime texture"},
+            {"name": "80年代复古动画", "description": "1980年代复古动漫，颗粒纹理，柔和色调，手绘的不完美感", "en_value": "1980s retro anime, grain texture, soft tones, hand-drawn imperfection"},
+            {"name": "暗黑哥特动画", "description": "暗黑哥特动漫，浓重阴影，戏剧化的明暗对比，华丽细节，阴郁氛围", "en_value": "Dark gothic anime, heavy shadows, dramatic chiaroscuro, ornate details, gloomy atmosphere"},
+            {"name": "蒸汽波动画", "description": "蒸汽波动漫美学，霓虹粉和青蓝，故障效果，复古未来主义，梦幻朦胧", "en_value": "Vaporwave anime aesthetic, neon pink and cyan, glitch effects, retro futurism, dreamy haze"},
+            {"name": "赛博朋克边缘行者风", "description": "赛博朋克边缘行者风格，霓虹灯照明，高对比度，粗粝都市，机械细节", "en_value": "Cyberpunk Edgerunners style, neon lighting, high contrast, gritty urban, mechanical details"}
+          ]
+        },
+        {
+          "name": {"zh": "写实/电影类", "en": "Realistic/Cinematic"},
+          "items": [
+            {"name": "UE5电影写实", "description": "虚幻引擎5电影级渲染，照片级真实，PBR材质，光线追踪，全局光照，8K", "en_value": "Unreal Engine 5 cinematic rendering, photorealistic, PBR materials, ray tracing, global illumination, 8K"},
+            {"name": "照片级写实", "description": "照片级写实，超高细节，8K分辨率，真实纹理，自然光线", "en_value": "Photorealistic, ultra-high detail, 8K resolution, realistic textures, natural lighting"},
+            {"name": "经典好莱坞电影风", "description": "经典好莱坞电影感，黄金时代布光，戏剧性阴影，胶片颗粒，35mm胶片质感", "en_value": "Classic Hollywood cinematic feel, Golden Age lighting, dramatic shadows, film grain, 35mm film texture"},
+            {"name": "纪录片质感", "description": "纪录片风格，自然光线，手持摄影感，真实世界纹理", "en_value": "Documentary style, natural lighting, handheld camera feel, realistic world textures"}
+          ]
+        },
+        {
+          "name": {"zh": "艺术/绘画类", "en": "Art/Painting Style"},
+          "items": [
+            {"name": "水墨古风", "description": "中国传统水墨画风格，浓淡变化的墨色，流动的晕染渐变，极简留白，古典意境", "en_value": "Chinese traditional ink painting style, varying ink density, flowing diffusion gradients, minimalistic white space, classical artistic conception"},
+            {"name": "工笔画", "description": "工笔细描风格，精致均匀的轮廓线条，平涂色彩填充，古典韵味", "en_value": "Gongbi fine brushwork style, delicate even outline strokes, flat color fills, classical charm"},
+            {"name": "浮世绘", "description": "浮世绘日本木版画风格，平面色彩，粗轮廓线，装饰性图案", "en_value": "Ukiyo-e Japanese woodblock print style, flat colors, bold outlines, decorative patterns"},
+            {"name": "印象派油画", "description": "印象派油画，可见笔触，斑驳光线，鲜艳色调", "en_value": "Impressionist oil painting, visible brushstrokes, dappled light, vivid tones"},
+            {"name": "水彩渲染", "description": "水彩画，湿画法，色彩渗透，柔和边缘，半透明层次", "en_value": "Watercolor rendering, wet technique, color bleeding, soft edges, translucent layers"},
+            {"name": "彩色铅笔手绘", "description": "手绘线条，层次排线，纹理质感，手工感", "en_value": "Colored pencil hand-drawn, layered strokes, texture feel, handmade aesthetic"},
+            {"name": "钢笔淡彩", "description": "精细线条加水彩薄涂风格，清晰墨线，淡色渲染，速写本质感", "en_value": "Fine pen and watercolor wash style, clear ink lines, light color rendering, sketch essence texture"},
+            {"name": "版画/木刻", "description": "版画风格，粗黑线条，有限色块，强烈的黑白对比", "en_value": "Printmaking/woodcut style, bold black lines, limited color blocks, strong black and white contrast"},
+            {"name": "低多边形", "description": "低多边形3D风格，几何切面，平面着色，简化形态", "en_value": "Low poly 3D style, geometric facets, flat shading, simplified forms"},
+            {"name": "像素艺术", "description": "像素艺术，8-bit或16-bit，可见像素点，有限调色板", "en_value": "Pixel art, 8-bit or 16-bit, visible pixel points, limited palette"},
+            {"name": "黏土/橡皮泥风", "description": "黏土动画风格，橡皮泥质感，指纹痕迹，定格动画感", "en_value": "Claymation style, plasticine texture, fingerprint traces, stop-motion feel"}
+          ]
+        },
+        {
+          "name": {"zh": "年代/复古类", "en": "Era/Vintage Style"},
+          "items": [
+            {"name": "80年代霓虹复古", "description": "1980年代霓虹复古，合成器波美学，霓虹网格线，发光边缘，紫色和青色配色", "en_value": "1980s neon retro, synthwave aesthetic, neon grid lines, glowing edges, purple and cyan palette"},
+            {"name": "民国月份牌风", "description": "1920年代上海月份牌广告画风格，复古广告艺术，柔和的水彩渲染，优雅姿态", "en_value": "1920s Shanghai monthly calendar advertisement style, retro advertising art, soft watercolor rendering, elegant poses"},
+            {"name": "维多利亚时代插画", "description": "维多利亚时代插画，雕刻般的线条，华丽边框，棕褐色调，19世纪书版画风格", "en_value": "Victorian era illustration, engraved line quality, ornate borders, sepia tones, 19th century book illustration style"},
+            {"name": "中世纪手抄本风", "description": "中世纪手抄本风格，金箔点缀，装饰性首字母，古朴纸张纹理，宗教图像感", "en_value": "Medieval manuscript style, gold leaf accents, decorative initials, antique paper texture, religious iconography feel"}
+          ]
+        },
+        {
+          "name": {"zh": "地域/民族类", "en": "Regional/Ethnic Style"},
+          "items": [
+            {"name": "北欧极简风", "description": "北欧极简设计，干净线条，柔和色调，功能性简洁，自然光线", "en_value": "Nordic minimalist design, clean lines, soft tones, functional simplicity, natural lighting"},
+            {"name": "非洲部落艺术", "description": "非洲部落艺术，粗犷几何图案，大地色调，面具风格设计，节奏感构图", "en_value": "African tribal art, bold geometric patterns, earth tones, mask-style design, rhythmic composition"},
+            {"name": "阿拉伯几何纹样", "description": "伊斯兰几何艺术，精细的镶嵌图案，阿拉伯藤蔓纹，金色和蓝色，数学精度", "en_value": "Islamic geometric art, intricate tessellation patterns, Arabic arabesques, gold and blue, mathematical precision"}
+          ]
+        },
+        {
+          "name": {"zh": "特殊质感/材质类", "en": "Special Texture/Material"},
+          "items": [
+            {"name": "粉笔画/黑板报风", "description": "粉笔质感，柔和颗粒，深色背景上的明亮色彩", "en_value": "Chalk drawing/blackboard style, soft particles, bright colors on dark background"},
+            {"name": "剪纸/纸雕风", "description": "剪纸艺术，层叠纸张效果，锐利边缘，立体阴影，民间艺术纸工艺", "en_value": "Papercut/paper carving art, layered paper effect, sharp edges, dimensional shadows, folk paper craft"},
+            {"name": "全息投影/镭射", "description": "全息投影，彩虹色，光的衍射，彩虹光泽，未来感展示", "en_value": "Holographic projection, iridescent colors, light diffraction, rainbow sheen, futuristic display"}
+          ]
+        },
+        {
+          "name": {"zh": "概念/实验类", "en": "Conceptual/Experimental"},
+          "items": [
+            {"name": "赛博朋克", "description": "赛博朋克，霓虹灯，雨湿街道，全息投影，高科技低生活，反乌托邦", "en_value": "Cyberpunk, neon lights, rain-wet streets, holographic projections, high-tech low-life, dystopia"},
+            {"name": "末世废土", "description": "后末日废土，铁锈和腐烂，贫瘠景观，拼凑科技，褪色色调", "en_value": "Post-apocalyptic wasteland, rust and decay, barren landscapes, patched technology, faded tones"},
+            {"name": "蒸汽朋克", "description": "蒸汽朋克，黄铜和铜，维多利亚机械，蒸汽动力，齿轮和发条", "en_value": "Steampunk, brass and copper, Victorian machinery, steam power, gears and clockwork"},
+            {"name": "童话绘本风", "description": "儿童绘本插画，柔和梦幻色彩，故事书魅力，温柔质感", "en_value": "Children's picture book illustration, soft dreamy colors, storybook charm, gentle textures"},
+            {"name": "超现实主义", "description": "超现实主义，梦境逻辑，不可能的图像，融化形态", "en_value": "Surrealism, dream logic, impossible images, melting forms"},
+            {"name": "故障艺术", "description": "故障艺术，数字损坏，RGB偏移，像素排序，屏幕撕裂", "en_value": "Glitch art, digital corruption, RGB shift, pixel sorting, screen tearing"},
+            {"name": "禅意/侘寂", "description": "侘寂美学，不完美之美，自然材质，质朴简洁，宁静氛围", "en_value": "Zen/Wabi-sabi aesthetics, beauty of imperfection, natural materials, rustic simplicity, serene atmosphere"}
+          ]
+        },
+        {
+          "name": {"zh": "场景专属风格", "en": "Scene-Specific Styles"},
+          "items": [
+            {"value": "建筑可视化渲染，真实光照，精确材质，结构清晰", "label": "建筑可视化", "en_value": "Architectural visualization rendering, realistic lighting, accurate materials, clear structure"},
+            {"value": "城市规划沙盘模型，微缩景观，俯视视角，简洁体块", "label": "城市规划沙盘", "en_value": "Urban planning sandbox model, miniature landscape, overhead view, simplified blocks"},
+            {"value": "舞台布景设计，戏剧性灯光，人工质感，场景感强烈", "label": "舞台布景风", "en_value": "Stage set design, dramatic lighting, artificial textures, strong scene presence"},
+            {"value": "移轴摄影效果，浅景深条带，微缩模型感，玩具般的质感", "label": "移轴微缩模型", "en_value": "Tilt-shift photography effect, shallow depth of field band, miniature model feel, toy-like texture"},
+            {"value": "开放世界游戏场景，广阔视野，多层次的远景，丰富的环境细节", "label": "开放世界游戏场景", "en_value": "Open world game scene, wide field of view, layered distant scenery, rich environmental details"}
+          ]
+        }
+      ],
+      "hasCustom": true,
+      "defaultSelected": "三渲二渲染的3D动漫，粗犷的黑色轮廓线，双色调阴影带有细腻的中灰过渡，冷色调为主，色彩饱和度高，锐利的镜面高光"
+    },
+    "style_advanced": {
+      "label": {"zh": "高级质感", "en": "Advanced Textures"},
+      "type": "select",
+      "multiple": true,
+      "categories": [
+        {
+          "name": {"zh": "画质分辨率", "en": "Quality Resolution"},
+          "items": [
+            {"value": "standard quality", "label": "标准", "en_value": "Standard"},
+            {"value": "HD 1080P", "label": "高清(1080P)", "en_value": "HD 1080P"},
+            {"value": "2K resolution", "label": "2K", "en_value": "2K"},
+            {"value": "4K resolution", "label": "4K", "en_value": "4K"},
+            {"value": "8K resolution", "label": "8K", "en_value": "8K"}
+          ]
+        },
+        {
+          "name": {"zh": "颗粒质感", "en": "Grain Texture"},
+          "items": [
+            {"value": "no grain", "label": "无颗粒", "en_value": "No grain"},
+            {"value": "subtle noise", "label": "轻微噪点", "en_value": "Subtle noise"},
+            {"value": "fine film grain", "label": "胶片颗粒(细)", "en_value": "Fine film grain"},
+            {"value": "coarse film grain", "label": "胶片颗粒(粗)", "en_value": "Coarse film grain"},
+            {"value": "vintage 16mm", "label": "复古16mm", "en_value": "Vintage 16mm"},
+            {"value": "vintage 8mm", "label": "复古8mm", "en_value": "Vintage 8mm"}
+          ]
+        },
+        {
+          "name": {"zh": "景深", "en": "Depth of Field"},
+          "items": [
+            {"value": "shallow depth of field", "label": "浅景深", "en_value": "Shallow DoF"},
+            {"value": "deep depth of field", "label": "深景深", "en_value": "Deep DoF"},
+            {"value": "tilt shift", "label": "移轴效果", "en_value": "Tilt shift"}
+          ]
+        },
+        {
+          "name": {"zh": "焦段", "en": "Focal Length"},
+          "items": [
+            {"value": "wide angle 24mm", "label": "广角24mm", "en_value": "Wide 24mm"},
+            {"value": "standard 50mm", "label": "标准50mm", "en_value": "Standard 50mm"},
+            {"value": "portrait 85mm", "label": "人像85mm", "en_value": "Portrait 85mm"},
+            {"value": "telephoto 135mm", "label": "长焦135mm", "en_value": "Telephoto 135mm"}
+          ]
+        },
+        {
+          "name": {"zh": "电影感光影", "en": "Cinematic Lighting"},
+          "items": [
+            {"value": "no cinematic lighting", "label": "无", "en_value": "None"},
+            {"value": "volumetric light rays", "label": "体积光(丁达尔)", "en_value": "Volumetric rays"},
+            {"value": "lens flare", "label": "镜头光晕", "en_value": "Lens flare"},
+            {"value": "glare", "label": "眩光", "en_value": "Glare"},
+            {"value": "light spots", "label": "光斑", "en_value": "Light spots"}
+          ]
+        },
+        {
+          "name": {"zh": "暗角", "en": "Vignetting"},
+          "items": [
+            {"value": "no vignetting", "label": "无", "en_value": "None"},
+            {"value": "slight vignetting", "label": "轻微", "en_value": "Slight"},
+            {"value": "medium vignetting", "label": "中等", "en_value": "Medium"},
+            {"value": "strong vignetting", "label": "强", "en_value": "Strong"}
+          ]
+        },
+        {
+          "name": {"zh": "镜头畸变", "en": "Lens Distortion"},
+          "items": [
+            {"value": "no distortion", "label": "无", "en_value": "None"},
+            {"value": "slight barrel distortion", "label": "轻微桶形畸变", "en_value": "Slight barrel"},
+            {"value": "pincushion distortion", "label": "枕形畸变", "en_value": "Pincushion"},
+            {"value": "fisheye effect", "label": "鱼眼效果", "en_value": "Fisheye"},
+            {"value": "tilt shift effect", "label": "移轴效果", "en_value": "Tilt shift"}
+          ]
+        },
+        {
+          "name": {"zh": "色散/色差", "en": "Chromatic Aberration"},
+          "items": [
+            {"value": "no chromatic aberration", "label": "无", "en_value": "None"},
+            {"value": "slight chromatic aberration", "label": "轻微色散", "en_value": "Slight"},
+            {"value": "strong chromatic aberration", "label": "强色散", "en_value": "Strong"}
+          ]
+        },
+        {
+          "name": {"zh": "胶片模拟", "en": "Film Simulation"},
+          "items": [
+            {"value": "no film simulation", "label": "无", "en_value": "None"},
+            {"value": "Kodak Portra", "label": "Kodak Portra", "en_value": "Kodak Portra"},
+            {"value": "Fuji Velvia", "label": "Fuji Velvia", "en_value": "Fuji Velvia"},
+            {"value": "Kodak Tri-X", "label": "Kodak Tri-X", "en_value": "Kodak Tri-X"},
+            {"value": "Ilford HP5", "label": "Ilford HP5", "en_value": "Ilford HP5"}
+          ]
+        },
+        {
+          "name": {"zh": "艺术化处理", "en": "Artistic Processing"},
+          "items": [
+            {"value": "no artistic processing", "label": "无", "en_value": "None"},
+            {"value": "LUT color grading", "label": "LUT调色", "en_value": "LUT color grading"},
+            {"value": "bleach bypass", "label": "漂白效果", "en_value": "Bleach bypass"},
+            {"value": "cross process", "label": "交叉冲印", "en_value": "Cross process"},
+            {"value": "color separation", "label": "色调分离", "en_value": "Color separation"}
+          ]
+        }
+      ],
+      "hasCustom": true,
+      "collapsible": true
+    },
+    "image_weight": {
+      "label": {"zh": "图片参考权重", "en": "Image Reference Weight"},
+      "type": "slider",
+      "min": 0.1,
+      "max": 2.0,
+      "step": 0.1,
+      "default": 1.0
+    },
+    "aspect_ratio": {
+      "label": {"zh": "画面比例", "en": "Aspect Ratio"},
+      "type": "select",
+      "items": [
+        {"value": "1:1", "label": "1:1", "en_value": "1:1"},
+        {"value": "3:2", "label": "3:2", "en_value": "3:2"},
+        {"value": "4:3", "label": "4:3", "en_value": "4:3"},
+        {"value": "16:9", "label": "16:9", "en_value": "16:9"},
+        {"value": "9:16", "label": "9:16", "en_value": "9:16"},
+        {"value": "2.35:1", "label": "2.35:1", "en_value": "2.35:1"}
+      ],
+      "hasCustom": true,
+      "defaultSelected": "16:9"
+    },
+    "negative_prompts": {
+      "label": {"zh": "负面提示词", "en": "Negative Prompts"},
+      "type": "select",
+      "items": [
+        {"value": "no watermark", "label": "no watermark", "en_value": "no watermark"},
+        {"value": "no text", "label": "no text", "en_value": "no text"},
+        {"value": "no building distortion", "label": "no building distortion", "en_value": "no building distortion"},
+        {"value": "no floating objects", "label": "no floating objects", "en_value": "no floating objects"}
+      ],
+      "hasCustom": true,
+      "multiple": true,
+      "defaultSelected": ["no watermark", "no text", "no building distortion", "no floating objects"]
+    }
+  },
+  "T3": {
+    "prop_description": {
+      "label": {"zh": "道具描述", "en": "Prop Description"},
+      "type": "textarea",
+      "placeholder": {"zh": "请输入道具描述...", "en": "Enter prop description..."}
+    },
+    "prop_material": {
+      "label": {"zh": "材质", "en": "Material"},
+      "type": "select",
+      "items": [
+        {"value": "金属", "label": "金属", "en_value": "Metal"},
+        {"value": "塑料", "label": "塑料", "en_value": "Plastic"},
+        {"value": "木头", "label": "木头", "en_value": "Wood"},
+        {"value": "布料", "label": "布料", "en_value": "Fabric"},
+        {"value": "皮革", "label": "皮革", "en_value": "Leather"},
+        {"value": "玻璃", "label": "玻璃", "en_value": "Glass"},
+        {"value": "石头", "label": "石头", "en_value": "Stone"},
+        {"value": "橡胶", "label": "橡胶", "en_value": "Rubber"},
+        {"value": "陶瓷", "label": "陶瓷", "en_value": "Ceramic"},
+        {"value": "碳纤维", "label": "碳纤维", "en_value": "Carbon Fiber"}
+      ],
+      "hasCustom": true
+    },
+    "prop_texture": {
+      "label": {"zh": "表面纹理", "en": "Surface Texture"},
+      "type": "select",
+      "items": [
+        {"value": "光滑", "label": "光滑", "en_value": "Smooth"},
+        {"value": "磨砂", "label": "磨砂", "en_value": "Matte"},
+        {"value": "划痕", "label": "划痕", "en_value": "Scratched"},
+        {"value": "锈迹", "label": "锈迹", "en_value": "Rusty"},
+        {"value": "凹凸", "label": "凹凸", "en_value": "Textured"},
+        {"value": "碳纤维", "label": "碳纤维纹理", "en_value": "Carbon fiber"},
+        {"value": "拉丝", "label": "拉丝", "en_value": "Brushed"},
+        {"value": "镜面", "label": "镜面", "en_value": "Mirror"}
+      ],
+      "hasCustom": true
+    },
+    "prop_condition": {
+      "label": {"zh": "状态", "en": "Condition"},
+      "type": "select",
+      "items": [
+        {"value": "全新", "label": "全新", "en_value": "Brand new"},
+        {"value": "轻微磨损", "label": "轻微磨损", "en_value": "Slightly worn"},
+        {"value": "严重破损", "label": "严重破损", "en_value": "Heavily damaged"},
+        {"value": "打开", "label": "打开", "en_value": "Open"},
+        {"value": "闭合", "label": "闭合", "en_value": "Closed"},
+        {"value": "亮灯", "label": "亮灯", "en_value": "Lit"}
+      ],
+      "hasCustom": true
+    },
+    "prop_color": {
+      "label": {"zh": "颜色", "en": "Color"},
+      "type": "select",
+      "items": [
+        {"value": "白", "label": "白", "en_value": "White"},
+        {"value": "黑", "label": "黑", "en_value": "Black"},
+        {"value": "灰", "label": "灰", "en_value": "Gray"},
+        {"value": "红", "label": "红", "en_value": "Red"},
+        {"value": "蓝", "label": "蓝", "en_value": "Blue"},
+        {"value": "黄", "label": "黄", "en_value": "Yellow"},
+        {"value": "绿", "label": "绿", "en_value": "Green"},
+        {"value": "橙", "label": "橙", "en_value": "Orange"},
+        {"value": "紫", "label": "紫", "en_value": "Purple"}
+      ],
+      "hasCustom": true
+    },
+    "style_base": {
+      "label": {"zh": "基础风格", "en": "Base Style"},
+      "type": "select",
+      "categories": [
+        {
+          "name": {"zh": "动漫/二次元类", "en": "Anime/Anime Style"},
+          "items": [
+            {"name": "赛璐珞三渲二(蓝锁风)", "description": "三渲二渲染的3D动漫，粗犷的黑色轮廓线，双色调阴影带有细腻的中灰过渡，冷色调为主，色彩饱和度高，锐利的镜面高光", "en_value": "Cel-shaded 3D anime, Blue Lock style, bold black outlines, two-tone cel shading with subtle mid-tones, high saturation cold colors, sharp specular highlights"},
+            {"name": "新海诚电影风", "description": "新海诚电影美学，电影级体积光，镜头光晕，高度细节化，鲜艳自然的色彩", "en_value": "Makoto Shinkai cinematic aesthetics, cinematic volumetric lighting, lens flare, hyper-detailed, vivid natural colors"},
+            {"name": "吉卜力柔和风", "description": "吉卜力工作室风格，柔和的手绘质感背景，温柔的阳光，水彩般透明的阴影，温暖的怀旧氛围", "en_value": "Studio Ghibli style, soft hand-drawn background textures, gentle sunlight, watercolor-like transparent shadows, warm nostalgic atmosphere"},
+            {"name": "美式卡通(皮克斯)", "description": "皮克斯动画风格，风格化的3D角色，富有表现力的表情，明亮饱和的色彩，次表面散射的皮肤质感，光滑的曲面", "en_value": "Pixar animation style, stylized 3D characters, expressive features, bright saturated colors, subsurface scattering skin texture, smooth curved surfaces"},
+            {"name": "热血少年漫风", "description": "少年漫画风格，动态速度线，戏剧化的黑白对比，大胆的构图，高对比度的画面", "en_value": "Shonen manga style, dynamic speed lines, dramatic black and white contrast, bold composition, high contrast"},
+            {"name": "90年代赛璐珞手绘动画", "description": "1990年代赛璐珞手绘动画，手绘画面，可见笔触，柔和的胶片颗粒，复古动漫质感", "en_value": "1990s cel-drawn animation, hand-drawn visuals, visible brushstrokes, soft film grain, retro anime texture"},
+            {"name": "80年代复古动画", "description": "1980年代复古动漫，颗粒纹理，柔和色调，手绘的不完美感", "en_value": "1980s retro anime, grain texture, soft tones, hand-drawn imperfection"},
+            {"name": "暗黑哥特动画", "description": "暗黑哥特动漫，浓重阴影，戏剧化的明暗对比，华丽细节，阴郁氛围", "en_value": "Dark gothic anime, heavy shadows, dramatic chiaroscuro, ornate details, gloomy atmosphere"},
+            {"name": "蒸汽波动画", "description": "蒸汽波动漫美学，霓虹粉和青蓝，故障效果，复古未来主义，梦幻朦胧", "en_value": "Vaporwave anime aesthetic, neon pink and cyan, glitch effects, retro futurism, dreamy haze"},
+            {"name": "赛博朋克边缘行者风", "description": "赛博朋克边缘行者风格，霓虹灯照明，高对比度，粗粝都市，机械细节", "en_value": "Cyberpunk Edgerunners style, neon lighting, high contrast, gritty urban, mechanical details"}
+          ]
+        },
+        {
+          "name": {"zh": "写实/电影类", "en": "Realistic/Cinematic"},
+          "items": [
+            {"name": "UE5电影写实", "description": "虚幻引擎5电影级渲染，照片级真实，PBR材质，光线追踪，全局光照，8K", "en_value": "Unreal Engine 5 cinematic rendering, photorealistic, PBR materials, ray tracing, global illumination, 8K"},
+            {"name": "照片级写实", "description": "照片级写实，超高细节，8K分辨率，真实纹理，自然光线", "en_value": "Photorealistic, ultra-high detail, 8K resolution, realistic textures, natural lighting"},
+            {"name": "经典好莱坞电影风", "description": "经典好莱坞电影感，黄金时代布光，戏剧性阴影，胶片颗粒，35mm胶片质感", "en_value": "Classic Hollywood cinematic feel, Golden Age lighting, dramatic shadows, film grain, 35mm film texture"},
+            {"name": "纪录片质感", "description": "纪录片风格，自然光线，手持摄影感，真实世界纹理", "en_value": "Documentary style, natural lighting, handheld camera feel, realistic world textures"}
+          ]
+        },
+        {
+          "name": {"zh": "艺术/绘画类", "en": "Art/Painting Style"},
+          "items": [
+            {"name": "水墨古风", "description": "中国传统水墨画风格，浓淡变化的墨色，流动的晕染渐变，极简留白，古典意境", "en_value": "Chinese traditional ink painting style, varying ink density, flowing diffusion gradients, minimalistic white space, classical artistic conception"},
+            {"name": "工笔画", "description": "工笔细描风格，精致均匀的轮廓线条，平涂色彩填充，古典韵味", "en_value": "Gongbi fine brushwork style, delicate even outline strokes, flat color fills, classical charm"},
+            {"name": "浮世绘", "description": "浮世绘日本木版画风格，平面色彩，粗轮廓线，装饰性图案", "en_value": "Ukiyo-e Japanese woodblock print style, flat colors, bold outlines, decorative patterns"},
+            {"name": "印象派油画", "description": "印象派油画，可见笔触，斑驳光线，鲜艳色调", "en_value": "Impressionist oil painting, visible brushstrokes, dappled light, vivid tones"},
+            {"name": "水彩渲染", "description": "水彩画，湿画法，色彩渗透，柔和边缘，半透明层次", "en_value": "Watercolor rendering, wet technique, color bleeding, soft edges, translucent layers"},
+            {"name": "彩色铅笔手绘", "description": "手绘线条，层次排线，纹理质感，手工感", "en_value": "Colored pencil hand-drawn, layered strokes, texture feel, handmade aesthetic"},
+            {"name": "钢笔淡彩", "description": "精细线条加水彩薄涂风格，清晰墨线，淡色渲染，速写本质感", "en_value": "Fine pen and watercolor wash style, clear ink lines, light color rendering, sketch essence texture"},
+            {"name": "版画/木刻", "description": "版画风格，粗黑线条，有限色块，强烈的黑白对比", "en_value": "Printmaking/woodcut style, bold black lines, limited color blocks, strong black and white contrast"},
+            {"name": "低多边形", "description": "低多边形3D风格，几何切面，平面着色，简化形态", "en_value": "Low poly 3D style, geometric facets, flat shading, simplified forms"},
+            {"name": "像素艺术", "description": "像素艺术，8-bit或16-bit，可见像素点，有限调色板", "en_value": "Pixel art, 8-bit or 16-bit, visible pixel points, limited palette"},
+            {"name": "黏土/橡皮泥风", "description": "黏土动画风格，橡皮泥质感，指纹痕迹，定格动画感", "en_value": "Claymation style, plasticine texture, fingerprint traces, stop-motion feel"}
+          ]
+        },
+        {
+          "name": {"zh": "年代/复古类", "en": "Era/Vintage Style"},
+          "items": [
+            {"name": "80年代霓虹复古", "description": "1980年代霓虹复古，合成器波美学，霓虹网格线，发光边缘，紫色和青色配色", "en_value": "1980s neon retro, synthwave aesthetic, neon grid lines, glowing edges, purple and cyan palette"},
+            {"name": "民国月份牌风", "description": "1920年代上海月份牌广告画风格，复古广告艺术，柔和的水彩渲染，优雅姿态", "en_value": "1920s Shanghai monthly calendar advertisement style, retro advertising art, soft watercolor rendering, elegant poses"},
+            {"name": "维多利亚时代插画", "description": "维多利亚时代插画，雕刻般的线条，华丽边框，棕褐色调，19世纪书版画风格", "en_value": "Victorian era illustration, engraved line quality, ornate borders, sepia tones, 19th century book illustration style"},
+            {"name": "中世纪手抄本风", "description": "中世纪手抄本风格，金箔点缀，装饰性首字母，古朴纸张纹理，宗教图像感", "en_value": "Medieval manuscript style, gold leaf accents, decorative initials, antique paper texture, religious iconography feel"}
+          ]
+        },
+        {
+          "name": {"zh": "地域/民族类", "en": "Regional/Ethnic Style"},
+          "items": [
+            {"name": "北欧极简风", "description": "北欧极简设计，干净线条，柔和色调，功能性简洁，自然光线", "en_value": "Nordic minimalist design, clean lines, soft tones, functional simplicity, natural lighting"},
+            {"name": "非洲部落艺术", "description": "非洲部落艺术，粗犷几何图案，大地色调，面具风格设计，节奏感构图", "en_value": "African tribal art, bold geometric patterns, earth tones, mask-style design, rhythmic composition"},
+            {"name": "阿拉伯几何纹样", "description": "伊斯兰几何艺术，精细的镶嵌图案，阿拉伯藤蔓纹，金色和蓝色，数学精度", "en_value": "Islamic geometric art, intricate tessellation patterns, Arabic arabesques, gold and blue, mathematical precision"}
+          ]
+        },
+        {
+          "name": {"zh": "特殊质感/材质类", "en": "Special Texture/Material"},
+          "items": [
+            {"name": "粉笔画/黑板报风", "description": "粉笔质感，柔和颗粒，深色背景上的明亮色彩", "en_value": "Chalk drawing/blackboard style, soft particles, bright colors on dark background"},
+            {"name": "剪纸/纸雕风", "description": "剪纸艺术，层叠纸张效果，锐利边缘，立体阴影，民间艺术纸工艺", "en_value": "Papercut/paper carving art, layered paper effect, sharp edges, dimensional shadows, folk paper craft"},
+            {"name": "全息投影/镭射", "description": "全息投影，彩虹色，光的衍射，彩虹光泽，未来感展示", "en_value": "Holographic projection, iridescent colors, light diffraction, rainbow sheen, futuristic display"}
+          ]
+        },
+        {
+          "name": {"zh": "概念/实验类", "en": "Conceptual/Experimental"},
+          "items": [
+            {"name": "赛博朋克", "description": "赛博朋克，霓虹灯，雨湿街道，全息投影，高科技低生活，反乌托邦", "en_value": "Cyberpunk, neon lights, rain-wet streets, holographic projections, high-tech low-life, dystopia"},
+            {"name": "末世废土", "description": "后末日废土，铁锈和腐烂，贫瘠景观，拼凑科技，褪色色调", "en_value": "Post-apocalyptic wasteland, rust and decay, barren landscapes, patched technology, faded tones"},
+            {"name": "蒸汽朋克", "description": "蒸汽朋克，黄铜和铜，维多利亚机械，蒸汽动力，齿轮和发条", "en_value": "Steampunk, brass and copper, Victorian machinery, steam power, gears and clockwork"},
+            {"name": "童话绘本风", "description": "儿童绘本插画，柔和梦幻色彩，故事书魅力，温柔质感", "en_value": "Children's picture book illustration, soft dreamy colors, storybook charm, gentle textures"},
+            {"name": "超现实主义", "description": "超现实主义，梦境逻辑，不可能的图像，融化形态", "en_value": "Surrealism, dream logic, impossible images, melting forms"},
+            {"name": "故障艺术", "description": "故障艺术，数字损坏，RGB偏移，像素排序，屏幕撕裂", "en_value": "Glitch art, digital corruption, RGB shift, pixel sorting, screen tearing"},
+            {"name": "禅意/侘寂", "description": "侘寂美学，不完美之美，自然材质，质朴简洁，宁静氛围", "en_value": "Zen/Wabi-sabi aesthetics, beauty of imperfection, natural materials, rustic simplicity, serene atmosphere"}
+          ]
+        },
+        {
+          "name": {"zh": "道具专属风格", "en": "Prop-Specific Styles"},
+          "items": [
+            {"value": "工业设计草图风格，手绘线条，标注线，设计稿质感", "label": "工业设计草图", "en_value": "Industrial design sketch style, hand-drawn lines, annotation marks, design draft aesthetic"},
+            {"value": "Keyshot产品渲染，影棚灯光，高精度材质，产品级质感", "label": "Keyshot产品渲染", "en_value": "Keyshot product rendering, studio lighting, high-precision materials, product-level texture"},
+            {"value": "珠宝设计展示，精致金属，宝石光泽，黑色背景衬托", "label": "珠宝设计风", "en_value": "Jewelry design showcase, delicate metal, gemstone luster, black background contrast"},
+            {"value": "武器概念设计稿，机械结构清晰，功能部件展示，金属质感", "label": "武器概念设计", "en_value": "Weapon concept design draft, clear mechanical structure, functional parts showcase, metallic texture"},
+            {"value": "食品广告摄影，柔和侧光，新鲜质感，食欲感强", "label": "食品广告摄影风", "en_value": "Food advertising photography, soft side lighting, fresh texture, appetizing appeal"}
+          ]
+        }
+      ],
+      "hasCustom": true,
+      "defaultSelected": "三渲二渲染的3D动漫，粗犷的黑色轮廓线，双色调阴影带有细腻的中灰过渡，冷色调为主，色彩饱和度高，锐利的镜面高光"
+    },
+    "style_advanced": {
+      "label": {"zh": "高级质感", "en": "Advanced Textures"},
+      "type": "select",
+      "multiple": true,
+      "categories": [
+        {
+          "name": {"zh": "画质分辨率", "en": "Quality Resolution"},
+          "items": [
+            {"value": "standard quality", "label": "标准", "en_value": "Standard"},
+            {"value": "HD 1080P", "label": "高清(1080P)", "en_value": "HD 1080P"},
+            {"value": "2K resolution", "label": "2K", "en_value": "2K"},
+            {"value": "4K resolution", "label": "4K", "en_value": "4K"},
+            {"value": "8K resolution", "label": "8K", "en_value": "8K"}
+          ]
+        },
+        {
+          "name": {"zh": "颗粒质感", "en": "Grain Texture"},
+          "items": [
+            {"value": "no grain", "label": "无颗粒", "en_value": "No grain"},
+            {"value": "subtle noise", "label": "轻微噪点", "en_value": "Subtle noise"},
+            {"value": "fine film grain", "label": "胶片颗粒(细)", "en_value": "Fine film grain"},
+            {"value": "coarse film grain", "label": "胶片颗粒(粗)", "en_value": "Coarse film grain"}
+          ]
+        },
+        {
+          "name": {"zh": "材质精度", "en": "Material Precision"},
+          "items": [
+            {"value": "standard material", "label": "标准", "en_value": "Standard"},
+            {"value": "high precision texture", "label": "高精度纹理", "en_value": "High precision"},
+            {"value": "macro detail", "label": "微距细节", "en_value": "Macro detail"},
+            {"value": "surface micro visible", "label": "表面微观可见", "en_value": "Surface micro"}
+          ]
+        },
+        {
+          "name": {"zh": "反射质感", "en": "Reflection Quality"},
+          "items": [
+            {"value": "standard reflection", "label": "标准", "en_value": "Standard"},
+            {"value": "matte finish", "label": "哑光", "en_value": "Matte"},
+            {"value": "specular highlight", "label": "高光反射", "en_value": "Specular highlight"},
+            {"value": "brushed metal reflection", "label": "金属拉丝反光", "en_value": "Brushed metal"},
+            {"value": "mirror reflection", "label": "镜面反射", "en_value": "Mirror"}
+          ]
+        },
+        {
+          "name": {"zh": "电影感光影", "en": "Cinematic Lighting"},
+          "items": [
+            {"value": "no cinematic lighting", "label": "无", "en_value": "None"},
+            {"value": "studio lighting", "label": "影棚光", "en_value": "Studio lighting"},
+            {"value": "cinematic studio lighting", "label": "电影级布光", "en_value": "Cinematic studio"},
+            {"value": "softbox effect", "label": "柔光箱效果", "en_value": "Softbox"},
+            {"value": "side backlight", "label": "侧逆光", "en_value": "Side backlight"}
+          ]
+        },
+        {
+          "name": {"zh": "锐度", "en": "Sharpness"},
+          "items": [
+            {"value": "standard sharpness", "label": "标准", "en_value": "Standard"},
+            {"value": "soft focus", "label": "柔焦", "en_value": "Soft focus"},
+            {"value": "sharp clear", "label": "锐利清晰", "en_value": "Sharp clear"},
+            {"value": "ultra sharp", "label": "超锐", "en_value": "Ultra sharp"}
+          ]
+        },
+        {
+          "name": {"zh": "景深", "en": "Depth of Field"},
+          "items": [
+            {"value": "no depth of field", "label": "无", "en_value": "None"},
+            {"value": "shallow depth product close-up", "label": "浅景深(产品特写)", "en_value": "Shallow DoF"},
+            {"value": "full clarity", "label": "全清晰", "en_value": "Full clarity"}
+          ]
+        },
+        {
+          "name": {"zh": "暗角", "en": "Vignetting"},
+          "items": [
+            {"value": "no vignetting", "label": "无", "en_value": "None"},
+            {"value": "slight vignetting", "label": "轻微", "en_value": "Slight"},
+            {"value": "medium vignetting", "label": "中等", "en_value": "Medium"},
+            {"value": "strong vignetting", "label": "强", "en_value": "Strong"}
+          ]
+        },
+        {
+          "name": {"zh": "色散/色差", "en": "Chromatic Aberration"},
+          "items": [
+            {"value": "no chromatic aberration", "label": "无", "en_value": "None"},
+            {"value": "slight chromatic aberration", "label": "轻微色散", "en_value": "Slight"}
+          ]
+        },
+        {
+          "name": {"zh": "胶片模拟", "en": "Film Simulation"},
+          "items": [
+            {"value": "no film simulation", "label": "无", "en_value": "None"},
+            {"value": "Kodak Portra", "label": "Kodak Portra", "en_value": "Kodak Portra"},
+            {"value": "Fuji Velvia", "label": "Fuji Velvia", "en_value": "Fuji Velvia"}
+          ]
+        }
+      ],
+      "hasCustom": true,
+      "collapsible": true
+    },
+    "image_weight": {
+      "label": {"zh": "图片参考权重", "en": "Image Reference Weight"},
+      "type": "slider",
+      "min": 0.1,
+      "max": 2.0,
+      "step": 0.1,
+      "default": 1.0
+    },
+    "aspect_ratio": {
+      "label": {"zh": "画面比例", "en": "Aspect Ratio"},
+      "type": "select",
+      "items": [
+        {"value": "1:1", "label": "1:1", "en_value": "1:1"},
+        {"value": "3:2", "label": "3:2", "en_value": "3:2"},
+        {"value": "4:3", "label": "4:3", "en_value": "4:3"},
+        {"value": "16:9", "label": "16:9", "en_value": "16:9"},
+        {"value": "9:16", "label": "9:16", "en_value": "9:16"},
+        {"value": "2.35:1", "label": "2.35:1", "en_value": "2.35:1"}
+      ],
+      "hasCustom": true,
+      "defaultSelected": "16:9"
+    },
+    "negative_prompts": {
+      "label": {"zh": "负面提示词", "en": "Negative Prompts"},
+      "type": "select",
+      "items": [
+        {"value": "no watermark", "label": "no watermark", "en_value": "no watermark"},
+        {"value": "no text", "label": "no text", "en_value": "no text"},
+        {"value": "no shadow on background", "label": "no shadow on background", "en_value": "no shadow on background"}
+      ],
+      "hasCustom": true,
+      "multiple": true,
+      "defaultSelected": ["no watermark", "no text", "no shadow on background"]
+    }
+  },
+  "T4": {
+    "subject": {
+      "label": {"zh": "主体", "en": "Subject"},
+      "type": "input",
+      "placeholder": {"zh": "输入主体名称", "en": "Enter subject name"}
+    },
+    "scene": {
+      "label": {"zh": "场景", "en": "Scene"},
+      "type": "input",
+      "placeholder": {"zh": "输入场景名称", "en": "Enter scene name"}
+    },
+    "prop": {
+      "label": {"zh": "道具", "en": "Prop"},
+      "type": "input",
+      "placeholder": {"zh": "输入道具名称", "en": "Enter prop name"}
+    },
+    "action": {
+      "label": {"zh": "动作", "en": "Action"},
+      "type": "select",
+      "categories": [
+        {
+          "name": {"zh": "站立类", "en": "Standing"},
+          "items": [
+            {"value": "自然站立", "label": "自然站立", "en_value": "standing naturally"},
+            {"value": "双手插兜", "label": "双手插兜", "en_value": "hands in pockets"},
+            {"value": "抱臂", "label": "抱臂", "en_value": "arms crossed"},
+            {"value": "单手叉腰", "label": "单手叉腰", "en_value": "hand on hip"},
+            {"value": "双手背在身后", "label": "双手背在身后", "en_value": "hands behind back"},
+            {"value": "靠墙站立", "label": "靠墙站立", "en_value": "leaning against wall"}
+          ]
+        },
+        {
+          "name": {"zh": "运动类", "en": "Movement"},
+          "items": [
+            {"value": "走路", "label": "走路", "en_value": "walking"},
+            {"value": "跑步", "label": "跑步", "en_value": "running"},
+            {"value": "冲刺", "label": "冲刺", "en_value": "sprinting"},
+            {"value": "跳跃", "label": "跳跃", "en_value": "jumping"},
+            {"value": "下蹲", "label": "下蹲", "en_value": "squatting"},
+            {"value": "起跳", "label": "起跳", "en_value": "jumping up"}
+          ]
+        },
+        {
+          "name": {"zh": "足球类", "en": "Soccer"},
+          "items": [
+            {"value": "颠球", "label": "颠球", "en_value": "juggling ball"},
+            {"value": "抽射", "label": "抽射", "en_value": "shooting"},
+            {"value": "推射", "label": "推射", "en_value": "passing shot"},
+            {"value": "头球", "label": "头球", "en_value": "heading"},
+            {"value": "扑救", "label": "扑救", "en_value": "saving"},
+            {"value": "盘带", "label": "盘带", "en_value": "dribbling"},
+            {"value": "滑铲", "label": "滑铲", "en_value": "sliding"},
+            {"value": "开大脚", "label": "开大脚", "en_value": "clearing"},
+            {"value": "踩球", "label": "踩球", "en_value": "stepping on ball"}
+          ]
+        },
+        {
+          "name": {"zh": "手势类", "en": "Gestures"},
+          "items": [
+            {"value": "挥手", "label": "挥手", "en_value": "waving"},
+            {"value": "指向", "label": "指向", "en_value": "pointing"},
+            {"value": "握拳", "label": "握拳", "en_value": "clenched fist"},
+            {"value": "鼓掌", "label": "鼓掌", "en_value": "clapping"},
+            {"value": "竖大拇指", "label": "竖大拇指", "en_value": "thumbs up"},
+            {"value": "双手张开", "label": "双手张开", "en_value": "hands open"},
+            {"value": "托腮", "label": "托腮", "en_value": "chin resting"}
+          ]
+        },
+        {
+          "name": {"zh": "交互类", "en": "Interaction"},
+          "items": [
+            {"value": "拥抱", "label": "拥抱", "en_value": "hugging"},
+            {"value": "击掌", "label": "击掌", "en_value": "high five"},
+            {"value": "握手", "label": "握手", "en_value": "handshake"},
+            {"value": "搭肩", "label": "搭肩", "en_value": "arm around shoulder"},
+            {"value": "递东西", "label": "递东西", "en_value": "handing over"},
+            {"value": "接东西", "label": "接东西", "en_value": "receiving"}
+          ]
+        },
+        {
+          "name": {"zh": "持物类", "en": "Object Holding"},
+          "items": [
+            {"value": "手中抱着@道具名字", "label": "手中抱着@道具名字", "en_value": "holding @prop_name"},
+            {"value": "脚下踩着@道具名字", "label": "脚下踩着@道具名字", "en_value": "stepping on @prop_name"},
+            {"value": "身旁放着@道具名字", "label": "身旁放着@道具名字", "en_value": "with @prop_name beside"},
+            {"value": "举着@道具名字", "label": "举着@道具名字", "en_value": "holding @prop_name up"},
+            {"value": "背着@道具名字", "label": "背着@道具名字", "en_value": "carrying @prop_name on back"}
+          ]
+        }
+      ]
+    },
+    "facial_expression": {
+      "label": {"zh": "表情", "en": "Facial Expression"},
+      "type": "select",
+      "categories": [
+        {
+          "name": {"zh": "眼部", "en": "Eyes"},
+          "items": [
+            {"value": "瞳孔放大", "label": "瞳孔放大", "en_value": "dilated pupils"},
+            {"value": "眼睛睁大", "label": "眼睛睁大", "en_value": "wide eyes"},
+            {"value": "眯眼", "label": "眯眼", "en_value": "squinting"},
+            {"value": "闭眼", "label": "闭眼", "en_value": "closed eyes"},
+            {"value": "目光锐利", "label": "目光锐利", "en_value": "sharp gaze"},
+            {"value": "眼神放空", "label": "眼神放空", "en_value": "empty gaze"},
+            {"value": "瞪眼", "label": "瞪眼", "en_value": "staring"}
+          ]
+        },
+        {
+          "name": {"zh": "嘴部", "en": "Mouth"},
+          "items": [
+            {"value": "嘴巴微张", "label": "嘴巴微张", "en_value": "slightly open mouth"},
+            {"value": "嘴唇紧抿", "label": "嘴唇紧抿", "en_value": "tight lips"},
+            {"value": "嘴角上扬", "label": "嘴角上扬", "en_value": "smiling mouth"},
+            {"value": "嘴角下垂", "label": "嘴角下垂", "en_value": "frowning mouth"},
+            {"value": "咬牙切齿", "label": "咬牙切齿", "en_value": "clenched teeth"},
+            {"value": "张嘴大喊", "label": "张嘴大喊", "en_value": "shouting"}
+          ]
+        },
+        {
+          "name": {"zh": "眉毛", "en": "Eyebrows"},
+          "items": [
+            {"value": "眉头紧锁", "label": "眉头紧锁", "en_value": "furrowed brows"},
+            {"value": "眉毛上扬", "label": "眉毛上扬", "en_value": "raised brows"},
+            {"value": "眉毛下垂", "label": "眉毛下垂", "en_value": "lowered brows"}
+          ]
+        },
+        {
+          "name": {"zh": "组合表情", "en": "Combined"},
+          "items": [
+            {"value": "面无表情", "label": "面无表情", "en_value": "neutral expression"},
+            {"value": "微笑", "label": "微笑", "en_value": "smiling"},
+            {"value": "大笑", "label": "大笑", "en_value": "laughing"},
+            {"value": "惊讶", "label": "惊讶", "en_value": "surprised"},
+            {"value": "愤怒", "label": "愤怒", "en_value": "angry"},
+            {"value": "悲伤", "label": "悲伤", "en_value": "sad"},
+            {"value": "恐惧", "label": "恐惧", "en_value": "fearful"},
+            {"value": "专注", "label": "专注", "en_value": "focused"},
+            {"value": "紧张", "label": "紧张", "en_value": "nervous"},
+            {"value": "放松", "label": "放松", "en_value": "relaxed"},
+            {"value": "凶狠", "label": "凶狠", "en_value": "menacing"},
+            {"value": "呆萌", "label": "呆萌", "en_value": "cute"},
+            {"value": "不屑", "label": "不屑", "en_value": "disdainful"}
+          ]
+        }
+      ]
+    },
+    "emotion": {
+      "label": {"zh": "情绪", "en": "Emotion"},
+      "type": "select",
+      "categories": [
+        {
+          "name": {"zh": "正面", "en": "Positive"},
+          "items": [
+            {"value": "开心", "label": "开心", "en_value": "happy"},
+            {"value": "兴奋", "label": "兴奋", "en_value": "excited"},
+            {"value": "自信", "label": "自信", "en_value": "confident"},
+            {"value": "坚定", "label": "坚定", "en_value": "determined"},
+            {"value": "期待", "label": "期待", "en_value": "hopeful"},
+            {"value": "满足", "label": "满足", "en_value": "content"},
+            {"value": "骄傲", "label": "骄傲", "en_value": "proud"},
+            {"value": "感动", "label": "感动", "en_value": "touched"}
+          ]
+        },
+        {
+          "name": {"zh": "负面", "en": "Negative"},
+          "items": [
+            {"value": "失落", "label": "失落", "en_value": "disappointed"},
+            {"value": "沮丧", "label": "沮丧", "en_value": "frustrated"},
+            {"value": "愤怒", "label": "愤怒", "en_value": "angry"},
+            {"value": "恐惧", "label": "恐惧", "en_value": "fearful"},
+            {"value": "焦虑", "label": "焦虑", "en_value": "anxious"},
+            {"value": "悲伤", "label": "悲伤", "en_value": "sad"},
+            {"value": "绝望", "label": "绝望", "en_value": "desperate"},
+            {"value": "嫉妒", "label": "嫉妒", "en_value": "jealous"}
+          ]
+        },
+        {
+          "name": {"zh": "中性", "en": "Neutral"},
+          "items": [
+            {"value": "安静", "label": "安静", "en_value": "quiet"},
+            {"value": "冷静", "label": "冷静", "en_value": "calm"},
+            {"value": "迷茫", "label": "迷茫", "en_value": "confused"},
+            {"value": "疲惫", "label": "疲惫", "en_value": "tired"},
+            {"value": "无所谓", "label": "无所谓", "en_value": "indifferent"},
+            {"value": "若有所思", "label": "若有所思", "en_value": "thoughtful"}
+          ]
+        },
+        {
+          "name": {"zh": "氛围类", "en": "Atmosphere"},
+          "items": [
+            {"value": "紧张", "label": "紧张", "en_value": "tense"},
+            {"value": "压抑", "label": "压抑", "en_value": "oppressive"},
+            {"value": "轻松", "label": "轻松", "en_value": "relaxed"},
+            {"value": "温暖", "label": "温暖", "en_value": "warm"},
+            {"value": "冷峻", "label": "冷峻", "en_value": "cold"},
+            {"value": "疏离", "label": "疏离", "en_value": "distant"}
+          ]
+        }
+      ]
+    },
+    "camera_angle": {
+      "label": {"zh": "视角", "en": "Camera Angle"},
+      "type": "select",
+      "items": [
+        {"value": "正视", "label": "正视", "en_value": "Front view"},
+        {"value": "侧视", "label": "侧视", "en_value": "Side view"},
+        {"value": "背视", "label": "背视", "en_value": "Back view"},
+        {"value": "低角度仰视", "label": "低角度仰视", "en_value": "Low angle"},
+        {"value": "高角度俯视", "label": "高角度俯视", "en_value": "High angle"},
+        {"value": "过肩", "label": "过肩", "en_value": "Over-the-shoulder"},
+        {"value": "主观视角POV", "label": "主观视角POV", "en_value": "POV"}
+      ],
+      "hasCustom": true
+    },
+    "shot_type": {
+      "label": {"zh": "景别", "en": "Shot Type"},
+      "type": "select",
+      "items": [
+        {"value": "大特写", "label": "大特写", "en_value": "Extreme close-up"},
+        {"value": "特写", "label": "特写", "en_value": "Close-up"},
+        {"value": "近景", "label": "近景", "en_value": "Medium close-up"},
+        {"value": "中景", "label": "中景", "en_value": "Medium shot"},
+        {"value": "全景", "label": "全景", "en_value": "Full shot"},
+        {"value": "远景", "label": "远景", "en_value": "Wide shot"},
+        {"value": "超远景", "label": "超远景", "en_value": "Extreme wide shot"}
+      ],
+      "hasCustom": true
+    },
+    "lighting": {
+      "label": {"zh": "光线", "en": "Lighting"},
+      "type": "select",
+      "items": [
+        {"value": "金色黄昏", "label": "金色黄昏", "en_value": "Golden hour"},
+        {"value": "清晨白光", "label": "清晨白光", "en_value": "Morning white light"},
+        {"value": "正午强光", "label": "正午强光", "en_value": "Noon harsh light"},
+        {"value": "阴天柔光", "label": "阴天柔光", "en_value": "Overcast soft light"},
+        {"value": "夜晚月光", "label": "夜晚月光", "en_value": "Night moonlight"},
+        {"value": "室内暖灯", "label": "室内暖灯", "en_value": "Indoor warm lamp"}
+      ],
+      "hasCustom": true
+    },
+    "style_base": {
+      "label": {"zh": "基础风格", "en": "Base Style"},
+      "type": "select",
+      "categories": [
+        {
+          "name": {"zh": "动漫/二次元类", "en": "Anime/Anime Style"},
+          "items": [
+            {"name": "赛璐珞三渲二(蓝锁风)", "description": "三渲二渲染的3D动漫，粗犷的黑色轮廓线，双色调阴影带有细腻的中灰过渡，冷色调为主，色彩饱和度高，锐利的镜面高光", "en_value": "Cel-shaded 3D anime, Blue Lock style, bold black outlines, two-tone cel shading with subtle mid-tones, high saturation cold colors, sharp specular highlights"},
+            {"name": "新海诚电影风", "description": "新海诚电影美学，电影级体积光，镜头光晕，高度细节化，鲜艳自然的色彩", "en_value": "Makoto Shinkai cinematic aesthetics, cinematic volumetric lighting, lens flare, hyper-detailed, vivid natural colors"},
+            {"name": "吉卜力柔和风", "description": "吉卜力工作室风格，柔和的手绘质感背景，温柔的阳光，水彩般透明的阴影，温暖的怀旧氛围", "en_value": "Studio Ghibli style, soft hand-drawn background textures, gentle sunlight, watercolor-like transparent shadows, warm nostalgic atmosphere"},
+            {"name": "美式卡通(皮克斯)", "description": "皮克斯动画风格，风格化的3D角色，富有表现力的表情，明亮饱和的色彩，次表面散射的皮肤质感，光滑的曲面", "en_value": "Pixar animation style, stylized 3D characters, expressive features, bright saturated colors, subsurface scattering skin texture, smooth curved surfaces"},
+            {"name": "热血少年漫风", "description": "少年漫画风格，动态速度线，戏剧化的黑白对比，大胆的构图，高对比度的画面", "en_value": "Shonen manga style, dynamic speed lines, dramatic black and white contrast, bold composition, high contrast"},
+            {"name": "90年代赛璐珞手绘动画", "description": "1990年代赛璐珞手绘动画，手绘画面，可见笔触，柔和的胶片颗粒，复古动漫质感", "en_value": "1990s cel-drawn animation, hand-drawn visuals, visible brushstrokes, soft film grain, retro anime texture"},
+            {"name": "80年代复古动画", "description": "1980年代复古动漫，颗粒纹理，柔和色调，手绘的不完美感", "en_value": "1980s retro anime, grain texture, soft tones, hand-drawn imperfection"},
+            {"name": "暗黑哥特动画", "description": "暗黑哥特动漫，浓重阴影，戏剧化的明暗对比，华丽细节，阴郁氛围", "en_value": "Dark gothic anime, heavy shadows, dramatic chiaroscuro, ornate details, gloomy atmosphere"},
+            {"name": "蒸汽波动画", "description": "蒸汽波动漫美学，霓虹粉和青蓝，故障效果，复古未来主义，梦幻朦胧", "en_value": "Vaporwave anime aesthetic, neon pink and cyan, glitch effects, retro futurism, dreamy haze"},
+            {"name": "赛博朋克边缘行者风", "description": "赛博朋克边缘行者风格，霓虹灯照明，高对比度，粗粝都市，机械细节", "en_value": "Cyberpunk Edgerunners style, neon lighting, high contrast, gritty urban, mechanical details"}
+          ]
+        },
+        {
+          "name": {"zh": "写实/电影类", "en": "Realistic/Cinematic"},
+          "items": [
+            {"name": "UE5电影写实", "description": "虚幻引擎5电影级渲染，照片级真实，PBR材质，光线追踪，全局光照，8K", "en_value": "Unreal Engine 5 cinematic rendering, photorealistic, PBR materials, ray tracing, global illumination, 8K"},
+            {"name": "照片级写实", "description": "照片级写实，超高细节，8K分辨率，真实纹理，自然光线", "en_value": "Photorealistic, ultra-high detail, 8K resolution, realistic textures, natural lighting"},
+            {"name": "经典好莱坞电影风", "description": "经典好莱坞电影感，黄金时代布光，戏剧性阴影，胶片颗粒，35mm胶片质感", "en_value": "Classic Hollywood cinematic feel, Golden Age lighting, dramatic shadows, film grain, 35mm film texture"},
+            {"name": "纪录片质感", "description": "纪录片风格，自然光线，手持摄影感，真实世界纹理", "en_value": "Documentary style, natural lighting, handheld camera feel, realistic world textures"}
+          ]
+        },
+        {
+          "name": {"zh": "艺术/绘画类", "en": "Art/Painting Style"},
+          "items": [
+            {"name": "水墨古风", "description": "中国传统水墨画风格，浓淡变化的墨色，流动的晕染渐变，极简留白，古典意境", "en_value": "Chinese traditional ink painting style, varying ink density, flowing diffusion gradients, minimalistic white space, classical artistic conception"},
+            {"name": "工笔画", "description": "工笔细描风格，精致均匀的轮廓线条，平涂色彩填充，古典韵味", "en_value": "Gongbi fine brushwork style, delicate even outline strokes, flat color fills, classical charm"},
+            {"name": "浮世绘", "description": "浮世绘日本木版画风格，平面色彩，粗轮廓线，装饰性图案", "en_value": "Ukiyo-e Japanese woodblock print style, flat colors, bold outlines, decorative patterns"},
+            {"name": "印象派油画", "description": "印象派油画，可见笔触，斑驳光线，鲜艳色调", "en_value": "Impressionist oil painting, visible brushstrokes, dappled light, vivid tones"},
+            {"name": "水彩渲染", "description": "水彩画，湿画法，色彩渗透，柔和边缘，半透明层次", "en_value": "Watercolor rendering, wet technique, color bleeding, soft edges, translucent layers"},
+            {"name": "彩色铅笔手绘", "description": "手绘线条，层次排线，纹理质感，手工感", "en_value": "Colored pencil hand-drawn, layered strokes, texture feel, handmade aesthetic"},
+            {"name": "钢笔淡彩", "description": "精细线条加水彩薄涂风格，清晰墨线，淡色渲染，速写本质感", "en_value": "Fine pen and watercolor wash style, clear ink lines, light color rendering, sketch essence texture"},
+            {"name": "版画/木刻", "description": "版画风格，粗黑线条，有限色块，强烈的黑白对比", "en_value": "Printmaking/woodcut style, bold black lines, limited color blocks, strong black and white contrast"},
+            {"name": "低多边形", "description": "低多边形3D风格，几何切面，平面着色，简化形态", "en_value": "Low poly 3D style, geometric facets, flat shading, simplified forms"},
+            {"name": "像素艺术", "description": "像素艺术，8-bit或16-bit，可见像素点，有限调色板", "en_value": "Pixel art, 8-bit or 16-bit, visible pixel points, limited palette"},
+            {"name": "黏土/橡皮泥风", "description": "黏土动画风格，橡皮泥质感，指纹痕迹，定格动画感", "en_value": "Claymation style, plasticine texture, fingerprint traces, stop-motion feel"}
+          ]
+        },
+        {
+          "name": {"zh": "年代/复古类", "en": "Era/Vintage Style"},
+          "items": [
+            {"name": "80年代霓虹复古", "description": "1980年代霓虹复古，合成器波美学，霓虹网格线，发光边缘，紫色和青色配色", "en_value": "1980s neon retro, synthwave aesthetic, neon grid lines, glowing edges, purple and cyan palette"},
+            {"name": "民国月份牌风", "description": "1920年代上海月份牌广告画风格，复古广告艺术，柔和的水彩渲染，优雅姿态", "en_value": "1920s Shanghai monthly calendar advertisement style, retro advertising art, soft watercolor rendering, elegant poses"},
+            {"name": "维多利亚时代插画", "description": "维多利亚时代插画，雕刻般的线条，华丽边框，棕褐色调，19世纪书版画风格", "en_value": "Victorian era illustration, engraved line quality, ornate borders, sepia tones, 19th century book illustration style"},
+            {"name": "中世纪手抄本风", "description": "中世纪手抄本风格，金箔点缀，装饰性首字母，古朴纸张纹理，宗教图像感", "en_value": "Medieval manuscript style, gold leaf accents, decorative initials, antique paper texture, religious iconography feel"}
+          ]
+        },
+        {
+          "name": {"zh": "地域/民族类", "en": "Regional/Ethnic Style"},
+          "items": [
+            {"name": "北欧极简风", "description": "北欧极简设计，干净线条，柔和色调，功能性简洁，自然光线", "en_value": "Nordic minimalist design, clean lines, soft tones, functional simplicity, natural lighting"},
+            {"name": "非洲部落艺术", "description": "非洲部落艺术，粗犷几何图案，大地色调，面具风格设计，节奏感构图", "en_value": "African tribal art, bold geometric patterns, earth tones, mask-style design, rhythmic composition"},
+            {"name": "阿拉伯几何纹样", "description": "伊斯兰几何艺术，精细的镶嵌图案，阿拉伯藤蔓纹，金色和蓝色，数学精度", "en_value": "Islamic geometric art, intricate tessellation patterns, Arabic arabesques, gold and blue, mathematical precision"}
+          ]
+        },
+        {
+          "name": {"zh": "特殊质感/材质类", "en": "Special Texture/Material"},
+          "items": [
+            {"name": "粉笔画/黑板报风", "description": "粉笔质感，柔和颗粒，深色背景上的明亮色彩", "en_value": "Chalk drawing/blackboard style, soft particles, bright colors on dark background"},
+            {"name": "剪纸/纸雕风", "description": "剪纸艺术，层叠纸张效果，锐利边缘，立体阴影，民间艺术纸工艺", "en_value": "Papercut/paper carving art, layered paper effect, sharp edges, dimensional shadows, folk paper craft"},
+            {"name": "全息投影/镭射", "description": "全息投影，彩虹色，光的衍射，彩虹光泽，未来感展示", "en_value": "Holographic projection, iridescent colors, light diffraction, rainbow sheen, futuristic display"}
+          ]
+        },
+        {
+          "name": {"zh": "概念/实验类", "en": "Conceptual/Experimental"},
+          "items": [
+            {"name": "赛博朋克", "description": "赛博朋克，霓虹灯，雨湿街道，全息投影，高科技低生活，反乌托邦", "en_value": "Cyberpunk, neon lights, rain-wet streets, holographic projections, high-tech low-life, dystopia"},
+            {"name": "末世废土", "description": "后末日废土，铁锈和腐烂，贫瘠景观，拼凑科技，褪色色调", "en_value": "Post-apocalyptic wasteland, rust and decay, barren landscapes, patched technology, faded tones"},
+            {"name": "蒸汽朋克", "description": "蒸汽朋克，黄铜和铜，维多利亚机械，蒸汽动力，齿轮和发条", "en_value": "Steampunk, brass and copper, Victorian machinery, steam power, gears and clockwork"},
+            {"name": "童话绘本风", "description": "儿童绘本插画，柔和梦幻色彩，故事书魅力，温柔质感", "en_value": "Children's picture book illustration, soft dreamy colors, storybook charm, gentle textures"},
+            {"name": "超现实主义", "description": "超现实主义，梦境逻辑，不可能的图像，融化形态", "en_value": "Surrealism, dream logic, impossible images, melting forms"},
+            {"name": "故障艺术", "description": "故障艺术，数字损坏，RGB偏移，像素排序，屏幕撕裂", "en_value": "Glitch art, digital corruption, RGB shift, pixel sorting, screen tearing"},
+            {"name": "禅意/侘寂", "description": "侘寂美学，不完美之美，自然材质，质朴简洁，宁静氛围", "en_value": "Zen/Wabi-sabi aesthetics, beauty of imperfection, natural materials, rustic simplicity, serene atmosphere"}
+          ]
+        }
+      ],
+      "hasCustom": true,
+      "defaultSelected": "三渲二渲染的3D动漫，粗犷的黑色轮廓线，双色调阴影带有细腻的中灰过渡，冷色调为主，色彩饱和度高，锐利的镜面高光"
+    },
+    "style_advanced": {
+      "label": {"zh": "高级质感", "en": "Advanced Textures"},
+      "type": "select",
+      "multiple": true,
+      "categories": [
+        {
+          "name": {"zh": "画质分辨率", "en": "Quality Resolution"},
+          "items": [
+            {"value": "standard quality", "label": "标准", "en_value": "Standard"},
+            {"value": "HD 1080P", "label": "高清(1080P)", "en_value": "HD 1080P"},
+            {"value": "2K resolution", "label": "2K", "en_value": "2K"},
+            {"value": "4K resolution", "label": "4K", "en_value": "4K"},
+            {"value": "8K resolution", "label": "8K", "en_value": "8K"}
+          ]
+        },
+        {
+          "name": {"zh": "颗粒质感", "en": "Grain Texture"},
+          "items": [
+            {"value": "no grain", "label": "无颗粒", "en_value": "No grain"},
+            {"value": "subtle noise", "label": "轻微噪点", "en_value": "Subtle noise"},
+            {"value": "fine film grain", "label": "胶片颗粒(细)", "en_value": "Fine film grain"},
+            {"value": "coarse film grain", "label": "胶片颗粒(粗)", "en_value": "Coarse film grain"},
+            {"value": "rough texture", "label": "粗粝质感", "en_value": "Rough texture"},
+            {"value": "vintage 16mm", "label": "复古16mm", "en_value": "Vintage 16mm"},
+            {"value": "vintage 8mm", "label": "复古8mm", "en_value": "Vintage 8mm"}
+          ]
+        },
+        {
+          "name": {"zh": "景深", "en": "Depth of Field"},
+          "items": [
+            {"value": "no depth of field", "label": "无", "en_value": "None"},
+            {"value": "shallow depth background blur", "label": "浅景深(背景虚化)", "en_value": "Shallow DoF"},
+            {"value": "deep depth full clarity", "label": "深景深(全清晰)", "en_value": "Deep DoF"},
+            {"value": "tilt shift effect", "label": "移轴效果", "en_value": "Tilt shift"}
+          ]
+        },
+        {
+          "name": {"zh": "电影感光影", "en": "Cinematic Lighting"},
+          "items": [
+            {"value": "no cinematic lighting", "label": "无", "en_value": "None"},
+            {"value": "three-point lighting", "label": "电影级三点布光", "en_value": "Three-point lighting"},
+            {"value": "dramatic side lighting", "label": "戏剧性侧光", "en_value": "Dramatic side lighting"},
+            {"value": "volumetric light rays", "label": "体积光(丁达尔)", "en_value": "Volumetric rays"},
+            {"value": "lens flare", "label": "镜头光晕", "en_value": "Lens flare"},
+            {"value": "glare", "label": "眩光", "en_value": "Glare"},
+            {"value": "light spots", "label": "光斑", "en_value": "Light spots"}
+          ]
+        },
+        {
+          "name": {"zh": "锐度", "en": "Sharpness"},
+          "items": [
+            {"value": "standard sharpness", "label": "标准", "en_value": "Standard"},
+            {"value": "soft focus", "label": "柔焦", "en_value": "Soft focus"},
+            {"value": "soft lens effect", "label": "柔光镜效果", "en_value": "Soft lens effect"},
+            {"value": "sharp clear", "label": "锐利清晰", "en_value": "Sharp clear"},
+            {"value": "ultra sharp", "label": "超锐", "en_value": "Ultra sharp"}
+          ]
+        },
+        {
+          "name": {"zh": "暗角", "en": "Vignetting"},
+          "items": [
+            {"value": "no vignetting", "label": "无", "en_value": "None"},
+            {"value": "slight vignetting", "label": "轻微", "en_value": "Slight"},
+            {"value": "medium vignetting", "label": "中等", "en_value": "Medium"},
+            {"value": "strong vignetting", "label": "强", "en_value": "Strong"},
+            {"value": "vintage vignetting", "label": "复古暗角", "en_value": "Vintage"}
+          ]
+        },
+        {
+          "name": {"zh": "镜头畸变", "en": "Lens Distortion"},
+          "items": [
+            {"value": "no distortion", "label": "无", "en_value": "None"},
+            {"value": "slight barrel distortion", "label": "轻微桶形畸变", "en_value": "Slight barrel"},
+            {"value": "pincushion distortion", "label": "枕形畸变", "en_value": "Pincushion"},
+            {"value": "fisheye effect", "label": "鱼眼效果", "en_value": "Fisheye"}
+          ]
+        },
+        {
+          "name": {"zh": "色散/色差", "en": "Chromatic Aberration"},
+          "items": [
+            {"value": "no chromatic aberration", "label": "无", "en_value": "None"},
+            {"value": "slight chromatic aberration", "label": "轻微色散", "en_value": "Slight"},
+            {"value": "strong chromatic aberration", "label": "强色散", "en_value": "Strong"},
+            {"value": "cinematic chromatic aberration", "label": "电影级色差", "en_value": "Cinematic"}
+          ]
+        },
+        {
+          "name": {"zh": "胶片模拟", "en": "Film Simulation"},
+          "items": [
+            {"value": "no film simulation", "label": "无", "en_value": "None"},
+            {"value": "Kodak Portra", "label": "Kodak Portra", "en_value": "Kodak Portra"},
+            {"value": "Fuji Velvia", "label": "Fuji Velvia", "en_value": "Fuji Velvia"},
+            {"value": "Kodak Tri-X", "label": "Kodak Tri-X", "en_value": "Kodak Tri-X"},
+            {"value": "Ilford HP5", "label": "Ilford HP5", "en_value": "Ilford HP5"}
+          ]
+        },
+        {
+          "name": {"zh": "艺术化处理", "en": "Artistic Processing"},
+          "items": [
+            {"value": "no artistic processing", "label": "无", "en_value": "None"},
+            {"value": "LUT color grading", "label": "LUT调色", "en_value": "LUT color grading"},
+            {"value": "bleach bypass", "label": "漂白效果", "en_value": "Bleach bypass"},
+            {"value": "cross process", "label": "交叉冲印", "en_value": "Cross process"},
+            {"value": "color separation", "label": "色调分离", "en_value": "Color separation"}
+          ]
+        }
+      ],
+      "hasCustom": true,
+      "collapsible": true
+    },
+    "aspect_ratio": {
+      "label": {"zh": "画面比例", "en": "Aspect Ratio"},
+      "type": "select",
+      "items": [
+        {"value": "1:1", "label": "1:1", "en_value": "1:1"},
+        {"value": "3:2", "label": "3:2", "en_value": "3:2"},
+        {"value": "4:3", "label": "4:3", "en_value": "4:3"},
+        {"value": "16:9", "label": "16:9", "en_value": "16:9"},
+        {"value": "9:16", "label": "9:16", "en_value": "9:16"},
+        {"value": "2.35:1", "label": "2.35:1", "en_value": "2.35:1"}
+      ],
+      "hasCustom": true,
+      "defaultSelected": "16:9"
+    },
+    "image_weight": {
+      "label": {"zh": "图片参考权重", "en": "Image Reference Weight"},
+      "type": "slider",
+      "min": 0.1,
+      "max": 2.0,
+      "step": 0.1,
+      "default": 1.0
+    },
+    "negative_prompts": {
+      "label": {"zh": "负面提示词", "en": "Negative Prompts"},
+      "type": "select",
+      "items": [
+        {"value": "no watermark", "label": "no watermark", "en_value": "no watermark"},
+        {"value": "no text", "label": "no text", "en_value": "no text"},
+        {"value": "no body distortion", "label": "no body distortion", "en_value": "no body distortion"},
+        {"value": "no floating objects", "label": "no floating objects", "en_value": "no floating objects"}
+      ],
+      "hasCustom": true,
+      "multiple": true,
+      "defaultSelected": ["no watermark", "no text", "no body distortion", "no floating objects"]
+    }
+  },
+  "T5": {
+    "subject": {
+      "label": {"zh": "主体", "en": "Subject"},
+      "type": "input",
+      "placeholder": {"zh": "输入主体名称", "en": "Enter subject name"}
+    },
+    "scene": {
+      "label": {"zh": "场景", "en": "Scene"},
+      "type": "input",
+      "placeholder": {"zh": "输入场景名称", "en": "Enter scene name"}
+    },
+    "prop": {
+      "label": {"zh": "道具", "en": "Prop"},
+      "type": "input",
+      "placeholder": {"zh": "输入道具名称", "en": "Enter prop name"}
+    },
+    "image_weight": {
+      "label": {"zh": "图片参考权重", "en": "Image Reference Weight"},
+      "type": "slider",
+      "min": 0.1,
+      "max": 2.0,
+      "step": 0.1,
+      "default": 1.0
+    },
+    "action_description": {
+      "label": {"zh": "动作描述", "en": "Action Description"},
+      "type": "select",
+      "items": [
+        {"value": "静态站立", "label": "静态站立", "en_value": "standing still"},
+        {"value": "缓缓抬头", "label": "缓缓抬头", "en_value": "slowly raising head"},
+        {"value": "微风吹动头发", "label": "微风吹动头发", "en_value": "wind blowing hair"},
+        {"value": "眨眼", "label": "眨眼", "en_value": "blinking"},
+        {"value": "走路", "label": "走路", "en_value": "walking"},
+        {"value": "跑步", "label": "跑步", "en_value": "running"},
+        {"value": "颠球", "label": "颠球", "en_value": "juggling ball"},
+        {"value": "抽射", "label": "抽射", "en_value": "shooting"},
+        {"value": "扑救", "label": "扑救", "en_value": "saving"},
+        {"value": "头球", "label": "头球", "en_value": "heading"},
+        {"value": "盘带", "label": "盘带", "en_value": "dribbling"},
+        {"value": "转身", "label": "转身", "en_value": "turning around"},
+        {"value": "挥手", "label": "挥手", "en_value": "waving"},
+        {"value": "指向", "label": "指向", "en_value": "pointing"},
+        {"value": "对话", "label": "对话", "en_value": "talking"},
+        {"value": "拥抱", "label": "拥抱", "en_value": "hugging"},
+        {"value": "击掌", "label": "击掌", "en_value": "high five"},
+        {"value": "坐下", "label": "坐下", "en_value": "sitting down"},
+        {"value": "起立", "label": "起立", "en_value": "standing up"}
+      ],
+      "hasCustom": true
+    },
+    "motion_intensity": {
+      "label": {"zh": "运动幅度", "en": "Motion Intensity"},
+      "type": "select",
+      "items": [
+        {"value": "轻微（仅头发衣角微动）", "label": "轻微（仅头发衣角微动）", "en_value": "Subtle (only hair/clothes movement)"},
+        {"value": "中等（肢体局部运动）", "label": "中等（肢体局部运动）", "en_value": "Moderate (partial body movement)"},
+        {"value": "剧烈（全身大幅度动作）", "label": "剧烈（全身大幅度动作）", "en_value": "Intense (full body movement)"}
+      ],
+      "hasCustom": true
+    },
+    "camera_movement": {
+      "label": {"zh": "运镜方式", "en": "Camera Movement"},
+      "type": "select",
+      "items": [
+        {"value": "固定机位", "label": "固定机位", "en_value": "Fixed camera"},
+        {"value": "缓慢前推", "label": "缓慢前推", "en_value": "Slow push-in"},
+        {"value": "缓慢后拉", "label": "缓慢后拉", "en_value": "Slow pull-back"},
+        {"value": "跟拍", "label": "跟拍", "en_value": "Tracking shot"},
+        {"value": "环绕", "label": "环绕", "en_value": "Orbital shot"},
+        {"value": "低角度仰拍", "label": "低角度仰拍", "en_value": "Low angle tilt up"},
+        {"value": "俯拍", "label": "俯拍", "en_value": "Top-down shot"},
+        {"value": "快速摇摄", "label": "快速摇摄", "en_value": "Fast pan"},
+        {"value": "主观视角POV", "label": "主观视角POV", "en_value": "POV shot"},
+        {"value": "缓慢前推至特写", "label": "缓慢前推至特写", "en_value": "Slow push to close-up"}
+      ],
+      "hasCustom": true
+    },
+    "lighting": {
+      "label": {"zh": "光线", "en": "Lighting"},
+      "type": "select",
+      "items": [
+        {"value": "保持原图光线", "label": "保持原图光线", "en_value": "Maintain original lighting"},
+        {"value": "金色黄昏", "label": "金色黄昏", "en_value": "Golden hour"},
+        {"value": "清晨白光", "label": "清晨白光", "en_value": "Morning white light"},
+        {"value": "正午强光", "label": "正午强光", "en_value": "Noon harsh light"},
+        {"value": "夜晚月光", "label": "夜晚月光", "en_value": "Night moonlight"},
+        {"value": "室内暖灯", "label": "室内暖灯", "en_value": "Indoor warm lamp"}
+      ],
+      "hasCustom": true
+    },
+    "style_base": {
+      "label": {"zh": "基础风格", "en": "Base Style"},
+      "type": "select",
+      "categories": [
+        {
+          "name": {"zh": "动漫/二次元类", "en": "Anime/Anime Style"},
+          "items": [
+            {"name": "赛璐珞三渲二(蓝锁风)", "description": "三渲二渲染的3D动漫，粗犷的黑色轮廓线，双色调阴影带有细腻的中灰过渡，冷色调为主，色彩饱和度高，锐利的镜面高光", "en_value": "Cel-shaded 3D anime, Blue Lock style, bold black outlines, two-tone cel shading with subtle mid-tones, high saturation cold colors, sharp specular highlights"},
+            {"name": "新海诚电影风", "description": "新海诚电影美学，电影级体积光，镜头光晕，高度细节化，鲜艳自然的色彩", "en_value": "Makoto Shinkai cinematic aesthetics, cinematic volumetric lighting, lens flare, hyper-detailed, vivid natural colors"},
+            {"name": "吉卜力柔和风", "description": "吉卜力工作室风格，柔和的手绘质感背景，温柔的阳光，水彩般透明的阴影，温暖的怀旧氛围", "en_value": "Studio Ghibli style, soft hand-drawn background textures, gentle sunlight, watercolor-like transparent shadows, warm nostalgic atmosphere"},
+            {"name": "美式卡通(皮克斯)", "description": "皮克斯动画风格，风格化的3D角色，富有表现力的表情，明亮饱和的色彩，次表面散射的皮肤质感，光滑的曲面", "en_value": "Pixar animation style, stylized 3D characters, expressive features, bright saturated colors, subsurface scattering skin texture, smooth curved surfaces"},
+            {"name": "热血少年漫风", "description": "少年漫画风格，动态速度线，戏剧化的黑白对比，大胆的构图，高对比度的画面", "en_value": "Shonen manga style, dynamic speed lines, dramatic black and white contrast, bold composition, high contrast"},
+            {"name": "90年代赛璐珞手绘动画", "description": "1990年代赛璐珞手绘动画，手绘画面，可见笔触，柔和的胶片颗粒，复古动漫质感", "en_value": "1990s cel-drawn animation, hand-drawn visuals, visible brushstrokes, soft film grain, retro anime texture"},
+            {"name": "80年代复古动画", "description": "1980年代复古动漫，颗粒纹理，柔和色调，手绘的不完美感", "en_value": "1980s retro anime, grain texture, soft tones, hand-drawn imperfection"},
+            {"name": "暗黑哥特动画", "description": "暗黑哥特动漫，浓重阴影，戏剧化的明暗对比，华丽细节，阴郁氛围", "en_value": "Dark gothic anime, heavy shadows, dramatic chiaroscuro, ornate details, gloomy atmosphere"},
+            {"name": "蒸汽波动画", "description": "蒸汽波动漫美学，霓虹粉和青蓝，故障效果，复古未来主义，梦幻朦胧", "en_value": "Vaporwave anime aesthetic, neon pink and cyan, glitch effects, retro futurism, dreamy haze"},
+            {"name": "赛博朋克边缘行者风", "description": "赛博朋克边缘行者风格，霓虹灯照明，高对比度，粗粝都市，机械细节", "en_value": "Cyberpunk Edgerunners style, neon lighting, high contrast, gritty urban, mechanical details"}
+          ]
+        },
+        {
+          "name": {"zh": "写实/电影类", "en": "Realistic/Cinematic"},
+          "items": [
+            {"name": "UE5电影写实", "description": "虚幻引擎5电影级渲染，照片级真实，PBR材质，光线追踪，全局光照，8K", "en_value": "Unreal Engine 5 cinematic rendering, photorealistic, PBR materials, ray tracing, global illumination, 8K"},
+            {"name": "照片级写实", "description": "照片级写实，超高细节，8K分辨率，真实纹理，自然光线", "en_value": "Photorealistic, ultra-high detail, 8K resolution, realistic textures, natural lighting"},
+            {"name": "经典好莱坞电影风", "description": "经典好莱坞电影感，黄金时代布光，戏剧性阴影，胶片颗粒，35mm胶片质感", "en_value": "Classic Hollywood cinematic feel, Golden Age lighting, dramatic shadows, film grain, 35mm film texture"},
+            {"name": "纪录片质感", "description": "纪录片风格，自然光线，手持摄影感，真实世界纹理", "en_value": "Documentary style, natural lighting, handheld camera feel, realistic world textures"}
+          ]
+        },
+        {
+          "name": {"zh": "艺术/绘画类", "en": "Art/Painting Style"},
+          "items": [
+            {"name": "水墨古风", "description": "中国传统水墨画风格，浓淡变化的墨色，流动的晕染渐变，极简留白，古典意境", "en_value": "Chinese traditional ink painting style, varying ink density, flowing diffusion gradients, minimalistic white space, classical artistic conception"},
+            {"name": "工笔画", "description": "工笔细描风格，精致均匀的轮廓线条，平涂色彩填充，古典韵味", "en_value": "Gongbi fine brushwork style, delicate even outline strokes, flat color fills, classical charm"},
+            {"name": "浮世绘", "description": "浮世绘日本木版画风格，平面色彩，粗轮廓线，装饰性图案", "en_value": "Ukiyo-e Japanese woodblock print style, flat colors, bold outlines, decorative patterns"},
+            {"name": "印象派油画", "description": "印象派油画，可见笔触，斑驳光线，鲜艳色调", "en_value": "Impressionist oil painting, visible brushstrokes, dappled light, vivid tones"},
+            {"name": "水彩渲染", "description": "水彩画，湿画法，色彩渗透，柔和边缘，半透明层次", "en_value": "Watercolor rendering, wet technique, color bleeding, soft edges, translucent layers"},
+            {"name": "彩色铅笔手绘", "description": "手绘线条，层次排线，纹理质感，手工感", "en_value": "Colored pencil hand-drawn, layered strokes, texture feel, handmade aesthetic"},
+            {"name": "钢笔淡彩", "description": "精细线条加水彩薄涂风格，清晰墨线，淡色渲染，速写本质感", "en_value": "Fine pen and watercolor wash style, clear ink lines, light color rendering, sketch essence texture"},
+            {"name": "版画/木刻", "description": "版画风格，粗黑线条，有限色块，强烈的黑白对比", "en_value": "Printmaking/woodcut style, bold black lines, limited color blocks, strong black and white contrast"},
+            {"name": "低多边形", "description": "低多边形3D风格，几何切面，平面着色，简化形态", "en_value": "Low poly 3D style, geometric facets, flat shading, simplified forms"},
+            {"name": "像素艺术", "description": "像素艺术，8-bit或16-bit，可见像素点，有限调色板", "en_value": "Pixel art, 8-bit or 16-bit, visible pixel points, limited palette"},
+            {"name": "黏土/橡皮泥风", "description": "黏土动画风格，橡皮泥质感，指纹痕迹，定格动画感", "en_value": "Claymation style, plasticine texture, fingerprint traces, stop-motion feel"}
+          ]
+        },
+        {
+          "name": {"zh": "年代/复古类", "en": "Era/Vintage Style"},
+          "items": [
+            {"name": "80年代霓虹复古", "description": "1980年代霓虹复古，合成器波美学，霓虹网格线，发光边缘，紫色和青色配色", "en_value": "1980s neon retro, synthwave aesthetic, neon grid lines, glowing edges, purple and cyan palette"},
+            {"name": "民国月份牌风", "description": "1920年代上海月份牌广告画风格，复古广告艺术，柔和的水彩渲染，优雅姿态", "en_value": "1920s Shanghai monthly calendar advertisement style, retro advertising art, soft watercolor rendering, elegant poses"},
+            {"name": "维多利亚时代插画", "description": "维多利亚时代插画，雕刻般的线条，华丽边框，棕褐色调，19世纪书版画风格", "en_value": "Victorian era illustration, engraved line quality, ornate borders, sepia tones, 19th century book illustration style"},
+            {"name": "中世纪手抄本风", "description": "中世纪手抄本风格，金箔点缀，装饰性首字母，古朴纸张纹理，宗教图像感", "en_value": "Medieval manuscript style, gold leaf accents, decorative initials, antique paper texture, religious iconography feel"}
+          ]
+        },
+        {
+          "name": {"zh": "地域/民族类", "en": "Regional/Ethnic Style"},
+          "items": [
+            {"name": "北欧极简风", "description": "北欧极简设计，干净线条，柔和色调，功能性简洁，自然光线", "en_value": "Nordic minimalist design, clean lines, soft tones, functional simplicity, natural lighting"},
+            {"name": "非洲部落艺术", "description": "非洲部落艺术，粗犷几何图案，大地色调，面具风格设计，节奏感构图", "en_value": "African tribal art, bold geometric patterns, earth tones, mask-style design, rhythmic composition"},
+            {"name": "阿拉伯几何纹样", "description": "伊斯兰几何艺术，精细的镶嵌图案，阿拉伯藤蔓纹，金色和蓝色，数学精度", "en_value": "Islamic geometric art, intricate tessellation patterns, Arabic arabesques, gold and blue, mathematical precision"}
+          ]
+        },
+        {
+          "name": {"zh": "特殊质感/材质类", "en": "Special Texture/Material"},
+          "items": [
+            {"name": "粉笔画/黑板报风", "description": "粉笔质感，柔和颗粒，深色背景上的明亮色彩", "en_value": "Chalk drawing/blackboard style, soft particles, bright colors on dark background"},
+            {"name": "剪纸/纸雕风", "description": "剪纸艺术，层叠纸张效果，锐利边缘，立体阴影，民间艺术纸工艺", "en_value": "Papercut/paper carving art, layered paper effect, sharp edges, dimensional shadows, folk paper craft"},
+            {"name": "全息投影/镭射", "description": "全息投影，彩虹色，光的衍射，彩虹光泽，未来感展示", "en_value": "Holographic projection, iridescent colors, light diffraction, rainbow sheen, futuristic display"}
+          ]
+        },
+        {
+          "name": {"zh": "概念/实验类", "en": "Conceptual/Experimental"},
+          "items": [
+            {"name": "赛博朋克", "description": "赛博朋克，霓虹灯，雨湿街道，全息投影，高科技低生活，反乌托邦", "en_value": "Cyberpunk, neon lights, rain-wet streets, holographic projections, high-tech low-life, dystopia"},
+            {"name": "末世废土", "description": "后末日废土，铁锈和腐烂，贫瘠景观，拼凑科技，褪色色调", "en_value": "Post-apocalyptic wasteland, rust and decay, barren landscapes, patched technology, faded tones"},
+            {"name": "蒸汽朋克", "description": "蒸汽朋克，黄铜和铜，维多利亚机械，蒸汽动力，齿轮和发条", "en_value": "Steampunk, brass and copper, Victorian machinery, steam power, gears and clockwork"},
+            {"name": "童话绘本风", "description": "儿童绘本插画，柔和梦幻色彩，故事书魅力，温柔质感", "en_value": "Children's picture book illustration, soft dreamy colors, storybook charm, gentle textures"},
+            {"name": "超现实主义", "description": "超现实主义，梦境逻辑，不可能的图像，融化形态", "en_value": "Surrealism, dream logic, impossible images, melting forms"},
+            {"name": "故障艺术", "description": "故障艺术，数字损坏，RGB偏移，像素排序，屏幕撕裂", "en_value": "Glitch art, digital corruption, RGB shift, pixel sorting, screen tearing"},
+            {"name": "禅意/侘寂", "description": "侘寂美学，不完美之美，自然材质，质朴简洁，宁静氛围", "en_value": "Zen/Wabi-sabi aesthetics, beauty of imperfection, natural materials, rustic simplicity, serene atmosphere"}
+          ]
+        },
+        {
+          "name": {"zh": "视频专属风格", "en": "Video-Specific Styles"},
+          "items": [
+            {"value": "动态漫画，漫画分镜镜头，速度线，集中线，拟声词特效", "label": "动态漫画风", "en_value": "Dynamic manga, comic panel shots, speed lines, focus lines, onomatopoeia effects"},
+            {"value": "电影预告片质感，快速剪辑，强节奏，戏剧性光影，宏大配乐感", "label": "电影预告片质感", "en_value": "Movie trailer quality, fast cutting, strong rhythm, dramatic lighting, grand soundtrack feel"},
+            {"value": "MV音乐视频风格，节奏性镜头运动，情绪化调色，艺术化构图", "label": "MV音乐视频风", "en_value": "MV music video style, rhythmic camera movement, emotional color grading, artistic composition"},
+            {"value": "慢动作升格拍摄，时间被拉伸，每一个细节清晰可见", "label": "慢动作升格", "en_value": "Slow motion footage, time stretched, every detail clearly visible"},
+            {"value": "延时摄影，云层快速流动，光影在短时间内剧烈变化", "label": "延时摄影", "en_value": "Time-lapse photography, clouds moving quickly, dramatic lighting changes in short time"}
+          ]
+        }
+      ],
+      "hasCustom": true,
+      "defaultSelected": "三渲二渲染的3D动漫，粗犷的黑色轮廓线，双色调阴影带有细腻的中灰过渡，冷色调为主，色彩饱和度高，锐利的镜面高光"
+    },
+    "style_advanced": {
+      "label": {"zh": "高级质感", "en": "Advanced Textures"},
+      "type": "select",
+      "multiple": true,
+      "categories": [
+        {
+          "name": {"zh": "画质分辨率", "en": "Quality Resolution"},
+          "items": [
+            {"value": "standard quality", "label": "标准", "en_value": "Standard"},
+            {"value": "HD 1080P", "label": "高清(1080P)", "en_value": "HD 1080P"},
+            {"value": "2K resolution", "label": "2K", "en_value": "2K"},
+            {"value": "4K resolution", "label": "4K", "en_value": "4K"},
+            {"value": "8K resolution", "label": "8K", "en_value": "8K"}
+          ]
+        },
+        {
+          "name": {"zh": "颗粒质感", "en": "Grain Texture"},
+          "items": [
+            {"value": "no grain", "label": "无颗粒", "en_value": "No grain"},
+            {"value": "subtle noise", "label": "轻微噪点", "en_value": "Subtle noise"},
+            {"value": "fine film grain", "label": "胶片颗粒(细)", "en_value": "Fine film grain"},
+            {"value": "coarse film grain", "label": "胶片颗粒(粗)", "en_value": "Coarse film grain"},
+            {"value": "vintage 16mm", "label": "复古16mm", "en_value": "Vintage 16mm"}
+          ]
+        },
+        {
+          "name": {"zh": "运动模糊", "en": "Motion Blur"},
+          "items": [
+            {"value": "no motion blur", "label": "无", "en_value": "None"},
+            {"value": "slight motion blur", "label": "轻微", "en_value": "Slight"},
+            {"value": "standard motion blur", "label": "标准", "en_value": "Standard"},
+            {"value": "strong motion blur", "label": "强烈", "en_value": "Strong"},
+            {"value": "stop motion style", "label": "定格动画感", "en_value": "Stop motion"}
+          ]
+        },
+        {
+          "name": {"zh": "电影感光影", "en": "Cinematic Lighting"},
+          "items": [
+            {"value": "no cinematic lighting", "label": "无", "en_value": "None"},
+            {"value": "cinematic color grading", "label": "电影级调色", "en_value": "Cinematic grading"},
+            {"value": "lens flare", "label": "镜头光晕", "en_value": "Lens flare"},
+            {"value": "glare", "label": "眩光", "en_value": "Glare"},
+            {"value": "light spots", "label": "光斑", "en_value": "Light spots"}
+          ]
+        },
+        {
+          "name": {"zh": "帧率感", "en": "Frame Rate Feel"},
+          "items": [
+            {"value": "standard 24fps", "label": "标准24fps", "en_value": "Standard 24fps"},
+            {"value": "high frame rate 60fps", "label": "高帧率60fps", "en_value": "60fps"},
+            {"value": "slow motion feel", "label": "慢动作感", "en_value": "Slow motion"},
+            {"value": "frame抽帧效果", "label": "抽帧效果", "en_value": "Frame sampling"}
+          ]
+        },
+        {
+          "name": {"zh": "暗角", "en": "Vignetting"},
+          "items": [
+            {"value": "no vignetting", "label": "无", "en_value": "None"},
+            {"value": "slight vignetting", "label": "轻微", "en_value": "Slight"},
+            {"value": "medium vignetting", "label": "中等", "en_value": "Medium"},
+            {"value": "strong vignetting", "label": "强", "en_value": "Strong"},
+            {"value": "vintage vignetting", "label": "复古暗角", "en_value": "Vintage"}
+          ]
+        },
+        {
+          "name": {"zh": "色散/色差", "en": "Chromatic Aberration"},
+          "items": [
+            {"value": "no chromatic aberration", "label": "无", "en_value": "None"},
+            {"value": "slight chromatic aberration", "label": "轻微色散", "en_value": "Slight"},
+            {"value": "strong chromatic aberration", "label": "强色散", "en_value": "Strong"}
+          ]
+        },
+        {
+          "name": {"zh": "胶片模拟", "en": "Film Simulation"},
+          "items": [
+            {"value": "no film simulation", "label": "无", "en_value": "None"},
+            {"value": "Kodak Portra", "label": "Kodak Portra", "en_value": "Kodak Portra"},
+            {"value": "Fuji Velvia", "label": "Fuji Velvia", "en_value": "Fuji Velvia"},
+            {"value": "Kodak Tri-X", "label": "Kodak Tri-X", "en_value": "Kodak Tri-X"}
+          ]
+        },
+        {
+          "name": {"zh": "艺术化处理", "en": "Artistic Processing"},
+          "items": [
+            {"value": "no artistic processing", "label": "无", "en_value": "None"},
+            {"value": "LUT color grading", "label": "LUT调色", "en_value": "LUT color grading"},
+            {"value": "bleach bypass", "label": "漂白效果", "en_value": "Bleach bypass"},
+            {"value": "cross process", "label": "交叉冲印", "en_value": "Cross process"},
+            {"value": "color separation", "label": "色调分离", "en_value": "Color separation"}
+          ]
+        }
+      ],
+      "hasCustom": true,
+      "collapsible": true
+    },
+    "aspect_ratio": {
+      "label": {"zh": "画面比例", "en": "Aspect Ratio"},
+      "type": "select",
+      "items": [
+        {"value": "1:1", "label": "1:1", "en_value": "1:1"},
+        {"value": "3:2", "label": "3:2", "en_value": "3:2"},
+        {"value": "4:3", "label": "4:3", "en_value": "4:3"},
+        {"value": "16:9", "label": "16:9", "en_value": "16:9"},
+        {"value": "9:16", "label": "9:16", "en_value": "9:16"},
+        {"value": "2.35:1", "label": "2.35:1", "en_value": "2.35:1"}
+      ],
+      "hasCustom": true,
+      "defaultSelected": "16:9"
+    },
+    "image_weight": {
+      "label": {"zh": "图片参考权重", "en": "Image Reference Weight"},
+      "type": "slider",
+      "min": 0.1,
+      "max": 2.0,
+      "step": 0.1,
+      "default": 1.0
+    },
+    "negative_prompts": {
+      "label": {"zh": "负面提示词", "en": "Negative Prompts"},
+      "type": "select",
+      "items": [
+        {"value": "no morphing", "label": "no morphing", "en_value": "no morphing"},
+        {"value": "no body distortion", "label": "no body distortion", "en_value": "no body distortion"},
+        {"value": "no shaky camera", "label": "no shaky camera", "en_value": "no shaky camera"},
+        {"value": "subject solid", "label": "subject solid", "en_value": "subject solid"},
+        {"value": "background stable", "label": "background stable", "en_value": "background stable"},
+        {"value": "no extra limbs", "label": "no extra limbs", "en_value": "no extra limbs"},
+        {"value": "no face change", "label": "no face change", "en_value": "no face change"}
+      ],
+      "hasCustom": true,
+      "multiple": true,
+      "defaultSelected": ["no morphing", "no body distortion", "no shaky camera", "subject solid", "background stable", "no extra limbs", "no face change"]
+    }
+  }
+}

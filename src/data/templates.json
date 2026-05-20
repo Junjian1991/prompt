@@ -1,0 +1,51 @@
+{
+  "T1": {
+    "name": {"zh": "人物/生物", "en": "Character/Creature"},
+    "icon": "👤",
+    "outputFormat": {
+      "zh": "一张高精度角色设定图，白色背景，纵向排版。\n上半部分为头部三视图（正面头部、侧面头部、背面头部），展示完整五官、脸型轮廓、发型细节、发质纹理。\n下半部分为全身三视图（正面、侧面、背面全身站姿）。\n头部三视图与全身三视图角色一致性强，五官统一，发型统一，服装统一，比例统一，\n适合作为角色建模参考图。\n光线统一，边缘清晰，背景纯净，图片不出现任何文字，纯白色背景，无阴影。\n\n【角色名】{{character_name}}\n【物种】{{species}}\n【性别】{{gender}}\n【年龄】{{age}}\n【脸型】{{face_shape}}\n【面部特征】{{face_features}}\n【发型】{{hair}}\n【身体特征】{{body}}\n【服饰搭配】{{clothing}}\n【配饰】{{accessories}}\n【特殊体征】{{special_features}}\n【整体气质】{{temperament}}\n【姿态动作】双手自然下垂，站姿自然，全身完整入镜\n【环境光线】光线统一，边缘清晰，背景纯净，纯白色背景，无阴影\n【风格】{{style}}\n【约束】无文字，无阴影，三视图无表情\n--ar {{aspect_ratio}} --iw {{image_weight}}",
+      "en": "A high-precision character design sheet, white background, vertical layout. \nUpper section: head turnaround (front head, side head, back head), showing full facial features, face shape, hairstyle details, and hair texture. \nLower section: full body turnaround (front, side, back standing pose). \nStrict consistency between head and body views in facial features, hairstyle, outfit, and proportions. \nSuitable as a character modeling reference sheet. \nUniform lighting, clean edges, pure white background, no text, no shadows. \n\n【Name】{{character_name_en}}\n【Species】{{species_en}}\n【Gender】{{gender_en}}\n【Age】{{age_en}}\n【Face Shape】{{face_shape_en}}\n【Facial Features】{{face_features_en}}\n【Hair】{{hair_en}}\n【Body】{{body_en}}\n【Clothing】{{clothing_en}}\n【Accessories】{{accessories_en}}\n【Special Features】{{special_features_en}}\n【Temperament】{{temperament_en}}\n【Pose】Standing naturally with arms at sides, full body in frame\n【Lighting】Unified lighting, clear edges, pure white background, no text, no shadows\n【Style】{{style_en}}\n【Constraints】No text, no shadows, neutral expression in all views\n--ar {{aspect_ratio_en}} --iw {{image_weight_en}}"
+    },
+    "speciesOptions": {
+      "animal": ["animal_species", "animal_fur_color", "animal_body_type", "animal_anthropomorphism"],
+      "beastman": ["beastman_base_species", "beastman_ratio", "beastman_features"],
+      "robot": ["robot_appearance", "robot_material", "robot_color", "robot_light_color"]
+    }
+  },
+  "T2": {
+    "name": {"zh": "场景", "en": "Scene"},
+    "icon": "🌆",
+    "outputFormat": {
+      "zh": "[使用上传的参考图1作为参考]\n【风格】{{style}}\n【环境光线】{{lighting}}，{{weather}}，{{time_of_day}}\n【镜头视角】{{camera_angle}}，{{shot_type}}，焦段{{focal_length}}，景深{{depth_of_field}}\n【场景描述】{{scene_description}}\n【颗粒感】{{grain}}，暗角{{vignetting}}\n【一致性约束】所有建筑、结构、物体的位置必须严格匹配参考图布局。相同的建筑特征、比例、空间关系。\n【背景约束】纯白背景，无文字，无背景阴影。\n【负面约束】{{negative_prompts}}\n--ar {{aspect_ratio}} --iw {{image_weight}}",
+      "en": "[Use uploaded reference image 1 as reference]\n【Style】{{style_en}}\n【Lighting】{{lighting_en}}, {{weather_en}}, {{time_of_day_en}}\n【Camera Angle】{{camera_angle_en}}, {{shot_type_en}}, focal length {{focal_length_en}}, depth of field {{depth_of_field_en}}\n【Scene Description】{{scene_description}}\n【Grain】{{grain_en}}, vignetting {{vignetting_en}}\n【Consistency Constraint】All buildings, structures, objects must strictly match reference image layout. Same architectural features, proportions, spatial relationships.\n【Background Constraint】Pure white background, no text, no background shadows.\n【Negative Prompts】{{negative_prompts}}\n--ar {{aspect_ratio_en}} --iw {{image_weight_en}}"
+    }
+  },
+  "T3": {
+    "name": {"zh": "道具", "en": "Prop"},
+    "icon": "🎒",
+    "outputFormat": {
+      "zh": "一张高精度道具建模参考图，白色背景，横向排版，\n画面从左至右依次排列三个视图：【正视图】、【侧视图】、【俯视图】。\n三个视图中的道具大小比例一致，角度准确对应。\n\n【道具描述】{{prop_description}}\n材质{{prop_material}}，表面{{prop_texture}}，状态{{prop_condition}}，颜色{{prop_color}}。\n光线统一，边缘清晰，背景纯净，图片不出现任何文字，纯白色背景，无阴影。\n【风格】{{style}}\n【负面约束】{{negative_prompts}}\n--ar {{aspect_ratio}} --iw {{image_weight}}",
+      "en": "A high-precision prop modeling reference, white background, horizontal layout,\nThree views arranged left to right: [Front View], [Side View], [Top View].\nConsistent scale and accurate angles across all views.\n\n【Prop Description】{{prop_description}}\n{{prop_material_en}} material, {{prop_texture_en}} surface, {{prop_condition_en}} condition, {{prop_color_en}} color.\nUnified lighting, clear edges, clean background, no text, pure white background, no shadows.\n【Style】{{style_en}}\n【Negative Prompts】{{negative_prompts}}\n--ar {{aspect_ratio_en}} --iw {{image_weight_en}}"
+    }
+  },
+  "T4": {
+    "name": {"zh": "合成", "en": "Composition"},
+    "icon": "🎬",
+    "outputFormat": {
+      "zh": "【参考图锚点】\n- {{subject}}：@上传{{subject}}的角色图\n- {{scene}}：@上传{{scene}}的场景图\n{{prop_line}}\n\n【合成描述】{{composition_description}}\n【镜头视角】{{camera_angle}}，{{shot_type}}\n【环境光线】{{lighting}}\n【融合约束】背景布局与场景一致，角色比例匹配，光影统一\n【风格】{{style}}\n【防畸变约束】no morphing, no body distortion, subject remains solid\n【负面约束】{{negative_prompts}}\n--ar {{aspect_ratio}} --iw {{image_weight}}",
+      "en": "【Reference Images】\n- {{subject}}: @upload {{subject}} character image\n- {{scene}}: @upload {{scene}} background image\n{{prop_line_en}}\n\n【Composition Description】{{composition_description_en}}\n【Camera Angle】{{camera_angle_en}}, {{shot_type_en}}\n【Lighting】{{lighting_en}}\n【Blending Constraint】Background matches reference, character scale appropriate, unified lighting\n【Style】{{style_en}}\n【Anti-distortion】no morphing, no body distortion, subject remains solid\n【Negative Prompts】{{negative_prompts}}\n--ar {{aspect_ratio_en}} --iw {{image_weight_en}}"
+    }
+  },
+  "T5": {
+    "name": {"zh": "图生视频", "en": "Image to Video"},
+    "icon": "🎥",
+    "outputFormat": {
+      "zh": "【参考图锚点】\n- {{subject}}：@上传{{subject}}的角色图\n- {{scene}}：@上传{{scene}}的场景图\n{{prop_line}}\n- 起始帧（可选）：@上传合成好的场景图\n\n镜头1（0-{{duration}}秒）\n【动态描述】{{motion_description}}\n【运动幅度】{{motion_intensity}}\n【运镜方式】{{camera_movement}}\n【环境光线】{{lighting_video}}\n【氛围】{{atmosphere}}\n\n【风格】{{style}}\n【防畸变约束】no morphing, no body distortion, subject remains solid, background maintains structural integrity\n【负面约束】{{negative_prompts}}\n--ar {{aspect_ratio}} --iw {{image_weight}}",
+      "en": "【Reference Images】\n- {{subject}}: @upload {{subject}} character image\n- {{scene}}: @upload {{scene}} background image\n{{prop_line_en}}\n- Start frame (optional): @upload composed scene image\n\nShot 1 (0-{{duration}}s)\n【Motion Description】{{motion_description_en}}\n【Motion Intensity】{{motion_intensity_en}}\n【Camera Movement】{{camera_movement_en}}\n【Lighting】{{lighting_video_en}}\n【Atmosphere】{{atmosphere_en}}\n\n【Style】{{style_en}}\n【Anti-distortion】no morphing, no body distortion, subject remains solid, background maintains structural integrity\n【Negative Prompts】{{negative_prompts}}\n--ar {{aspect_ratio_en}} --iw {{image_weight_en}}"
+    },
+    "multiShotFormat": {
+      "zh": "【参考图锚点】\n- {{subject}}：@上传{{subject}}的角色图\n- {{scene}}：@上传{{scene}}的场景图\n{{prop_line}}\n- 起始帧：@上传合成好的场景图\n\n镜头1（0-5秒）\n【动态描述】{{motion_description}}\n【运动幅度】{{motion_intensity}}\n【运镜方式】{{camera_movement}}\n【环境光线】{{lighting_video}}\n【氛围】{{atmosphere}}\n\n镜头2（5-10秒）\n【动态描述】{{motion_description_2}}\n【运动幅度】{{motion_intensity_2}}\n【运镜方式】{{camera_movement_2}}\n【环境光线】{{lighting_video_2}}\n【氛围】{{atmosphere_2}}\n\n【风格】{{style}}\n【防畸变约束】no morphing, no body distortion, subject remains solid\n【负面约束】{{negative_prompts}}\n--ar {{aspect_ratio}} --iw {{image_weight}}",
+      "en": "【Reference Images】\n- {{subject}}: @upload {{subject}} character image\n- {{scene}}: @upload {{scene}} background image\n{{prop_line_en}}\n- Start frame: @upload composed scene image\n\nShot 1 (0-5s)\n【Motion Description】{{motion_description_en}}\n【Motion Intensity】{{motion_intensity_en}}\n【Camera Movement】{{camera_movement_en}}\n【Lighting】{{lighting_video_en}}\n【Atmosphere】{{atmosphere_en}}\n\nShot 2 (5-10s)\n【Motion Description】{{motion_description_2_en}}\n【Motion Intensity】{{motion_intensity_2_en}}\n【Camera Movement】{{camera_movement_2_en}}\n【Lighting】{{lighting_video_2_en}}\n【Atmosphere】{{atmosphere_2_en}}\n\n【Style】{{style_en}}\n【Anti-distortion】no morphing, no body distortion, subject remains solid\n【Negative Prompts】{{negative_prompts}}\n--ar {{aspect_ratio_en}} --iw {{image_weight_en}}"
+    }
+  }
+}

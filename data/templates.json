@@ -1,0 +1,36 @@
+{
+  "templates": {
+    "T1": {
+      "name": "人物/生物生成",
+      "icon": "👤",
+      "outputFormat": "一张高精度角色设定图，白色背景，横向排版，左侧为面部特写（正面大头像），右侧为三视图（正面、侧面、背面全身站姿），面部特写与三视图角色一致性强，五官统一，发型统一，服装统一，比例统一，适合作为角色建模参考图。光线统一，边缘清晰，背景纯净，图片不出现任何文字，纯白色背景，无阴影。\n\n【角色名】{{character_name}}\n【物种】{{species}}\n【性别】{{gender}}\n【年龄】{{age}}\n【脸型】{{face_shape}}\n【面部特征】眼睛{{eye_size}}，{{eye_lid}}眼皮，眼尾{{eye_corner}}，眼神{{eye_expression}}，瞳色{{eye_color}}；眉毛{{eyebrow_density}}，{{eyebrow_shape}}，{{eyebrow_color}}；鼻子{{nose}}；嘴唇{{lip_thickness}}，唇色{{lip_color}}；肤色{{skin_color}}\n【发型】{{hair_length}}，{{hair_color}}，{{hair_bangs}}刘海，{{hair_texture}}，{{hair_style}}\n【身体特征】身材{{body_type}}，身高{{height}}\n【服饰搭配】上身穿{{top_color}}色{{top_type}}（胸前有{{top_pattern}}印花），下身穿{{bottom_color}}色{{bottom_type}}，脚穿{{shoe_color}}色{{shoe_type}}\n【配饰】{{accessories}}\n【特殊体征】{{special_features}}\n【整体气质】{{temperament}}\n【姿态动作】双手自然下垂，站姿自然，全身完整入镜\n【环境光线】光线统一，边缘清晰，背景纯净，纯白色背景，无阴影\n【风格锚点】Cel-shaded 3D anime, Blue Lock style, bold black outlines, two-tone cel shading with subtle mid-tones, high saturation cold colors, sharp specular highlights, detailed iris textures\n【约束】无文字，无阴影，三视图无表情\n【负面提示词】{{negative_prompts}}",
+      "speciesGroups": {
+        "human_male": [],
+        "human_female": [],
+        "animal": ["animal_species", "fur_color", "animal_body_type", "anthropomorphism"],
+        "half_beast": ["base_species", "human_beast_ratio", "retained_features"],
+        "robot": ["robot_appearance", "robot_material", "robot_color", "light_color"]
+      }
+    },
+    "T2": {
+      "name": "场景生成",
+      "icon": "🌆",
+      "outputFormat": "[Use uploaded reference image 1 as image reference]\n【风格锚点】{{style_anchor}}\n【环境光线】{{lighting}}，{{weather}}，{{time_of_day}}\n【镜头视角】{{camera_angle}} human-eye view，{{shot_type}}，焦段{{focal_length}}，景深{{depth_of_field}}\n【场景描述】{{scene_description}}\n【颗粒感】{{grain}}，暗角{{vignette}}\n【一致性约束】All buildings, structures, objects strictly match the reference image layout.\n【背景约束】Clean white background, no text, no shadows from background.\n【负面约束】{{negative_prompts}}\n--ar 16:9 --iw 0.7"
+    },
+    "T3": {
+      "name": "道具生成",
+      "icon": "🎒",
+      "outputFormat": "一张高精度道具建模参考图，白色背景，横向排版，画面从左至右依次排列三个视图：【正视图】、【侧视图】、【俯视图】。三个视图中的道具大小比例一致，角度准确对应。\n【道具描述】{{prop_description}}\n材质{{material}}，表面{{surface_texture}}，状态{{condition}}，颜色{{prop_color}}。\n光线统一，边缘清晰，背景纯净，图片不出现任何文字，纯白色背景，无阴影。\n{{style_anchor_prop}}\n【负面约束】{{negative_prompts}}"
+    },
+    "T4": {
+      "name": "主体+场景合成",
+      "icon": "🎬",
+      "outputFormat": "【垫图指令】垫 @场景 参考图和 @主体 参考图\n【合成描述】在@场景，@主体{{action}}，{{expression}}，情绪{{emotion}}\n【镜头视角】{{camera_angle}}，{{shot_type}}\n【环境光线】{{lighting}}\n【融合约束】背景布局与@场景参考图一致，角色比例匹配场景，光影统一\n【风格锚点】{{style_anchor}}\n【负面约束】{{negative_prompts}}"
+    },
+    "T5": {
+      "name": "图生视频",
+      "icon": "🎥",
+      "outputFormat": "【垫图指令】使用此图作为视频起始帧\n【风格锚点】{{style_anchor}}\n【动态描述】{{action_description}}\n【运动幅度】{{motion_intensity}}\n【运镜方式】{{camera_movement}}\n【环境光线】{{lighting}}\n【时长参数】{{duration}}秒\n【防畸变约束】no morphing, no body distortion, subject remains solid, background maintains structural integrity\n【负面约束】{{negative_prompts}}\n--ar 16:9"
+    }
+  }
+}
