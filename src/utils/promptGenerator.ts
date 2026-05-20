@@ -231,8 +231,9 @@ const processT5CombinedFields = (state: PromptState, processedState: PromptState
     const parts2: string[] = [];
     if (state.subject) parts2.push(processedState[`subject${suffix}`] as string);
     if (state.action_description_2) parts2.push(processedState[`action_description_2${suffix}`] as string);
+    const suffixText2 = lang === 'zh' ? '。' : '.';
     processedState[`motion_description_2${suffix}`] = parts2.length > 0 
-      ? `${parts2.join('')}${suffixText}` 
+      ? `${parts2.join('')}${suffixText2}` 
       : '';
   } else {
     processedState[`motion_description_2${suffix}`] = '';
@@ -310,15 +311,15 @@ const getOptionValue = (optionConfig: any, value: string, lang: Language): strin
 
   if (foundItem) {
     if (optionConfig.useShortLabel) {
-      return lang === 'en' ? (foundItem.en_value || foundItem.label || foundItem.name) : (foundItem.short_label || foundItem.label || foundItem.name);
+      return lang === 'en' ? (foundItem.en_value || foundItem.label || foundItem.name || '') : (foundItem.short_label || foundItem.label || foundItem.name || '');
     }
     if (optionConfig.useDesc) {
-      return lang === 'en' ? (foundItem.en_value || foundItem.label || foundItem.name) : (foundItem.zh_desc || foundItem.label || foundItem.name);
+      return lang === 'en' ? (foundItem.en_value || foundItem.label || foundItem.name || '') : (foundItem.zh_desc || foundItem.label || foundItem.name || '');
     }
     if (foundItem.description) {
-      return lang === 'en' ? (foundItem.en_value || foundItem.label || foundItem.name) : (foundItem.description || foundItem.label || foundItem.name);
+      return lang === 'en' ? (foundItem.en_value || foundItem.label || foundItem.name || '') : (foundItem.description || foundItem.label || foundItem.name || '');
     }
-    return lang === 'en' ? (foundItem.en_value || foundItem.label || foundItem.name) : (foundItem.label || foundItem.name || foundItem.value);
+    return lang === 'en' ? (foundItem.en_value || foundItem.label || foundItem.name || '') : (foundItem.label || foundItem.name || foundItem.value || '');
   }
 
   return value;

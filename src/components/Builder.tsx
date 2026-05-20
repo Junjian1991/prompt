@@ -5,7 +5,6 @@ import { PreviewPanel } from './PreviewPanel';
 import { CopyButtons } from './CopyButtons';
 import { generatePrompt, generatePlainText, Language } from '../utils/promptGenerator';
 import options from '../data/options.json';
-import { signOut, useSession } from 'next-auth/react';
 
 interface State {
   [key: string]: string | string[];
@@ -19,7 +18,6 @@ const initialState: State = {};
 const initialCustomValues: CustomValues = {};
 
 export const Builder = () => {
-  const { data: session } = useSession();
   const [activeTemplate, setActiveTemplate] = useState('T1');
   const [state, setState] = useState<State>(initialState);
   const [customValues, setCustomValues] = useState<CustomValues>(initialCustomValues);
@@ -89,14 +87,6 @@ export const Builder = () => {
           >
             {language === 'zh' ? 'English' : '中文'}
           </button>
-          {session && (
-            <button
-              onClick={() => signOut()}
-              className="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-            >
-              退出登录
-            </button>
-          )}
         </div>
       </header>
 

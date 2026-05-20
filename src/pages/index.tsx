@@ -1,9 +1,6 @@
 import Link from 'next/link';
-import { useSession, signOut } from 'next-auth/react';
 
 export default function Home() {
-  const { data: session } = useSession();
-
   return (
     <div className="min-h-screen bg-white">
       {/* 顶部导航栏 */}
@@ -17,37 +14,12 @@ export default function Home() {
           </div>
           
           <div className="flex items-center gap-4">
-            {session ? (
-              <>
-                <Link
-                  href="/builder"
-                  className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl"
-                >
-                  进入工具
-                </Link>
-                <button
-                  onClick={() => signOut()}
-                  className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium hover:bg-gray-200 transition-all"
-                >
-                  退出登录
-                </button>
-              </>
-            ) : (
-              <>
-                <Link
-                  href="/auth/login"
-                  className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium hover:bg-gray-200 transition-all"
-                >
-                  登录
-                </Link>
-                <Link
-                  href="/auth/register"
-                  className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl"
-                >
-                  注册
-                </Link>
-              </>
-            )}
+            <Link
+              href="/builder"
+              className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl"
+            >
+              进入工具
+            </Link>
           </div>
         </div>
       </header>
@@ -67,21 +39,12 @@ export default function Home() {
             让AI听得懂你的创意
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {session ? (
-              <Link
-                href="/builder"
-                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
-              >
-                进入工具
-              </Link>
-            ) : (
-              <Link
-                href="/auth/register"
-                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
-              >
-                免费注册使用
-              </Link>
-            )}
+            <Link
+              href="/builder"
+              className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+            >
+              进入工具
+            </Link>
             <a
               href="#templates"
               className="bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-50 transition-all shadow-md hover:shadow-lg border border-gray-200"
@@ -269,21 +232,12 @@ export default function Home() {
           <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
             告别繁琐的手动编写，让AI更懂你的创意
           </p>
-          {session ? (
-            <Link
-              href="/builder"
-              className="inline-block bg-white text-gray-900 px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-2xl hover:shadow-3xl hover:-translate-y-1"
-            >
-              进入工具
-            </Link>
-          ) : (
-            <Link
-              href="/auth/register"
-              className="inline-block bg-white text-gray-900 px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-2xl hover:shadow-3xl hover:-translate-y-1"
-            >
-              立即注册
-            </Link>
-          )}
+          <Link
+            href="/builder"
+            className="inline-block bg-white text-gray-900 px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-2xl hover:shadow-3xl hover:-translate-y-1"
+          >
+            立即开始
+          </Link>
         </div>
       </section>
 
