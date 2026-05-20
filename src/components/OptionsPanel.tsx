@@ -36,7 +36,7 @@ const T1_BASE_OPTIONS = [
   'bottom_type', 'bottom_color',
   'shoe_type', 'shoe_color',
   'accessories', 'temperament', 'special_features',
-  'style_base', 'style_advanced', 'aspect_ratio', 'image_weight', 'negative_prompts'
+  'style_base', 'style_advanced', 'image_weight', 'aspect_ratio', 'negative_prompts'
 ];
 
 export const OptionsPanel = ({
@@ -210,7 +210,7 @@ export const OptionsPanel = ({
     if (templateId !== 'T4' && templateId !== 'T5') return null;
     
     return (
-      <div className="mb-6 mt-4">
+      <div className="mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">
           {language === 'zh' ? '动态描述' : 'Motion Description'}
         </label>
@@ -226,8 +226,19 @@ export const OptionsPanel = ({
     );
   };
 
-  const renderRemainingOptions = () => {
-    const excludeFields = [...ASSET_FIELDS, 'motion_description', 'image_weight', 'aspect_ratio'];
+  const renderMotionFields = () => {
+    if (templateId !== 'T4' && templateId !== 'T5') return null;
+    
+    return MOTION_FIELDS.map(key => {
+      if (templateOptions[key]) {
+        return renderSelectOption(key);
+      }
+      return null;
+    });
+  };
+
+  const renderNonMotionOptions = () => {
+    const excludeFields = [...ASSET_FIELDS, ...MOTION_FIELDS, 'motion_description', 'image_weight', 'aspect_ratio', 'negative_prompts'];
     
     return optionsToRender.map(key => {
       if (excludeFields.includes(key)) return null;
@@ -279,18 +290,19 @@ export const OptionsPanel = ({
         </div>
       )}
 
-      {renderRemainingOptions()}
-
-      {templateOptions.image_weight && renderSliderOption('image_weight')}
-      
-      {templateOptions.aspect_ratio && renderSelectOption('aspect_ratio')}
+      {renderNonMotionOptions()}
 
       {(templateId === 'T4' || templateId === 'T5') && (
         <>
           {renderAssetFields()}
           {renderDynamicDescription()}
+          {renderMotionFields()}
         </>
       )}
+
+      {templateOptions.image_weight && renderSliderOption('image_weight')}
+      
+      {templateOptions.aspect_ratio && renderSelectOption('aspect_ratio')}
 
       {templateOptions.negative_prompts && renderInputOption('negative_prompts')}
     </div>
